@@ -1,11 +1,11 @@
 # Using FastQC for basic run quality metrics
 
 This tutorial assumes you have a GVL instance running already in the NeCTAR cloud.
-See the "Initial setup" page for instructions on how to get that going.
+See the "[Initial setup](gvlsetup)" page for instructions on how to get that going.
 
 ## Obtain the example data
 
-Download an example datasets:
+Download the example datasets:
 
 * [MiSeq Nano Read 1](http://darlinglab.org/data/demux/Undetermined_S0_L001_R1_001.fastq.gz)
 * [MiSeq Nano Index Read 1](http://darlinglab.org/data/demux/Undetermined_S0_L001_I1_001.fastq.gz)

@@ -1,7 +1,7 @@
 # Demultiplexing custom sample barcodes with PhyloSift
 
 This tutorial assumes you have a GVL instance running already in the NeCTAR cloud.
-See the "Initial setup" page for instructions on how to get that going.
+See the "[Initial setup](gvlsetup)" page for instructions on how to get that going.
 We will further assume that you've logged in to the instance with ssh.
 
 Alternatively, it should be possible to run the tutorial locally in the terminal on a Mac or Linux machine.
@@ -105,7 +105,7 @@ This will run for a while, producing lines of output like this:
 
 And eventually finishing with a report of how many reads were assigned to each barcode.
 Note that phylosift allows each barcode to contain up to one mismatch; a pair of barcodes could have a mismatch in each barcode in the pair.
-The above command produces a demultiplexed file called platipy.fastq.gz with the following contents:
+The above command produces a demultiplexed file called `platypi.fastq.gz` with the following contents:
 
     @S11_1 M00607:72:000000000-D0B10:1:1101:15662:1335 1:N:0:0 barcode=ACGGTT:GAACTT random=::GGACTA:ACGATG:
     CTATTTCATCGTCAATCGCTGGCTGCGCGTCGCGACGTTCGTGGTGGCCGTGCTGGTGGTGATGCCGCTGTGGCAGGCCGGCAGCGGGCTGATGGCGCGCGTCGTCGCGCCGGCCCAGTCGCAGGCGAACGTGGCGGGCGCCACGCGCGT
@@ -141,5 +141,6 @@ While this is an ideal format for certain analyses, such as microbial community 
 
 * `--samplefiles` separate the samples into individual files
 * `--no-interleaving` create separate files for the forward and reverse reads from paired-end sequencing
+* `--flash` merge overlapping read pairs with the [FLASH software](http://ccb.jhu.edu/software/FLASH/). FLASH must be installed separately. This is useful for amplicon sequencing where the insert is known to be shorter than the sum of paired-end read lengths.
 
 
