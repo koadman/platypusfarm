@@ -11,6 +11,7 @@ Alternatively, it should be possible to run the tutorial locally in the terminal
      curl -O http://edhar.genomecenter.ucdavis.edu/~koadman/phylosift/devel/phylosift_20141105.tar.bz2
      tar -xjf phylosift_20141105.tar.bz2
      export PATH="$PATH:`pwd`/phylosift_20141105/bin"
+     
 
 The first command downloads PhyloSift using curl, the second command unzips it, and the third command adds it to your executable binary program path.
 
@@ -20,6 +21,7 @@ The first command downloads PhyloSift using curl, the second command unzips it, 
     curl -O http://darlinglab.org/data/demux/Undetermined_S0_L001_I2_001.fastq.gz
     curl -O http://darlinglab.org/data/demux/Undetermined_S0_L001_R1_001.fastq.gz
     curl -O http://darlinglab.org/data/demux/Undetermined_S0_L001_R2_001.fastq.gz
+    
 
 The above commands use curl to download an Illumina dataset produced on the UTS MiSeq.
 
@@ -143,4 +145,7 @@ While this is an ideal format for certain analyses, such as microbial community 
 * `--no-interleaving` create separate files for the forward and reverse reads from paired-end sequencing
 * `--flash` merge overlapping read pairs with the [FLASH software](http://ccb.jhu.edu/software/FLASH/). FLASH must be installed separately. This is useful for amplicon sequencing where the insert is known to be shorter than the sum of paired-end read lengths.
 
+## Get your data out
+
+Now that the Illumina reads are freshly demultiplexed it's possible to move on to the next stage of analysis. One option is to continue working in the Genomics Virtual Lab instance. If you'd like to move the data elsewhere, it's possible to retrieve it with scp or Secure FTP. From the linux or mac command-line it's as simple as running `scp XXX.XX.X.XXX:*.fastq.gz .` in your local machine's terminal to copy the data out of the GVL instance. XX.XX.X.XXX must be replaced with the GVL instance IP address. Alternatively, something like [FileZilla client](https://filezilla-project.org/download.php?type=client) can be used for a graphical interface to get the files out of the GVL.
 

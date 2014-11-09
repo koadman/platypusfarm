@@ -13,7 +13,7 @@ A quick rundown of the video instructions is below.
 
 ### Get EC2 API security credentials from NeCTAR
 
-1. [Log in to NeCTAR](ttp://dashboard.rc.nectar.org.au/)
+1. [Log in to NeCTAR](http://dashboard.rc.nectar.org.au/)
 2. Download security credentials for EC2 API & open in text editor
 
 ### Launch GVL instance via CloudMan
