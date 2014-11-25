@@ -8,6 +8,10 @@ See the "[Initial setup](gvlsetup)" page for instructions on how to get that goi
 Alternatively you can run any of these commands inside a Linux or Mac OS X terminal. 
 This _will not_ work on Windows, not even with cygwin. Use NeCTAR instead.
 
+The genome phylogenies produced by this approach are useful as a rough guide to the evolutionary history of any draft genomes
+you might have just sequenced or otherwise obtained. Careful inference of clonal descent is more involved and should be
+undertaken once it's clear which collection of isolate genomes would be appropriate for such an analysis.
+
 ## Obtain the example data
 
 Once logged into the cloud instance, create a new directory to work from:
@@ -64,7 +68,7 @@ For more details on what's happening under the hood see the [PhyloSift website](
 ## infer a phylogeny with FastTree
 
     find . -type f -regex '.*alignDir/concat.codon.updated.1.fasta' -exec cat {} \; | sed -r 's/\.1\..*//'  > codon_alignment.fa
-    ~/phylosift_v1.0.1/bin/FastTree -nt -gtr < codon_alignment.fa > codon_tree.tre
+    FastTree -nt -gtr < codon_alignment.fa > codon_tree.tre
     
 
 The first command adds all of the aligned marker genes found in the previous stage to a single file called `codon_alignment.fa`.
@@ -79,3 +83,8 @@ The last steps are to view it, interpret it, and publish it. There are many phyl
 
 Once open, enable the node labels which show bootstrap confidence. Optionally midpoint root the tree, adjust the line width, and export a PDF.
 
+If everything worked according to plan you should get a phylogeny that looks something like this:
+
+![A marker gene tree made with phylosift and FastTree](marker_gene_tree.png)
+
+The branch length units are substitutions per site. The node labes are clade confidence estimates.
