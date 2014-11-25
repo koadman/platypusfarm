@@ -13,7 +13,7 @@ It is best to place your private keys somewhere you can find them and not just l
 
 Once you find your private key file, go to __FileZilla => Settings => Connection => SFTP.__
 
-![sftp connection](sftp-con.pg)
+![sftp connection](sftp-con.png)
 
 Select, _Add keyfile..._ and select your private key. FileZilla might ask to convert the fileformat, this is ok and you can say yes.
 
