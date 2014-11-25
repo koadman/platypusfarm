@@ -1,8 +1,10 @@
 #Lunch Bytes
-###Cloud Computing
+##Cloud Computing
 The convergence of a number of computing technologies, which together enable the efficient sharing of computing resources without significant emphasis on physical location.
 
-####Building Blocks
+
+
+###Building Blocks
 
 ***Open-source movement*** -- not just "free as in beer".
 
@@ -20,6 +22,8 @@ Fortunately, nobody likes Larry.
 Virtualization goes back to before the Internet (Yes, cool ideas were possible even then!). Though it can be bewildering when first encountered, it is nothing more than providing a virtual rather than actual resource. Most often, resources are hardware; from a single device to an entire virtual computer.
 
 ![google trends](trends.png)
+
+
 
 ###Lexicon
 
@@ -48,7 +52,9 @@ Like the local disk in a laptop or desktop, persistent storage remains until del
 
 Bringing it all together, dynamic allocation is the on-demand provision of resources to support a requested instance. This includes requested memory, CPUs and transient storage. For NeCTAR this can be driven through the web-based dashboard.
 
-####NeCTAR Cloud
+
+
+###NeCTAR Cloud
 
 - [Dashboard](https://dashboard.rc.nectar.org.au/)
 - [Documentation site](https://support.rc.nectar.org.au/docs/)
