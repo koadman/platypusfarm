@@ -13,7 +13,7 @@ PhyloSift is a re-implementation and extension of the original amphora approach 
 [**Mauve** - multiple genome alignment](http://darlinglab.org/mauve)<br/>
 Mauve is a software tool to compute whole genome multiple alignments among bacteria and small eukaryotic genomes (usually no bigger than Drosophila). The software includes a Java-based visualization module and a set of alignment programs written in C++, available for Linux, Mac, and Windows. Source code is currently available on [sourceforge.net](http://sf.net/p/mauve).
 
-[**A5-miseq** - Andrew and AAron's Awesome Assembly Pipeline (miseq enabled)](http://sf.net/p/ngopt)<br/>
+[**A5-miseq** - Andrew And Aaron's Awesome Assembly Pipeline (miseq enabled)](http://sf.net/p/ngopt)<br/>
 A5-miseq is an updated software pipeline for de novo assembly of microbial isolate genomes from Illumina HiSeq or MiSeq data. It automates all of the usual steps in genome assembly with an easy-to-use interface.
 
 [**STS** - the Sequential Tree Sampler](https://github.com/metatangle/sts)<br/>
