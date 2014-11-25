@@ -5,4 +5,5 @@ pages:
 - [fastqc.md, FastQC]
 - [demuxing.md, Custom demultiplexing]
 - [nectar_cloud.md, Using the NeCTAR cloud]
+- [marker_phylogeny.md, Marker gene phylogeny]
 theme: readthedocs
