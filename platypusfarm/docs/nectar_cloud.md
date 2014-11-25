@@ -19,7 +19,7 @@ Fortunately, nobody likes Larry.
 
 Virtualization goes back to before the Internet (Yes, cool ideas were possible even then!). Though it can be bewildering when first encountered, it is nothing more than providing a virtual rather than actual resource. Most often, resources are hardware; from a single device to an entire virtual computer.
 
-![google trends](https://drive.google.com/file/d/0B5E21pJ7VsRVN1F0clZSQzIyZzg/view?usp=sharing)
+![google trends](trends.png)
 
 ###Lexicon
 
@@ -102,6 +102,4 @@ These are persistent storage units, existing independent of any instance, and th
 Zones are physical locations which have provided computing infrastructure to the NeCTAR cloud. These range from individual institutions to consortiums.
 
 Though UTS has access, it is not a major stake holder (doesn't provide a zone) and does not therefore have a preferential zone choice (someone correct me?) Depending on intended use, zone choice is therefore not necessarily important.
-
-
 
