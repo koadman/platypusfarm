@@ -13,7 +13,8 @@ twitter: [@koadman](http://twitter.com/koadman) | [google scholar](http://schola
 
 **Melissa Gardiner** -- Postdoctoral Research Associate
 
-**Dr. Michael Liu** -- Postdoctoral Research Associate
+**Dr. Michael Liu** -- Postdoctoral Research Associate<br/>
+[UTS staff profile](http://www.uts.edu.au/staff/michael.liu)
 
 **Dana Almeida** -- Honours student 2015
 
