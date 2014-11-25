@@ -2,16 +2,16 @@
 
 To access a running instance using FileZilla, you need two things.
 
-- your private key used in creating the instance.
-- the public IP address of the instance.
+1. Your private key used in creating the instance.
+2. The public IP address of the instance.
 
-The private key was downloaded via your browser, when the public/privte key pair was created. This file has the same name as the key-pair, with a .pem suffix.
+The IP address of your instance can be found on the __Instances__ tab of the NeCTAR dashboard. This IP address is randomly assigned each time an instance is started, make sure you use the up to date value.
 
-Eg. mykey.pem
+The private key was downloaded, via your browser, when the public/privte key pair was created on the NeCTAR website. You may have created it long before you created the instance you intend to use. It is best to place your private keys somewhere you can find them and not just left in a download folder. This is a sensitive piece of information. You should restrict its permissions to readable only by yourself. Some communication clients will insist on that you do this prior to connecting. This file has the same name as the key-pair, with a .pem suffix.
 
-It is best to place your private keys somewhere you can find them and not just left in a download folder. This is a sensitive piece of information. You should restrict its permissions to readable only by yourself. Some communication clients will insist on that.
+Eg. my-key.pem
 
-Once you find your private key file, go to __FileZilla => Settings => Connection => SFTP.__
+Once you find the correct private key file, go to __FileZilla => Settings => Connection => SFTP.__
 
 ![sftp connection](sftp-con.png)
 
