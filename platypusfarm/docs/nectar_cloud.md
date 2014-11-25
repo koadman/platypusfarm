@@ -1,4 +1,3 @@
-#Lunch Bytes
 ##Cloud Computing
 The convergence of a number of computing technologies, which together enable the efficient sharing of computing resources without significant emphasis on physical location.
 

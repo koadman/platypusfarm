@@ -4,4 +4,5 @@ pages:
 - [gvlsetup.md, Initial setup]
 - [fastqc.md, FastQC]
 - [demuxing.md, Custom demultiplexing]
+- [nectar_cloud.md, Using the NeCTAR cloud]
 theme: readthedocs
