@@ -89,6 +89,7 @@ GUI
 - [gftp](http://gftp.seul.org/) – Linux
 - [cyberduck](https://cyberduck.io/?l=en) – OSX
 
+For FileZilla connections to NeCTAR, we have a small tutorial [here](filezilla.md)
 
 ***Volumes***
 
