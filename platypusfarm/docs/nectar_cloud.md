@@ -66,7 +66,7 @@ Images come in many flavours, these can be generic or tailored to particular typ
 
 For Bioinformatics, our recommendations are the Genomics Virtual Laboratory (GVL) or in second place Bio-Linux. As with any effort within open-source, whose on top can change as developer support waxes and wanes. It is always a good idea for end-users not to become too complacent with an arbitrary choice made many years ago.
 
-- [GVL](https://genome.edu.au/wiki/GVL) -- currently ~ release 3.4
+- [GVL](https://genome.edu.au/wiki/GVL) -- currently ~ release 3.0.4
 - [Bio-Linux](http://environmentalomics.org/bio-linux/) -- currently release 8
 
 GVL is presently a highly supported part of the NeCTAR's cloud, with the goal of making bioinformatics analysis accessible and reproducible for all biologists.
