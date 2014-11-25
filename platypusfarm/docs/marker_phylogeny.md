@@ -30,6 +30,7 @@ Now obtain the following draft genome:
 
     curl -O http://darlinglab.org/data/marker_phylogeny/ecoli_a5.final.scaffolds.fasta
     
+
 The above collection of genomes include a draft and several references from related species. 
 It is generally useful to select a large number of closely related references to match any newly sequenced draft genomes that will be included the phylogeny.
 
@@ -40,6 +41,7 @@ This was described previously in the [demux tutorial](demuxing), but just to rec
     curl -O http://edhar.genomecenter.ucdavis.edu/~koadman/phylosift/devel/phylosift_20141125.tar.bz2
     tar -xjf phylosift_20141125.tar.bz2
     export PATH="$PATH:`pwd`/phylosift_20141125/bin"
+    
 
 The above commands (1) download a current phylosift, (2) unpack the archive, and (3) add the phylosift program's directory to the list of paths that the system's shell searches for programs.
 
@@ -56,7 +58,7 @@ The first command above finds each file with a name that matches `*.fna` and sea
 The second command does the same thing with `*.fasta` files. Note that if you have assembled genomes with A5-miseq, they will have names ending with `*.fasta`.
 The third & fourth commands align any homologs that were found to the profile HMM marker gene models.
 
-Note that phylosift is aware of frameshift and indel errors -- marker gene sequences having such errors will still become aligned.
+Some notes: the first time phylosift runs it downloads and indexes the marker gene database. The database is rather large, around 1GB so this can take a long time depending on the speed of your internet connection. Also, phylosift is aware of frameshift and indel errors -- marker gene sequences having such errors will still become aligned.
 For more details on what's happening under the hood see the [PhyloSift website](http://phylosift.wordpress.org) or read the [PhyloSift publication](https://peerj.com/articles/243/).
 
 ## infer a phylogeny with FastTree
