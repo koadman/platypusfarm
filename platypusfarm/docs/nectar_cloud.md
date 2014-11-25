@@ -17,7 +17,7 @@ As early as the mid 90s, big IT companies were already making their bets on whet
 
 Fortunately, nobody likes Larry.
 
-***Virutalization*** -- the Truman Show *in silico*.
+***Virtualization*** -- the Truman Show *in silico*.
 
 Virtualization goes back to before the Internet (Yes, cool ideas were possible even then!). Though it can be bewildering when first encountered, it is nothing more than providing a virtual rather than actual resource. Most often, resources are hardware; from a single device to an entire virtual computer.
 
@@ -34,7 +34,7 @@ Like a photograph, an image is the captured the state of runnable computer syste
 
 ***Container***
 
-Effective virtualization places a running machine in a bubble. These bubbles, are called containers and prevent the machines stepping on eachothers toes.
+Effective virtualization places a running machine in a bubble. These bubbles are called containers and prevent the machines stepping on each-others toes.
 
 ***Instance***
 
@@ -61,7 +61,7 @@ Bringing it all together, dynamic allocation is the on-demand provision of resou
 
 ***Image Flavours***
 
-Images come in many flavours, these can be generic or tailored to particular types of work. NeCTAR has a number of _"official"_ images, each of which are base installations of recent versions of well known Linux distributions. In addition to these are _"public"_ images, which can be anything for yet more base installations to highly tailored environments for particular computional tasks. Any user can create their own images on NeCTAR.
+Images come in many flavours, these can be generic or tailored to particular types of work. NeCTAR has a number of _"official"_ images, each of which are base installations of recent versions of well known Linux distributions. In addition to these are _"public"_ images, which can be anything for yet more base installations to highly tailored environments for particular computational tasks. Any user can create their own images on NeCTAR.
 
 - [NeCTAR Images](https://dashboard.rc.nectar.org.au/project/images/)
 
@@ -70,11 +70,11 @@ For Bioinformatics, our recommendations are the Genomics Virtual Laboratory (GVL
 - [GVL](https://genome.edu.au/wiki/GVL) -- currently ~ release 3.4
 - [Bio-Linux](http://environmentalomics.org/bio-linux/) -- currently release 8
 
-GVL is presently a highly supported part of the NeCTAR's cloud, with the goal of making bioinformatics analysis accessible and reproducible for all biologist.
+GVL is presently a highly supported part of the NeCTAR's cloud, with the goal of making bioinformatics analysis accessible and reproducible for all biologists.
 
-***Inital Start-up***
+***Initial Start-up***
 
-Images when first launched are automatically assigned a public IP address and transient storage. Transient storage exists only as long as the instance: 10GB primary (/dev/vda) and 30GB per CPU seconary (/dev/vdb). 
+Images when first launched are automatically assigned a public IP address and transient storage. Transient storage exists only as long as the instance: 10GB primary (/dev/vda) and 30GB per CPU secondary (/dev/vdb). 
 
 The primary device can be backed up by use of snap-shots, while the secondary device is excluded. Retaining data from the secondary device is left to the user.
 
@@ -108,4 +108,3 @@ These are persistent storage units, existing independent of any instance, and th
 Zones are physical locations which have provided computing infrastructure to the NeCTAR cloud. These range from individual institutions to consortiums.
 
 Though UTS has access, it is not a major stake holder (doesn't provide a zone) and does not therefore have a preferential zone choice (someone correct me?) Depending on intended use, zone choice is therefore not necessarily important.
-
