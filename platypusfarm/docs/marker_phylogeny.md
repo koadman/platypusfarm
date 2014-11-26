@@ -16,7 +16,9 @@ undertaken once it's clear which collection of isolate genomes would be appropri
 
 Once logged into the cloud instance, create a new directory to work from:
 
-    mkdir phylogeny ; cd phylogeny
+    sudo mkdir /mnt/phylogeny ; sudo chown ubuntu /mnt/phylogeny ; cd /mnt/phylogeny
+
+Note that the above instructions are _only_ relevant to operation in a NeCTAR cloud instance, and should not be used on your own laptop.
 
 Download the following finished genomes from NCBI:
 
