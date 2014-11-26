@@ -79,12 +79,14 @@ The primary device can be backed up by use of snap-shots, while the secondary de
 
 ***Methods of retaining data***
 
-Command-line
+Command-line:
+
 - rsync
 - scp
 - sftp
  
-GUI
+GUI:
+
 - [filezilla](https://wiki.filezilla-project.org/Main_Page) – Multi-OS
 - [gftp](http://gftp.seul.org/) – Linux
 - [cyberduck](https://cyberduck.io/?l=en) – OSX
