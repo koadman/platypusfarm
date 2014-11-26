@@ -8,6 +8,7 @@ The convergence of a number of computing technologies, which together enable the
 ***Open-source movement*** -- not just "free as in beer".
 
  The huge collaboration of open-source software developers as provided a great deal of the fundamental infrastructure on which cloud computing rests. It is fair to say that without the open-source community, Cloud Computing would not exist.
+
 - *Linux* -- what flavour would be like Mr Torvalds?
 
 ***Network Computer*** -- Oracle, aka Larry Ellison (mid 90s)
@@ -29,7 +30,6 @@ Virtualization goes back to before the Internet (Yes, cool ideas were possible e
 ***Image***
 
 Like a photograph, an image is the captured the state of runnable computer system. Ideally, this is a completely installed and configured system.
-
 
 ***Container***
 
@@ -71,7 +71,7 @@ For Bioinformatics, our recommendations are the Genomics Virtual Laboratory (GVL
 
 GVL is presently a highly supported part of the NeCTAR's cloud, with the goal of making bioinformatics analysis accessible and reproducible for all biologists.
 
-***Initial Start-up***
+***Initial Storage***
 
 Images when first launched are automatically assigned a public IP address and transient storage. Transient storage exists only as long as the instance: 10GB primary (/dev/vda) and 30GB per CPU secondary (/dev/vdb). 
 
@@ -79,12 +79,12 @@ The primary device can be backed up by use of snap-shots, while the secondary de
 
 ***Methods of retaining data***
 
-Command-line
+Command-line:
 - rsync
 - scp
 - sftp
  
-GUI
+GUI:
 - [filezilla](https://wiki.filezilla-project.org/Main_Page) – Multi-OS
 - [gftp](http://gftp.seul.org/) – Linux
 - [cyberduck](https://cyberduck.io/?l=en) – OSX
