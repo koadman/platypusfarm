@@ -5,6 +5,7 @@ pages:
 - [fastqc.md, FastQC]
 - [demuxing.md, Custom demultiplexing]
 - [nectar_cloud.md, Using the NeCTAR cloud]
+- [instance_startup.md, Starting a NeCTAR instance]
 - [filezilla.md, FileZilla secure FTP]
 - [marker_phylogeny.md, Marker gene phylogeny]
 theme: readthedocs
