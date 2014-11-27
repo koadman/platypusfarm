@@ -17,8 +17,10 @@ undertaken once it's clear which collection of isolate genomes would be appropri
 Once logged into the cloud instance, create a new directory to work from:
 
     sudo mkdir /mnt/phylogeny ; sudo chown ubuntu /mnt/phylogeny ; cd /mnt/phylogeny
+    curl http://darlinglab.org/tutorials/phylosiftrc > ~/.phylosiftrc
 
-Note that the above instructions are _only_ relevant to operation in a NeCTAR cloud instance, and should not be used on your own laptop.
+Note that the above instructions are _only_ relevant to operation in a NeCTAR cloud instance, and should **not** be used on your own laptop.
+The second command above installs a phylosift configuration file which specifies that phylosift should use the transient storage in /mnt to store its database. This is necessary on NeCTAR cloud instances because the root partition (perhaps stupidly) is not configured with much free disk space.
 
 Download the following finished genomes from NCBI:
 
@@ -44,9 +46,9 @@ It is generally useful to select a large number of closely related references to
 
 This was described previously in the [demux tutorial](demuxing), but just to recap:
 
-    curl -O http://edhar.genomecenter.ucdavis.edu/~koadman/phylosift/devel/phylosift_20141125.tar.bz2
-    tar -xjf phylosift_20141125.tar.bz2
-    export PATH="$PATH:`pwd`/phylosift_20141125/bin"
+    curl -O http://edhar.genomecenter.ucdavis.edu/~koadman/phylosift/devel/phylosift_20141126.tar.bz2
+    tar -xjf phylosift_20141126.tar.bz2
+    export PATH="$PATH:`pwd`/phylosift_20141126/bin"
     
 
 The above commands (1) download a current phylosift, (2) unpack the archive, and (3) add the phylosift program's directory to the list of paths that the system's shell searches for programs.
