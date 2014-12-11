@@ -40,6 +40,6 @@ twitter: [@koadman](http://twitter.com/koadman) | [google scholar](http://schola
 
 **Matt Denney** -- Research intern (University of California-Davis)
 
-**Raymond Wan** -- Postdoctoral scholar (Chinese University of Hong Kong)
+**Raymond Wan** -- Visiting postdoctoral scholar (Chinese University of Hong Kong)
 
 **Ethan Wyrsch** -- Honours student (UTS)
