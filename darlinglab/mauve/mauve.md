@@ -1,0 +1,11 @@
+---
+layout: mauvepage
+title: Mauve
+---
+
+![The Mauve logo](mauve_logo2.png)
+
+Mauve is a system for constructing multiple genome alignments in the presence of large-scale evolutionary events such as rearrangement and inversion. Multiple genome alignments provide a basis for research into comparative genomics and the study of genome-wide evolutionary dynamics. 
+
+Mauve has been developed with the idea that a multiple genome aligner should require only modest computational resources. It employs algorithmic techniques that scale well in the lengths of sequences being aligned. For example, a pair of Y. pestis genomes can be aligned in under a minute, while a group of 9 divergent Enterobacterial genomes can be aligned in a few hours. However, the current algorithm's compute time (progressiveMauve) scales cubically in the number of genomes to align, making it unsuitable for datasets containing more than 50-100 bacterial genomes.
+

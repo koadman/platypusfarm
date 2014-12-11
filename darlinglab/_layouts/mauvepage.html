@@ -1,0 +1,56 @@
+---
+layout: default
+---
+<head>
+  <link rel="shortcut icon" href="{{ site.baseurl }}/mauve/favicon.ico" />
+</head>
+
+{% sidebar %}
+#### [**Download Mauve**]({{ site.baseurl }}/mauve/download.html)
+
+#### User Guide:
++ [Introduction]({{ site.baseurl }}/mauve/user-guide/introduction.html)
++ [Installing]({{ site.baseurl }}/mauve/user-guide/installing.html)
++ [Aligning genomes]({{ site.baseurl }}/mauve/user-guide/aligning.html)
++ [The viewer]({{ site.baseurl }}/mauve/user-guide/viewer.html)
++ [File formats]({{ site.baseurl }}/mauve/user-guide/files.html)
++ [Reordering contigs]({{ site.baseurl }}/mauve/user-guide/reordering.html)
++ [mauveAligner]({{ site.baseurl }}/mauve/user-guide/mauvealigner.html)
++ [progressiveMauve]({{ site.baseurl }}/mauve/user-guide/progressivemauve.html)
++ [Version history]({{ site.baseurl }}/mauve/user-guide/versions.html)
++ [Screenshots]({{ site.baseurl }}/mauve/user-guide/screenshots.html)
+
+
+#### Developer Guide:
++ [Overview]({{ site.baseurl }}/mauve/developer-guide/overview.html)
++ [Building from source]({{ site.baseurl }}/mauve/developer-guide/building.html)
++ [Developing the GUI]({{ site.baseurl }}/mauve/developer-guide/developing-the-gui.html)
++ [Windows builds]({{ site.baseurl }}/mauve/developer-guide/building-on-windows.html)
++ [Mac builds]({{ site.baseurl }}/mauve/developer-guide/building-on-mac.html)
++ [Deploying Mauve]({{ site.baseurl }}/mauve/developer-guide/deploying-mauve-releases.html)
++ [Benchmarking]({{ site.baseurl }}/mauve/developer-guide/benchmarking.html)
+
+{% endsidebar %}
+
+{% if page.sidebar %}
+  <table>
+  <tr>
+  <td width="175" valign="top">
+  {{ page.sidebar | markdownify }}
+  </td>
+  <td valign="top">  
+{% endif %}
+
+<div class="post">
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+</div>
+
+{% if page.sidebar %}
+  </td>
+  </table>
+{% endif %}
+
