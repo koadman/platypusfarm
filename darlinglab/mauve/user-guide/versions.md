@@ -7,6 +7,7 @@ layout: mauvepage
 
 ##### New features:
 + Compatibility with older versions of Mac OS X 
+
 ##### Bugs fixed:
 + SNP output now handles mixed case sequence files and gap characters
 + Aligner memory usage has been streamlined, resulting in reduced memory requirements for alignments with many genomes
