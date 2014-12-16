@@ -7,12 +7,13 @@ layout: mauvepage
 #### Brief instructions for the lazy 
 
 1.  Ensure that pkg-config is installed
-2.  `svn co https://mauve.svn.sourceforge.net/svnroot/mauve/build_scripts`
+2.  `svn co https://svn.code.sf.net/p/mauve/code/build_scripts`
 3.  `cd build_scripts`
 4.  `./build_osx.sh`
 
-The resulting universal binaries will be located in
-`osx_build/mauveAligner/src`
+The resulting Mauve.app binaries will be located in
+`build/mauve/dist/`
+note that the build process will fail at the code signing stage, but the error can be safely ignored and the app used unsigned.
 
 #### Detailed build instructions 
 
