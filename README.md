@@ -1,4 +1,4 @@
 platypusfarm
 ============
 
-Tutorials and related material
+Darling lab web site, tutorials, reviews, Mauve web site, related material.
