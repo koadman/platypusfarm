@@ -2,27 +2,41 @@
 layout: mauvepage
 ---
 
-### Compiling mauveAligner from source 
+### Compiling mauveAligner from source on Linux
 
 Although Mauve is provided as a pre-compiled binary for Windows, Linux, and Mac OS X, we also make the source code available so that users can modify Mauve and compile it on other platforms. This chapter describes the procedure for compiling the command-line mauveAligner and progressiveMauve tools from source code on a unix system. Project files for Microsoft Visual studio are included to compile Mauve in a Windows environment.
 
+#### Brief instructions for the lazy 
+
+1.  Ensure that all prerequisites are installed (step 0 below)
+2.  `svn co https://svn.code.sf.net/p/mauve/code/build_scripts`
+3.  `cd build_scripts`
+4.  `./build_linux_x64.sh`
+
+The resulting GUI build will be located in
+`build/mauve/dist/`
+
+
 #### 0. Prerequisites
+
+The following command will install all prerequisites on debian and ubuntu:
+
+`sudo apt-get update ; sudo apt-get install g++ make pkg-config subversion libtool autoconf libbz2-dev libz-dev subversion bzip2 ant openjdk-7-jdk`
+
+
+#### 1. Obtain Mauve source code
 
 The command-line aligner tools are contained in a source package called "mauveAligner". mauveAligner depends on several additional software packages. 
 Each of these packages must be downloaded and installed in order to compile mauveAligner successfully.  The easiest way to obtain the code is to check it out directly from the sourceforge subversion repository, especially if the code will be modified and changes will be committed back to the repository.  To do so, execute the following series of commands inside a development directory:
 
-	svn co http://svn.code.sf.net/p/mauve/code/libGenome/trunk libGenome
-	svn co http://svn.code.sf.net/p/mauve/code/libMems/trunk libMems
-	svn co http://svn.code.sf.net/p/mauve/code/muscle/trunk muscle
-	svn co http://svn.code.sf.net/p/mauve/code/sgEvolver/trunk sgEvolver
-	svn co http://svn.code.sf.net/p/mauve/code/mauveAligner/trunk mauveAligner
+	svn co svn://svn.code.sf.net/p/mauve/code/libGenome/trunk libGenome
+	svn co svn://svn.code.sf.net/p/mauve/code/libMems/trunk libMems
+	svn co svn://svn.code.sf.net/p/mauve/code/muscle/trunk muscle
+	svn co svn://svn.code.sf.net/p/mauve/code/sgEvolver/trunk sgEvolver
+	svn co svn://svn.code.sf.net/p/mauve/code/mauveAligner/trunk mauveAligner
+	svn co svn://svn.code.sf.net/p/mauve/code/mauve/trunk mauve
 
 The developers make no guarantee that the latest source code will compile or otherwise work.
-
-##### Installing prerequisites on debian and ubuntu
-The following command will install all prerequisites:
-
-`sudo apt-get install g++ make pkgconfig subversion libtool autoconf libbz2-dev libz-dev subversion bzip2 ant openjdk-6-jdk`
 
 
 #### 1. Installing Boost
@@ -97,11 +111,12 @@ The following series of commands will build all libraries and source code from t
 	cd build
 
 	# download the source
-	svn co http://svn.code.sf.net/p/mauve/code/libGenome/trunk libGenome
-	svn co http://svn.code.sf.net/p/mauve/code/libMems/trunk libMems
-	svn co http://svn.code.sf.net/p/mauve/code/muscle/trunk muscle
-	svn co http://svn.code.sf.net/p/mauve/code/sgEvolver/trunk sgEvolver
-	svn co http://svn.code.sf.net/p/mauve/code/mauveAligner/trunk mauveAligner
+	svn co svn://svn.code.sf.net/p/mauve/code/libGenome/trunk libGenome
+	svn co svn://svn.code.sf.net/p/mauve/code/libMems/trunk libMems
+	svn co svn://svn.code.sf.net/p/mauve/code/muscle/trunk muscle
+	svn co svn://svn.code.sf.net/p/mauve/code/sgEvolver/trunk sgEvolver
+	svn co svn://svn.code.sf.net/p/mauve/code/mauveAligner/trunk mauveAligner
+	svn co svn://svn.code.sf.net/p/mauve/code/mauve/trunk mauve
 
 	# build pkg-config
 	curl -OL http://pkgconfig.freedesktop.org/releases/pkg-config-0.28.tar.gz
