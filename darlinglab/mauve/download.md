@@ -10,7 +10,7 @@ The 2.x release series incorporates an accurate new alignment algorithm called p
 
 Click the download link corresponding to your operating system:
 
-Windows	| |  [Mauve 2.3.1](downloads/mauve_installer_2.4.0.exe)
+Windows	| |  [Mauve 2.4.0](downloads/mauve_installer_2.4.0.exe)
 Linux	| |  [Mauve 2.4.0](downloads/mauve_linux_2.4.0.tar.gz)
 Mac OS X 10.7+ | |  [Mauve 2.4.0](downloads/Mauve-2.4.0.dmg)
 
