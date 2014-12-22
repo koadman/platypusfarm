@@ -22,9 +22,9 @@ layout: mauvepage
 + Contig N50 off-by-one error in Mauve Assembly Metrics
 + Boundary condition bugs in Mauve Assembly Metrics
 
-
 ##### Known bugs:
 + The OS X build uses an older version of the aligner component
++ The aligner is not supported on Windows 8. Alignments can be viewed but not created
 
 #### Version 2.3.1 (2009-11-11)
 
