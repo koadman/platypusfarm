@@ -15,10 +15,11 @@ Alternatively, mauveAligner and progressiveMauve can be compiled from source for
 
 Usage:
 
-	mauveAligner [options] <seq1 filename> <sml1 filename> ... <seqN filename> <smlN filename>
+`mauveAligner [options] <seq1 filename> <sml1 filename> ... <seqN filename> <smlN filename>`
+
 or
 
-	mauveAligner [options] <Multi-FastA file>
+`mauveAligner [options] <Multi-FastA file>`
 
 Each entry like `<seq filename>` denotes the name of a sequence file on disk that contains a genome to align. Sequence files can be in FastA, Multi-FastA, or GenBank flat file format. If an individual file contains several sequence entries, they will be concatenated and the whole concatenated sequence will be aligned to the sequences in the other files.
 

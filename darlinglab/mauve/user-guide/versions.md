@@ -3,6 +3,29 @@ layout: mauvepage
 ---
 ### Mauve version history
 
+#### Version 2.4.0 (2014-12-21)
+
+##### New features:
++ Compatibility with Mac OS X 10.8+
++ Mauve Assembly Metrics [(publication)](http://www.ncbi.nlm.nih.gov/pmc/articles/pmid/21810901/)
++ SNP output from the command line
++ Permutation matrix output
++ Updated visual styling of similarity plots
++ Mauve Contig Mover can now run headless (command-line) with OpenJDK and Oracle JDK 7 and 8
+
+##### Bugs fixed:
++ Poor performance of annotation tooltips on mouseover
++ Errors reading GenBank annotation from RAST and Prokka (thanks Torsten Seemann & Matt DeMaere)
++ Alignment of genomes > 2Gbp
++ new OpenJDK fonts caused ugly GUI component layouts
++ Build incompatibilities with modern Boost libs
++ Contig N50 off-by-one error in Mauve Assembly Metrics
++ Boundary condition bugs in Mauve Assembly Metrics
+
+
+##### Known bugs:
++ The OS X build uses an older version of the aligner component
+
 #### Version 2.3.1 (2009-11-11)
 
 ##### New features:

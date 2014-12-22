@@ -5,14 +5,19 @@ layout: mauvepage
 ### Downloading Mauve
 
 Mauve is free of charge, open-source software licensed under the GNU GPL.
-The current version of Mauve is 2.3.1, released on November 11th 2009.
+The current version of Mauve is 2.4.0, released on December 21st 2014.
 The 2.x release series incorporates an accurate new alignment algorithm called progressiveMauve. For a more comprehensive list of changes and new features, see the [Mauve version history](user-guide/versions.html).
 
 Click the download link corresponding to your operating system:
 
-Windows	| |  [Mauve 2.3.1](downloads/mauve_installer_2.3.1.exe)
-Linux	| |  [Mauve 2.3.1](downloads/mauve_linux_2.3.1.tar.gz)
-Mac OS X 10.4+ | |  [Mauve 2.3.1](downloads/Mauve-2.3.1.dmg)
+Windows	| |  [Mauve 2.3.1](downloads/mauve_installer_2.4.0.exe)
+Linux	| |  [Mauve 2.4.0](downloads/mauve_linux_2.4.0.tar.gz)
+Mac OS X 10.7+ | |  [Mauve 2.4.0](downloads/Mauve-2.4.0.dmg)
+
+
+Previous releases for older versions of Apple hardware that are no longer supported:
+
+Mac OS X 10.4-10.6 | |  [Mauve 2.3.1](downloads/Mauve-2.3.1.dmg)
 Mac OS X 10.3.9 | |  [Mauve 2.3.1](downloads/Mauve-OSX10.3-2.3.1.dmg)
 
 

@@ -24,7 +24,7 @@ Figure 2 (above) shows the same alignment of _E. coli_ K12 MG1655, _S. flexneri_
 
 #### Zooming in on Annotated Features
 
-If the aligned genome sequences were in GenBank files containing annotated features Mauve will display the annotated features next to the sequence similarity profiles. For efficiency reasons, annotated features appear only when less than 1Mbp of sequence is being displayed.  To zoom in on the alignment, either use the magnifying glass buttons from the toolbar, or use the keyboard shortcuts **Ctrl+Up** to zoom in (press Control and up arrow key simultaneously) and **Ctrl+Down** to zoom out.  Once viewing less than 1Mbp of sequence, annotated CDS features show up as white boxes, tRNAs are green, rRNAs are red, and misc_RNA features are blue. Mauve displays the /product qualifier when the mouse cursor is held over a feature. When a feature is clicked, Mauve shows a detailed listing of feature qualifiers in a popup window, in addition to a menu that links to the NCBI Entrez protein entry corresponding to the gene.
+If the aligned genome sequences were in GenBank files containing annotated features Mauve will display the annotated features next to the sequence similarity profiles. For efficiency reasons, annotated features appear only when less than 1Mbp of sequence is being displayed.  To zoom in on the alignment, either use the magnifying glass buttons from the toolbar, or use the keyboard shortcuts **Ctrl+Up** to zoom in (press Control and up arrow key simultaneously) and **Ctrl+Down** to zoom out. On Mac OS X, all of these shortcuts use the **Command** key instead, so zooming in is **Command+Up** etc.  Once viewing less than 1Mbp of sequence, annotated CDS features show up as white boxes, tRNAs are green, rRNAs are red, and misc_RNA features are blue. Mauve displays the /product qualifier when the mouse cursor is held over a feature. When a feature is clicked, Mauve shows a detailed listing of feature qualifiers in a popup window, in addition to a menu that links to the NCBI Entrez protein entry corresponding to the gene.
 
 ![A multidrug efflux protein missing from one Shigella isolate](threeway_variable.png)
 
@@ -35,7 +35,7 @@ Figure 3 (above) shows the same alignment zoomed in on a region 3.85Mbp into the
 
 #### Zooming and shifting the display
 
-The alignment display is interactive, providing the ability to zoom in on particular regions and shift the display to the left and right. Navigating through the alignment visualization can be accomplished by using the magnifying glass and arrow control buttons on the toolbar immediately above the display. Alternatively, keyboard shortcuts allow rapid movement through the alignment display. The keystrokes Ctrl+up arrow and Ctrl+down arrow zoom the display in and out, while **Ctrl+left** arrow and **Ctrl+right** arrow shift left and right, respectively.  Holding down the "shift" key with Ctrl+left and Ctrl+right accelerates the shifting leftward and rightward.
+The alignment display is interactive, providing the ability to zoom in on particular regions and shift the display to the left and right. Navigating through the alignment visualization can be accomplished by using the magnifying glass and arrow control buttons on the toolbar immediately above the display. Alternatively, keyboard shortcuts allow rapid movement through the alignment display. The keystrokes Ctrl+up arrow and Ctrl+down arrow zoom the display in and out, while **Ctrl+left** arrow and **Ctrl+right** arrow shift left and right, respectively (Command+left or Command+right on the mac).  Holding down the "shift" key with Ctrl+left and Ctrl+right accelerates the shifting leftward and rightward.
 
 #### Mouse control
 
@@ -104,7 +104,8 @@ In addition to parameters controlling the positional homolog inference procedure
 | Quit Mauve | Ctrl + Q |
 | Show or hide LCB connecting lines | Shift + L |
 | Show or hide LCB outlines | q |
- 
+
+Note: On Mac OS X the **Command** key must be used instead of the control key in the above keyboard shortcuts.
 
 #### Other Color Schemes
 
