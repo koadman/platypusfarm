@@ -23,7 +23,7 @@ Mac OS X 10.3.9 | |  [Mauve 2.3.1](downloads/Mauve-OSX10.3-2.3.1.dmg)
 
 ### Documentation
 
-We provide a [Mauve User's Guide](user-guide/overview.html) containing detailed information on how to operate the Mauve software.
+We provide a [Mauve User's Guide](user-guide/introduction.html) containing detailed information on how to operate the Mauve software.
 
 ### Support
 
