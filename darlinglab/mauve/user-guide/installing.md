@@ -8,7 +8,7 @@ Whether Mauve will be running under Windows, Linux, Mac OS X, or another operati
 
 ### Downloading
 
-Download the latest version of Mauve for your operating system from the [Mauve download site](http://darlinglab.org/mauve/download).
+Download the latest version of Mauve for your operating system from the [Mauve download site](http://darlinglab.org/mauve/download.html).
 
 #### Installation on Windows
 
