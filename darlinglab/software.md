@@ -46,7 +46,7 @@ Seevolution is an interactive viewer for mutations occurring during genome evolu
 [**ASAP and the ERIC BRC**](http://asap.ahabs.wisc.edu/asap/home.php)<br/>
 ASAP is A Systematic Annotation Package for microbial genomes which is part of the larger Enteropathogen Resource Integration Center project. Together, ERIC and ASAP provide a centralized, web based means to annotate the genomes of enteropathogens and serve as a clearinghouse for all types of annotation and experimental data. ASAP supports a wealth of automated annotation strategies, and its evolution has been described in a series of Nucleic Acids Research papers. ASAP is led by [Nicole Perna](http://genetics.wisc.edu/Perna.htm) and continues to grow at the Genome Evolution Laboratory since my departure.
 
-[**libClustalW** – a C library for Clustal-W 1.83](http://asap.ahabs.wisc.edu/software/software-development-libraries/libclustalw.html)<br/>
+[**libClustalW** – a C library for Clustal-W 1.83](https://sourceforge.net/p/mauve/code/HEAD/tree/libClustalW)<br/>
 The 1.83 release of Clustal-W has been refactored as a C library. It builds in Visual Studio on Windows and on Linux, BSD, and other unices with gcc and automake. Note that the Clustal-W authors have since [made a 2.0 release](http://www.clustal.org/) which represents a complete rewrite of the aligner and which renders this library obsolete.
 
 [**libGenome** – a C++ development library](http://sourceforge.net/projects/libgenome)<br/>
