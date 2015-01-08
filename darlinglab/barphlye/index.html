@@ -1,0 +1,694 @@
+
+<html>
+
+	<head>
+
+		<title>
+
+			patterns of genome rearrangement in bacterial populations
+
+		</title>
+
+	<META NAME="keywords" CONTENT="yersinia genome rearrangement replichore balance">
+
+	<LINK REL ="stylesheet" TYPE="text/css" HREF="stylesheet.css" TITLE="Style">		
+
+	</head>
+
+	<body bgcolor="#ffffff">
+
+
+
+
+
+
+		<div align="center">
+
+			<img src="logo.png"><br/><br/>
+
+		</div>
+
+		<div align="center">
+
+			<table width="400" align="center" border="0" cellpadding="5" cellspacing="0">
+
+				<tr width="400">
+
+					<td class="NavBarCell1Rev">
+
+						<a class="qindex" href="#overview">overview</a>
+
+					</td>
+
+					<td class="NavBarCell1Rev" align="center">
+
+						<a class="qindex" href="#data">data</a>
+
+					</td>
+
+					<td class="NavBarCell1Rev"  align="center">
+
+						<a class="qindex" href="#software">software</a>
+
+					</td>
+
+					<td class="NavBarCell1Rev" align="right">
+
+						<a class="qindex" href="#example">an example</a>
+
+					</td>
+
+				</tr>
+
+			</table>
+
+		</div>
+
+		<div align="center">
+
+		<div style="width: 800px; float:center" align="left">
+
+			<a name="overview"/>
+
+				<hr/>
+
+				<p><h1>overview</h1></p>
+
+				<hr/>
+
+				<p>
+
+					We commonly think of molecular evolution as a process of replication with mutation 
+
+					and subsequent natural selection on mutations.  In genomic DNA, one class of mutations
+
+					modifies the arrangement of chromosomes without otherwise changing the content.
+
+					While the mutational processes leading to 
+
+					genomic rearrangement have been well characterized, little is known regarding the
+
+					patterns with which natural selection acts on genome rearrangement mutations.
+
+				</p>
+
+				<p>
+
+					In this work we introduce a set of statistical methods to infer and analyze ancestral
+
+					genome arrangements in circular bacterial genomes.  Our methods assume that the organisms
+
+					under study are related by an evolutionary process and that their ancestry and genome arrangement history 
+
+					can be described by a binary tree with inversion mutations mapped onto the branches.
+
+				</p>
+
+				<p>
+
+					The results of genome rearrangement analysis in eight closely-related <i>Yersinia</i> genomes
+
+					has been published in PLoS Genetics.  Supplemental data for that study can be found on this web
+
+					site, along with the software and scripts used to perform the analysis.
+
+				</p>
+
+			<a name="data"/>
+
+				<hr/>
+
+				<p><h1>data</h1></p>
+
+				<hr/>
+
+				<p>
+
+					<h4>alignment of 8 <i>Yersinia</i></h4>
+
+					<p>
+
+						The alignment is in eXtended Multi-FastA format, as used by Mauve and <a href="http://darlinglab.org/mauve/user-guide/files.html">described here</a>.<br/>
+
+						<a href="http://gel.ahabs.wisc.edu/barphlye/yersinia8_alignment.zip">yersinia8_alignment.zip</a> [38 Mb] contains the alignment, along with the source genomes annotated in genbank format.<br/>
+
+						The alignment can be interactively browsed using the Mauve software.
+
+					</p>
+
+					<h4>signed permutation matrix of LCBs</h4>
+
+					<p>
+
+						<a href="yersinia8.perms">yersinia8.perms</a> [2 Kb] contains the signed permutation matrix derived from the above alignment
+
+					</p>
+
+					<h4>LCB coordinates</h4>
+
+					<p>
+
+						<a href="yersinia8.lcbs">yersinia8.lcbs</a> [10 Kb] is a tab-delimited text file containing the genomic coordinates corresponding to each LCB.
+
+					</p>
+
+					<h4>posterior output from BADGER</h4>
+
+					<p>
+
+						<a href="http://gel.ahabs.wisc.edu/barphlye/yersinia8_run1.0.zip">yersinia8_run1.0.zip</a> [69 Mb] contains the posterior sampling of BADGER when applied to the <i>Yersinia</i> LCBs
+
+					</p>
+
+					<h4>videos of yersinia genome evolution</h4>
+
+					<p>
+
+						These videos show the predicted inversion events that transform an ancestral <i>Yersinia</i> to a modern isolate.
+
+						Origin and terminus of replication are marked, and the ancestral replichores are colored blue and green.  Regions
+
+						near the terminus are light in color, while regions near the origin in the ancestor are darker.
+
+						<table border="0">
+
+							<tr>
+
+								<td>
+
+									<a href="http://gel.ahabs.wisc.edu/barphlye/videos.html#kim">
+
+									<img src="Fig_S1_YpKIM-poster.jpg" width="100" alt="YpKIM video link" border="0"/>
+
+									</a>
+
+								</td>
+
+								<td>
+
+									<a href="http://gel.ahabs.wisc.edu/barphlye/videos.html#antiqua">
+
+									<img src="Fig_S2_YpAntiqua-poster.jpg" width="100" alt="YpAntiqua video link" border="0"/>
+
+									</a>
+
+								</td>
+
+								<td>
+
+									<a href="http://gel.ahabs.wisc.edu/barphlye/videos.html#91001">
+
+									<img src="Fig_S3_Yp91001-poster.jpg" width="100" alt="Yp91001 video link" border="0"/>
+
+									</a>
+
+								</td>
+
+								<td>
+
+									<a href="http://gel.ahabs.wisc.edu/barphlye/videos.html#co92">
+
+									<img src="Fig_S4_YpCO92-poster.jpg" width="100" alt="YpCO92 video link" border="0"/>
+
+									</a>
+
+								</td>
+
+								<td>
+
+									<a href="http://gel.ahabs.wisc.edu/barphlye/videos.html#nepal516">
+
+									<img src="Fig_S5_YpNepal516-poster.jpg" width="100" alt="YpNepal516 video link" border="0"/>
+
+									</a>
+
+								</td>
+
+								<td>
+
+									<a href="http://gel.ahabs.wisc.edu/barphlye/videos.html#pestoidesf">
+
+									<img src="Fig_S6_YpPestoidesF-poster.jpg" width="100" alt="YpPestoidesF video link" border="0"/>
+
+									</a>
+
+								</td>
+
+								<td>
+
+									<a href="http://gel.ahabs.wisc.edu/barphlye/videos.html#ip31758">
+
+									<img src="Fig_S7_YptbIP31758-poster.jpg" width="100" alt="YpIP31758 video link" border="0"/>
+
+									</a>
+
+								</td>
+
+								<td>
+
+									<a href="http://gel.ahabs.wisc.edu/barphlye/videos.html#ip32953">
+
+									<img src="Fig_S8_YptbIP32953-poster.jpg" width="100" alt="YpIP32953 video link" border="0"/>
+
+									</a>
+
+								</td>
+
+							</tr>
+
+							<tr>
+
+								<td>
+
+									<a href="http://gel.ahabs.wisc.edu/barphlye/videos.html#kim">
+
+										<i>Y. pestis</i> KIM
+
+									</a>
+
+								</td>
+
+								<td>
+
+									<a href="http://gel.ahabs.wisc.edu/barphlye/videos.html#antiqua">
+
+									<i>Y. pestis</i> Antiqua
+
+									</a>
+
+								</td>
+
+								<td>
+
+									<a href="http://gel.ahabs.wisc.edu/barphlye/videos.html#91001">
+
+									<i>Y. pestis</i> 91001
+
+									</a>
+
+								</td>
+
+								<td>
+
+									<a href="http://gel.ahabs.wisc.edu/barphlye/videos.html#co92">
+
+									<i>Y. pestis</i> CO92
+
+									</a>
+
+								</td>
+
+								<td>
+
+									<a href="http://gel.ahabs.wisc.edu/barphlye/videos.html#nepal516">
+
+									<i>Y. pestis</i> Nepal516
+
+									</a>
+
+								</td>
+
+								<td>
+
+									<a href="http://gel.ahabs.wisc.edu/barphlye/videos.html#pestoidesf">
+
+									<i>Y. pestis</i> PestoidesF
+
+									</a>
+
+								</td>
+
+								<td>
+
+									<a href="http://gel.ahabs.wisc.edu/barphlye/videos.html#ip31758">
+
+									<i>Y. psuedotuberculosis</i> IP31758
+
+									</a>
+
+								</td>
+
+								<td>
+
+									<a href="http://gel.ahabs.wisc.edu/barphlye/videos.html#ip32953">
+
+									<i>Y. psuedotuberculosis</i> IP32953
+
+									</a>
+
+								</td>
+
+							</tr>
+
+						</table>
+
+					</p>
+
+				</p>
+
+			<a name="software"/>
+
+				<hr/>
+
+				<p><h1>software</h1></p>
+
+				<hr/>
+
+				<p>
+
+					The methods for genome rearrangement analysis have been implemented in a set of scripts and programs
+
+					collectively referred to as <tt>barphlye</tt>.<br/>
+
+					barphlye makes use of the BADGER 1.01b software for MCMC analysis of inversion phylogeny, written by 
+
+					Donald Simon and Bret Larget.<br/>
+
+					The latest release of barphlye may be <a href="http://gel.ahabs.wisc.edu/barphlye/downloads">downloaded here</a>.
+
+				</p>
+
+				<p>
+
+					A full barphlye analysis also depends on R, available from <a href="http://www.r-project.org/">http://www.r-project.org</a>.
+
+					Input to barphlye is a signed permutation matrix, which we suggest computing from genome sequence using the 
+
+					Progressive Mauve software, available from <a href="http://gel.ahabs.wisc.edu/mauve">http://gel.ahabs.wisc.edu/mauve</a>.
+
+					Once you have obtained these other tools, download barphlye.  Build the software on Mac OS X or unix/Linux with the following commands:</p>
+
+<pre>
+
+tar xzf barphlye-0.0.0.tar.gz
+
+cd barphlye-0.0.0
+
+./configure --prefix=$HOME
+
+make install
+
+(setenv PATH "$HOME/bin:$PATH" || export PATH="$HOME/bin:$PATH")
+
+</pre>
+
+				<p>
+
+					Congratulations.  Your new software is ready to use.  For usage instructions please see the example below.
+
+				</p>
+
+				<p>
+
+					If you use barphlye in your own work, please cite both the barphlye and BADGER publications:
+
+					<li>Aaron E. Darling, Istvan Miklos, Mark A. Ragan.  2008.  Dynamics of genome rearrangement in bacterial populations.  PLoS Genetics.  In press.</li>
+
+					<li>Bret Larget, Donald L. Simon, Joseph B. Kadane, Deborah Sweet.  2005.  A Bayesian analysis of metazoan mitochondrial genome arrangements.  Molecular Biology and Evolution.  22(3):486-495.</li>
+
+				</p>
+
+				<p>
+
+					For any inquiries, please contact Aaron Darling &lt;a.darling(at)imb(o)uq(o)edu(o)au&gt;.
+
+				</p>
+
+			<a name="example"/>
+
+				<hr/>
+
+				<p><h1>an example</h1></p>
+
+				<hr/>
+
+				<p>
+
+					WARNING:  use of the barphlye software requires familiarity with unix and command-line software.
+
+					You have been warned!
+
+				</p>
+
+				<p>
+
+					The steps in the analysis procedure can be summarized as:
+
+					<ol>
+
+					<li>Compute a genome alignment</li>
+
+					<li>Create a signed permutation matrix in BADGER format</li>
+
+					<li>Run BADGER</li>
+
+					<li>Visualize phylogenetic tree topologies as a splits network</li>
+
+					<li>Summarize ancestral genome arrangements in the BADGER output</li>
+
+					<li>Create graphs of rearrangement histories</li>
+
+					<li>(optional) Make movies of the rearrangement history</li>
+
+					</ol>
+
+				</p>
+
+				<p>
+
+					This example assumes that you have finished genome sequence data obtained from the 
+
+					<a href="ftp://ftp.ncbi.nih.gov/genomes/Bacteria">NCBI ftp site</a> in 
+
+					either GenBank format (.gbk) or FastA format (.fna).  For the following example, we
+
+					will use three hypothetical genome sequences in GenBank format, with filenames of
+
+					NC_001.gbk, NC_002.gbk, and NC_003.gbk.
+
+				</p>
+
+				<h4>Step 1.  Compute a genome alignment</h4>
+
+				<p>
+
+					Run the following command to compute a genome alignment, replacing the three hypothetical
+
+					genomes with your own files:
+
+<pre>
+
+progressiveMauve --output=my_alignment.xmfa NC_001.gbk NC_002.gbk NC_003.gbk
+
+</pre>
+
+					The alignment may take anywhere from five minutes to several hours to compute, depending
+
+					on the number and size of the genomes involved, and the speed of the computer.
+
+					The resulting alignment will be in an XMFA format file called my_alignment.xmfa.
+
+				</p>
+
+				<h4>Step 2.  Create a signed permutation matrix in BADGER format</h4>
+
+				<p>
+
+					The Progressive Mauve alignment may contains alignments of rearranged segments that
+
+					are not conserved among all genomes.  Since BADGER does not (yet) cope with gene gain
+
+					and loss we must project the alignment to segments conserved among all taxa with the
+
+					following command:
+
+<pre>
+
+projectAndStrip my_alignment.xmfa my_alignment-Nway.xmfa 0 1 2 ... N-1
+
+</pre>
+
+					The numbers 0..N-1 represent the indices of the genomes to include in the projection.  Normally one would
+
+					include all N genomes by listing out all numbers 0..N-1, but it is possible to remove some genomes from the projection
+
+					by leaving out their index number.  The numbering order corresponds to the order the genomes were given 
+
+					during the progressiveMauve alignment.
+
+
+
+					We may now create a signed permutation matrix and LCB coordinates for BADGER with the following command:
+
+<pre>
+
+makeBadgerMatrix my_alignment-Nway.xmfa my_alignment.perms my_alignment.lcbs
+
+</pre>
+
+					The programs <tt>projectAndStrip</tt> and <tt>makeBadgerMatrix</tt> are accessory programs from the Mauve genome alignment
+
+					software.  They are not currently packaged with the barphlye source code.  Current versions can be 
+
+					downloaded for the platform of your choice from the "other programs" section of the
+
+					<a href="http://darlinglab.org/mauve/snapshots/">Mauve snapshots page</a>.
+
+				</p>
+
+				<h4>Step 3.  Run BADGER</h4>
+
+				<p>
+
+					BADGER is a fairly complex MCMC program, and full instructions on its usage can be found
+
+					on the <a href="http://badger.duq.edu/manual2">BADGER web site</a>.
+
+				</p>
+
+				<h4>Step 4.  Visualize phylogenetic tree topologies as a splits network</h4>
+
+				<p>
+
+					It may be desirable to examine how well BADGER was able to resolve the phylogeny
+
+					of the organisms under study.  The <a href="http://www.splitstree.org/">SplitsTree software</a> provides a means to view
+
+					phylogenetic tree signal along with ambiguity in the phylogenetic reconstruction
+
+					by constructing a <i>consensus network</i>.  Before loading BADGER output into
+
+					SplitsTree, it must be reformatted using the following command:
+
+<pre>
+
+badgerTreToNexus.pl &lt;badger .tre&gt; &lt;number of taxa&gt; &lt;mydata.nex&gt;
+
+</pre>
+
+					The resulting NEXUS format file can be loaded into SplitTree and a consensus network
+
+					constructed.  Be sure to remove the appropriate number of trees as burn-in.
+
+					<a href="splits_network.png">An example consensus network can be viewed here</a>.
+
+				</p>
+
+				<h4>Step 5.  Summarize ancestral genome arrangements in the BADGER output</h4>
+
+				<p>
+
+					For this step, it is necessary to pick a reference genome and identify the origin of replication
+
+					and the terminus dif site.  With these quantities known, the format of the command-line to summarize
+
+					the BADGER output is:
+
+<pre>
+
+arrangement &lt;burnin cycles&gt; &lt;LCB size filename&gt; &lt;Ref genome origin&gt; &lt;Ref genome terminus&gt; &lt;Ref genome length&gt; &lt;[permutation file 1] ... [permutation file N]&gt; &lt;[topology file 1] ... [topology file N]&gt;
+
+</pre>
+
+					Assuming we use 10000 burnin cycles in our example, the origin is located at nucleotide 1,
+
+					the terminus at 2300000, and a reference genome size of 5000000, then our command will look like:
+
+<pre>
+
+arrangement 10000 my_alignment.lcbs 1 2300000 5000000 run1.0.prm run1.0.top
+
+</pre>
+
+				</p>
+
+				<h4>Step 6.  Create graphs of rearrangement histories</h4>
+
+				<p>
+
+					Assuming that the command to summarize the posterior distribution has completed successfully,
+
+					it is now possible to generate graphs of things like historical replichore balance, inversion sizes, and so on.
+
+					To do so, run the following command:
+
+<pre>
+
+R CMD BATCH inv_lengths.R
+
+</pre>
+
+					If any errors occur, the file inv_lengths.Rout will contain the relevant error messages.  That
+
+					file will also contain results of various statistical tests performed on the data.
+
+				</p>
+
+				<h4>Step 7.  (optional) Make movies of the rearrangement history</h4>
+
+				<p>
+
+					The <tt>arrangement</tt> program prints the maximum a-posteriori estimate of the genome
+
+					rearrangement history to the console.  That estimate can be used to generate videos of 
+
+					the rearrangement history along any branch of the phylogeny.
+
+				</p>
+
+				<p>
+
+					The video rendering system depends on the java-based processing software and a few additional
+
+					modules.  Specifically, it requires:
+
+					<li>
+
+						Processing, from <a href="http://processing.org/">http://processing.org</a>
+
+					</li>
+
+					<li>
+
+						surfaceLib, from <a href="http://eskimoblood.de/surfacelib/">http://eskimoblood.de/surfacelib/</a>
+
+					</li>
+
+					<li>
+
+						quicktime, from <a href="http://apple.com/quicktime">http://apple.com/quicktime</a>
+
+					</li>
+
+					Once the requisite software has been acquired, it will be necessary to download and edit the
+
+					<a href="inversion_movies.txt">barphlye inversion movie maker source code</a> by pasting in the inversion history 
+
+					given by the <tt>arrangement</tt> program.  The entirety of the source should be pasted into a processing project.
+
+				</p>
+
+		</div>
+
+	</div>
+
+		
+
+	</body>
+
+</html>
+
+	
+
+
+
+
+<!--
+     FILE ARCHIVED ON 3:58:00 Jun 19, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 0:15:23 Jan 8, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+
