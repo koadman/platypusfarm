@@ -16,12 +16,12 @@ twitter: [@koadman](http://twitter.com/koadman) | [google scholar](http://schola
 **Dr. Michael Liu** -- Postdoctoral Research Associate<br/>
 [UTS staff profile](http://www.uts.edu.au/staff/michael.liu)
 
-**Dana Almeida** -- Honours student 2015
-
 **Matt Z. DeMaere** -- Ph.D. student<br/>
 [google scholar](http://scholar.google.com.au/citations?user=hQTEUsIAAAAJ&hl=en&oi=ao)
 
 **Paul Worden** -- Research Assistant
+
+**Sunaina Bansal** -- Research Assistant
 
 ### Associates
 
@@ -42,4 +42,4 @@ twitter: [@koadman](http://twitter.com/koadman) | [google scholar](http://schola
 
 **Raymond Wan** -- Visiting postdoctoral scholar (Chinese University of Hong Kong)
 
-**Ethan Wyrsch** -- Honours student (UTS)
+**Ethan Wyrsch** -- Honours student 2013 (UTS)
