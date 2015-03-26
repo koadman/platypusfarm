@@ -5,7 +5,8 @@ date:   2015-03-23 07:19:50
 category: blog
 ---
 
-Recently, much of the microbiology world has been sucked into a vortex called genomic epidemiology.
+
+**important: see update at bottom of page** Recently, much of the microbiology world has been sucked into a vortex called genomic epidemiology.
 This is not entirely a bad thing. Genomic data can be orders of magnitude more informative than MLST data when it comes to inferring the ancestry of an isolated microbe. Genomic data gives information on gene content. And with bacterial whole genome sequencing costs approaching parity with the cost of MLST, why sequence a few genes when you could have whole genomes? Indeed these are exciting times for microbiology. But wait, there's a fly in the ointment.
 
 The typical genomic epidemiology workflow goes something like this:
@@ -112,4 +113,21 @@ Perhaps this is just a case of RTFM. But how many of us actually do that? In ret
 Thanks to [Matt DeMaere](https://scholar.google.com.au/citations?user=hQTEUsIAAAAJ&hl=en&oi=ao) for assistance preparing this blog post.
 
 (*) Note that isolate names have been anonymized to protect the innocent.
+
+
+### Update: 25th March 2015
+
+Morgan Price emailed to let me know that the above described changes, along with some others, have been incorporated into version 2.1.8 of FastTree. It's available from the [usual place](http://microbesonline.org/fasttree/). The increased precision is not enabled in the precompiled binaries, e.g. it's still necessary to build with `-DUSE_DOUBLE`, but the precompiled binary supplies some helpful warning messages to let users know if their data may be in the danger zone:
+
+	WARNING! This alignment consists of closely-related and very-long sequences.
+	This version of FastTree may not report reasonable branch lengths!
+	Consider recompiling FastTree with -DUSE_DOUBLE.
+	For more information, visit
+	http://www.microbesonline.org/fasttree/#BranchLen
+
+	WARNING! FastTree (or other standard maximum-likelihood tools)
+	may not be appropriate for aligments of very closely-related sequences
+	like this one, as FastTree does not account for recombination or gene conversion
+
+Happy FastTreeing!
 
