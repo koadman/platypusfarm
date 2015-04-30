@@ -5,6 +5,11 @@ layout: mauvepage
 ### Downloading Mauve
 
 Mauve is free of charge, open-source software licensed under the GNU GPL.
+
+The latest development snapshots, which may contain recent bugfixes are here:
+
+[Mauve development snapshots](snapshots/)
+
 The current version of Mauve is 2.4.0, released on December 21st 2014.
 The 2.x release series incorporates an accurate new alignment algorithm called progressiveMauve. For a more comprehensive list of changes and new features, see the [Mauve version history](user-guide/versions.html).
 
