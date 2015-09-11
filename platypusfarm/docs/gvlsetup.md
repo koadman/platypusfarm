@@ -9,21 +9,23 @@ Mark Crowe has created a [video tutorial](https://www.youtube.com/watch?v=m3_8q9
 
 Remember to use 'ubuntu' as the login name instead of admin.
 
-A quick rundown of the video instructions is below.
+A quick rundown of the instructions, adapted to launch the microbial GVL are below.
 
 ### Get EC2 API security credentials from NeCTAR
 
 1. [Log in to NeCTAR](http://dashboard.rc.nectar.org.au/)
-2. Download security credentials for EC2 API & open in text editor
+2. Download security credentials for EC2 API (From Compute->Access&Security->API access tab) & open in text editor
 
-### Launch GVL instance via CloudMan
+### Launch a GVL instance via CloudMan
 
 1. Go to [launch.genome.edu.au](http://launch.genome.edu.au)
-2. Enter your EC2 credentials when prompted
-3. Be patient (coffee might help)
-4. Enter Galaxy web interface
+2. Fill out the form, copy in your EC2 credentials
+3. In the "advanced options"->Image section, select GVL-4.0.0 Beta 2 (or later)
+4. In "advanced options"->Flavor, select Microbial GVL
+5. Be patient (coffee might help)
+6. Enter Galaxy web interface
 
-## connecting via ssh
+## (Optional) connecting via ssh
 
 You should now be able to connect via ssh.
 On Mac or Linux, open a terminal (This is in the Applications->Utilities folder on OS X).
