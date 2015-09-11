@@ -125,11 +125,11 @@ Would indicate that nucleotides 22,256 through 22,371 from the first genome are 
 
 Progressive Mauve utilizes a revised backbone file format which reflects its ability to align regions conserved among subsets of the genomes under study.  A short example of the backbone file format is:
 
-seq_0_leftend	seq_0_rightend	seq_1_leftend	seq_1_rightend	seq_2_leftend	seq_2_rightend
-1             15378          1            	15377          1             15377
-16728        	19795         	15378        	18446         	15378        	18445
-0            	0             	18447        	18668         	18446        	18667
-19796        	20566         	18669        	19439         	18668        	19438
+	seq_0_leftend	seq_0_rightend	seq_1_leftend	seq_1_rightend	seq_2_leftend	seq_2_rightend
+	1             15378          1            	15377          1             15377
+	16728        	19795         	15378        	18446         	15378        	18445
+	0            	0             	18447        	18668         	18446        	18667
+	19796        	20566         	18669        	19439         	18668        	19438
 
 The first line is a header line, indicating the information contained by each column.  Each subsequent line corresponds to a segment of DNA conserved among two or more genomes.  Thus, the first line indicates that the segment between coordinates 1 and 15378 in the first genome is homologous to the segment between coordinates 1 and 15377 of the second and third genomes.  Similarly, the second line indicates that the segment [16728-19795] in the first genome is homologous to [15378-18446] in the second genome and [15378-18445] in the third genome. 
 
