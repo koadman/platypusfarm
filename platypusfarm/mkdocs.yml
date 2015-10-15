@@ -11,4 +11,5 @@ pages:
 - [instance_startup.md, Starting a NeCTAR instance]
 - [filezilla.md, FileZilla secure FTP]
 - [marker_phylogeny.md, Marker gene phylogeny]
+- [uts_networking.md, UTS network settings]
 theme: readthedocs
