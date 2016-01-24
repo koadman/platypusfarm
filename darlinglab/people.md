@@ -19,6 +19,9 @@ twitter: [@koadman](http://twitter.com/koadman) | [google scholar](http://schola
 **Matt Z. DeMaere** -- Ph.D. student<br/>
 [google scholar](http://scholar.google.com.au/citations?user=hQTEUsIAAAAJ&hl=en&oi=ao)
 
+**Mathieu Fourment** -- Postdoctoral Research Associate<br/>
+[google scholar](https://scholar.google.com.au/citations?user=dUOgPoYAAAAJ&hl=en&oi=ao)
+
 **Paul Worden** -- Research Assistant
 
 **Sunaina Bansal** -- Research Assistant
