@@ -6,7 +6,7 @@ permalink: /projects/
 
 Our group has several ongoing projects.
 
-+ Bayesian phylogenomic inference using Monte Carlo methods, including Sequential Monte Carlo, MCMC, and approximate Bayesian computation. See the [STS software](https://github.com/metatangle/sts) and [beagle library](https://code.google.com/p/beagle-lib/) for examples of recent work in this area.
++ Bayesian phylogenomic inference using Monte Carlo methods, including Sequential Monte Carlo, MCMC, and approximate Bayesian computation. See the [STS software](https://github.com/matsengrp/sts) and [beagle library](https://code.google.com/p/beagle-lib/) for examples of recent work in this area.
 + Understanding the development of the infant gut microbiome, the relationship with maternal microbiota, and the development of atopy.
   In collaboration with a large team led by [Prof. Shyamali Dharmage](http://pgh.unimelb.edu.au/about/contact/allstaff/dharmage) and with support of the National Health and Medical Research Council, we are studying the microbiota found in the breast milk of families that are at risk for atopy.
 + Forensic analysis of microbial samples using phylogenetic analysis of metagenome data.
