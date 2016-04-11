@@ -3,6 +3,10 @@
 If you have just joined UTS you will have been assigned a student or staff ID number. 
 This number can be used to log into the UTS-WPA wireless network and the *eduroam* network while at other academic institutions around the world.
 
+## Connecting to UTS-WPA wifi with Android & Linux
+
+A few custom settings are needed to connect to the campus wifi. For authentication type select "TTLS" or "Tunneled TLS", then for the stage 2 authentication, select "MSCHAP" or "MSCHAPv2". The username is your staff or student ID number, along with your campus password.
+
 ## UTS email IMAP settings
 
 UTS uses Microsoft Exchange email services, however there are IMAP & SMTP servers available for use with third-party mail apps such as Evolution, Thunderbird, K9 mail, etc.
