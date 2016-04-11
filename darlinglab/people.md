@@ -11,7 +11,12 @@ permalink: /people/
 email: aaron.darling (_at_) uts.edu.au<br/>
 twitter: [@koadman](http://twitter.com/koadman) | [google scholar](http://scholar.google.com/citations?user=TE8_LDwAAAAJ&hl=en&oi=ao) | [UTS staff profile](http://www.uts.edu.au/staff/aaron.darling)
 
-**Melissa Gardiner** -- Postdoctoral Research Associate
+**Rachel Kwong** -- Honours student 2016, with [Dr. Catherine Burke](http://www.uts.edu.au/staff/catherine.burke)<br/>
+
+**Liza Kretzschmar** -- Ph.D. student, with [A/Prof Shauna Murray](http://www.uts.edu.au/staff/shauna.murray)<br/>
+[UTS profile](http://www.uts.edu.au/research-and-teaching/our-research/climate-change-cluster/our-people/research-students/anna-liza)
+
+**Priyanka Hastak** -- Ph.D. student, with [Dr. Piklu Roy Chowdhury](http://www.uts.edu.au/staff/piklu.bhattacharya)<br/>
 
 **Dr. Michael Liu** -- Postdoctoral Research Associate<br/>
 [UTS staff profile](http://www.uts.edu.au/staff/michael.liu)
@@ -22,22 +27,19 @@ twitter: [@koadman](http://twitter.com/koadman) | [google scholar](http://schola
 **Mathieu Fourment** -- Postdoctoral Research Associate<br/>
 [google scholar](https://scholar.google.com.au/citations?user=dUOgPoYAAAAJ&hl=en&oi=ao)
 
-**Paul Worden** -- Research Assistant
-
-**Sunaina Bansal** -- Research Assistant
+**Dr. Leigh Monahan** -- Postdoctoral Research Associate, UTS<br/>
+[UTS staff profile](http://www.uts.edu.au/staff/leigh.monahan)
 
 ### Associates
 
 **Dr. Catherine Burke** -- Chancellor's Postdoctoral Fellow, UTS<br/>
 [UTS staff profile](http://www.uts.edu.au/staff/catherine.burke)
 
-**Dr. Leigh Monahan** -- Postdoctoral Research Associate, UTS<br/>
-[UTS staff profile](http://www.uts.edu.au/staff/leigh.monahan)
-
-**Christopher Beitel** -- Ph.D. student, UC Davis<br/>
-[datascimed blog](http://datascimed.ghost.io)
-
 ### Lab Alumni
+
+**Sunaina Bansal** -- Research Assistant
+
+**Melissa Gardiner** -- Postdoctoral Research Associate
 
 **Myrtille Michel** -- Research intern (Univ. of Lyon)
 
