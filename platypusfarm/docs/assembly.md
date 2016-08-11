@@ -17,7 +17,7 @@ Just save them wherever is convenient.
 ## Upload the files to the GVL system
 
 1. Click the "Get Data" -> "Upload File From Your Computer" links at the left side of the page
-2. Click the "Choose File" button and select the two sequence files you just downloaded
+2. Click the "Choose local file" button and select the two sequence files you just downloaded
 3. Click the "Start" button
 
 ## Launch the assembly
