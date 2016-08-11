@@ -20,10 +20,9 @@ A quick rundown of the instructions, adapted to launch the microbial GVL are bel
 
 1. Go to [launch.genome.edu.au](http://launch.genome.edu.au)
 2. Fill out the form, copy in your EC2 credentials
-3. In the "advanced options"->Image section, select GVL-4.0.0 Beta 2 (or later)
-4. In "advanced options"->Flavor, select Microbial GVL
-5. Be patient (coffee might help)
-6. Enter Galaxy web interface
+3. In "advanced options"->Flavor, select "Microbial GVL + Blank Indices"
+4. Be patient (coffee might help)
+5. Enter Galaxy web interface
 
 ## (Optional) connecting via ssh
 
