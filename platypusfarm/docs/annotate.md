@@ -7,10 +7,12 @@ See the "[Genome assembly with SPAdes](assembly)" page for instructions on how t
 
 1. Click the "NGS: Annotation" link at left
 2. Scroll down and select "Prokka" in the left side drop down menu
-3. Select "Yes" for "Force GenBank/ENA/DDJB compliance (--compliant)". This is essential in order to visualize annotations in the [Mauve software](http://darlinglab.org/mauve).
-4. Optionally enter in any other relevant parameters
-5. Click the "Execute" button
-6. Upon completion, the status tabs in the right sidebar will turn green and results can be viewed by clicking the eye icon.
+3. Set the "Locus tag prefix" to a single letter, e.g. N
+4. Select "Yes" for "Force GenBank/ENA/DDJB compliance (--compliant)". This is essential in order to visualize annotations in the [Mauve software](http://darlinglab.org/mauve).
+5. Set the sequencing centre name to a single letter, e.g. Z. It is necessary to set this and the locus tag prefix to a single letter so that Prokka can create contig names that are short enough to be GenBank compliant (as selected in step 4). If you will not be viewing genomes in Mauve then any locus tag prefix and sequencing centre name can be given.
+6. Optionally enter in any other relevant parameters
+7. Click the "Execute" button
+8. Upon completion, the status tabs in the right sidebar will turn green and results can be viewed by clicking the eye icon.
 
 
 Once this is done, it is possible to download the annotated genome in GenBank format by clicking the "Prokka on data N: gbk" link in the right sidebar, then clicking the floppy disk icon.
