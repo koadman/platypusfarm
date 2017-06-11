@@ -10,20 +10,12 @@ The current version of Mauve is 2.4.0, released on December 21st 2014.
 The 2.x release series incorporates an accurate new alignment algorithm called progressiveMauve. For a more comprehensive list of changes and new features, see the [Mauve version history](user-guide/versions.html).
 Unfortunately the 2.4.0 release has a buggy interaction with the boost C++ libraries that causes frequent crashes, therefore it is suggested that the development snapshots linked below be used until the next release. Mauve 2.4.0 can still be found in the release archive linked below.
 
-<!--
-Click the download link corresponding to your operating system:
-**Current Mauve release**:
-
-Windows	| |  [Mauve 2.4.0](downloads/mauve_installer_2.4.0.exe)
-Linux	| |  [Mauve 2.4.0](downloads/mauve_linux_2.4.0.tar.gz)
-Mac OS X 10.7+ | |  [Mauve 2.4.0](downloads/Mauve-2.4.0.dmg)
--->
 
 **Mauve development snapshots**
 
-Windows	| |  [2015-02-26](snapshots/2015/2015-02-26/windows/mauve_installer_20150226.exe)
-Linux	| |  [2015-02-13](snapshots/2015/2015-02-13/linux-x64/mauve_linux_snapshot_2015-02-13.tar.gz)
-Mac OS X 10.7+ | |  [2015-02-25](snapshots/2015/2015-02-25/MacOS/Mauve-snapshot_2015-02-25.dmg)
+Windows	| |  [Mauve 2015-02-26](snapshots/2015/2015-02-26/windows/mauve_installer_20150226.exe) | |  [other programs](snapshots/2015/2015-02-26/windows/)
+Linux	| |  [Mauve 2015-02-13](snapshots/2015/2015-02-13/linux-x64/mauve_linux_snapshot_2015-02-13.tar.gz) | |  [other programs](snapshots/2015/2015-02-13/linux-x64/)
+Mac OS X 10.7+ | |  [Mauve 2015-02-25](snapshots/2015/2015-02-25/MacOS/Mauve-snapshot_2015-02-25.dmg) | |  [other programs](snapshots/2015/2015-02-25/MacOS/)
 
 The latest development snapshots may contain recent bugfixes. The complete archive of snapshots is [available here](snapshots/).
 
