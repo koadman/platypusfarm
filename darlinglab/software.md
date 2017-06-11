@@ -4,7 +4,8 @@ title: Software
 permalink: /software/
 ---
 
-###Current software projects
+### Current software projects
+
 Our group is currently involved in the following software development projects
 
 [**PhyloSift** - phylogenetic analysis of genomes and metagenomes](http://phylosift.wordpress.org)<br/>
