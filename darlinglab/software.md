@@ -16,7 +16,7 @@ Mauve is a software tool to compute whole genome multiple alignments among bacte
 [**A5-miseq** - Andrew And Aaron's Awesome Assembly Pipeline (miseq enabled)](http://sf.net/p/ngopt)<br/>
 A5-miseq is an updated software pipeline for de novo assembly of microbial isolate genomes from Illumina HiSeq or MiSeq data. It automates all of the usual steps in genome assembly with an easy-to-use interface.
 
-[**STS** - the Sequential Tree Sampler](https://github.com/metatangle/sts)<br/>
+[**STS** - the Sequential Tree Sampler](https://github.com/OnlinePhylo/sts)<br/>
 Software to update a posterior probability distribution over phylogenies with new sequence data. A collaboration with the [Matsen group](http://matsen.fhcrc.org) at the Fred Hutchinson Cancer Research Center.
 
 ###Past software projects
@@ -25,13 +25,13 @@ Darling lab members have contributed to the following software projects in the p
 [**mpiBLAST** - open source parallel BLAST](http://mpiblast.org/)<br/>
 mpiBLAST is a parallelization of the popular NCBI BLAST for MPI-based compute clusters. When searching large databases, it can yield super-linear speedups. It is extremely flexible, accommodating cluster architectures with and without shared storage and parallel filesystems. It integrates well with most job scheduling systems and has also been extended to grid architectures.
 
-[**The beagle library** - a library for phylogenetic likelihood calculation on the CPU and GPU](https://code.google.com/p/beagle-lib/)<br/>
+[**The beagle library** - a library for phylogenetic likelihood calculation on the CPU and GPU](https://github.com/beagle-dev/beagle-lib)<br/>
 libhmsbeagle, also known as the beagle library, is a software development library for calculating phylogenetic likelihoods using a variety of compute hardware types. Currently supported hardware types and features include graphics processing units (GPUs) via CUDA and OpenCL, standard CPUs using SSE for fine-scale parallelism and OpenMP for coarse parallelism, and others. The library works on Linux, Mac, and Windows. Further development on this software is being led by [Daniel Ayres].
 
 [**Repeatoire** – alignment of interspersed genomic repeats](http://wwwabi.snv.jussieu.fr/public/Repeatoire/)<br/>
 Software to construct multiple sequence alignments of interspersed repeats directly from raw genomic sequence. This project is led by [Dr. Todd Treangen](http://www.cbcb.umd.edu/~treangen/).
 
-[**ClonalOrigin** – inference of homologous recombination in bacteria using whole genome sequences](http://code.google.com/p/clonalorigin)<br/>
+[**ClonalOrigin** – inference of homologous recombination in bacteria using whole genome sequences](https://github.com/xavierdidelot/clonalorigin)<br/>
 This software implements a Bayesian model of recombination among bacteria. Starting with whole genome sequences aligned with progressiveMauve, this software can reconstruct the probability distribution over historical recombination events among each lineage. From that probability distribution one can compute quantities of interest, such as the rate of gene flow between particular lineages, which parts of the genome have undergone recombination, and more. We have applied this software to investigate speciation in archaea, the chromosomal structure of recombination in Bacillus, and rates of gene flow between pathogenic and commensal E. coli. This software is being maintained by [Xavier Didelot](http://www.xavierdidelot.xtreemhost.com/).
 
 [**barphlye** – Bayesian rearrangement phylogeny in Yersinia](http://darlinglab.org/barphlye)<br/>
@@ -40,7 +40,7 @@ barphlye supplements the [BADGER software](http://badger.duq.edu/) to analyze pa
 [**GenoPlast** – Bayesian inference of genomic plasticity](http://www.xavierdidelot.xtreemhost.com/genoplast.htm)<br/>
 Given a Mauve genome alignment, GenoPlast uses a statistical model to infer the baseline rates of gene gain and loss among a group of organisms, along with lineage-specific changes to those rates. Gain and loss are modeled independently. Thus it is possible to detect, for example, a lineage-specific accelerated loss with a constant rate of acquisition that may be characteristic of a recent lifestyle change in bacteria. This project was led by [Xavier Didelot](http://www.xavierdidelot.xtreemhost.com/).
 
-[**Seevolution** – a time machine for evolution](http://seevolution.org/)<br/>
+[**Seevolution** – a time machine for evolution](http://seevolution.sourceforge.net/)<br/>
 Seevolution is an interactive viewer for mutations occurring during genome evolution. The program is written in Java and uses Java3D. This project was developed by Andres Esteban-Marcos, who was a student I supervised at The Institute for Molecular Bioscience at The University of Queensland.
 
 [**ASAP and the ERIC BRC**](http://asap.ahabs.wisc.edu/asap/home.php)<br/>
