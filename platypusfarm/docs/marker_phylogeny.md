@@ -67,7 +67,7 @@ The second command does the same thing with `*.fasta` files. Note that if you ha
 The third & fourth commands align any homologs that were found to the profile HMM marker gene models.
 
 Some notes: the first time phylosift runs it downloads and indexes the marker gene database. The database is rather large, around 1GB so this can take a long time depending on the speed of your internet connection. Also, phylosift is aware of frameshift and indel errors -- marker gene sequences having such errors will still become aligned.
-For more details on what's happening under the hood see the [PhyloSift website](http://phylosift.wordpress.org) or read the [PhyloSift publication](https://peerj.com/articles/243/).
+For more details on what's happening under the hood see the [PhyloSift website](http://phylosift.wordpress.com) or read the [PhyloSift publication](https://peerj.com/articles/243/).
 
 ## infer a phylogeny with FastTree
 
