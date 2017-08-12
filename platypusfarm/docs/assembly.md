@@ -23,7 +23,7 @@ Just save them wherever is convenient.
 ## Launch the assembly
 
 1. Click the "NGS: Assembly" link at left
-2. Scroll down and select "spades" in the left side drop down menu
+2. Scroll down and select "SPAdes" in the left side drop down menu
 3. In the "Libraries" section, check that the correct files are listed. "mutant_R1.fastq" should be the forward reads file, and "mutant_R2.fastq" should be the reverse reads file. 
 4. Click the "Execute" button
 5. Be patient. Go for a short walk. Sitting is the new smoking.
