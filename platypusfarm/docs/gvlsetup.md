@@ -20,9 +20,12 @@ A quick rundown of the instructions, adapted to launch the microbial GVL are bel
 
 1. Go to [launch.genome.edu.au](http://launch.genome.edu.au)
 2. Fill out the form, copy in your EC2 credentials
-3. In "advanced options"->Flavor, select "Microbial GVL + Blank Indices"
-4. Be patient (coffee might help)
-5. Enter Galaxy web interface
+3. In "advanced options"->Flavor, select "GVL 4.2.0 Beta"
+4. Click "Create a cluster".
+5. Be patient (coffee might help), when the cluster has fully booted click the web console link
+6. Enter Galaxy web interface
+
+Occasionally the GVL web launcher fails to recognize that your GVL instance has completed launching. When this happens the GVL web console can be accessed by copying the IP address from the [NeCTAR dashboard](http://dashboard.rc.nectar.org.au/) and pasting it into the address bar in a new web browser tab.
 
 ## (Optional) connecting via ssh
 
