@@ -13,9 +13,8 @@ gap_penalty = -4
 seq_1 = "TACG"
 seq_2 = "TGG"
 
-# maps between chars and indices
+# maps between chars and substitution matrix indices
 ch = {"A":0,"C":1,"G":2,"T":3}
-rch = {0:"A",1:"C",2:"G",3:"T"}
 
 # this will store our dynamic programming matrix
 dp_matrix = np.ndarray(shape=(len(seq_1)+1,len(seq_2)+1), dtype=int)
@@ -32,14 +31,18 @@ for i in range(len(seq_1)+1):
         if i==0 and j==0: continue # skip the first cell
 
         # 
-        # students must fill in 'scores' here
+        # 'scores' must be filled in here
+        #
         scores = [-999,-999,-999]
         if( i>0 ):
-            scores[2] = dp_matrix[i-1,j] + gap_penalty
+            pass
+            # scores[2] = 
         if( j>0 ):
-            scores[0] = dp_matrix[i,j-1] + gap_penalty
+            pass
+            # scores[0] = 
         if( i>0 and j>0 ):
-            scores[1] = dp_matrix[i-1,j-1] + subst_matrix[ ch[seq_1[i-1]] ][ ch[seq_2[j-1]] ]
+            pass
+            # scores[1] = 
 
         # select the best previous cell
         best = max(scores)
