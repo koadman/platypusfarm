@@ -12,4 +12,5 @@ pages:
 - [filezilla.md, FileZilla secure FTP]
 - [marker_phylogeny.md, Marker gene phylogeny]
 - [uts_networking.md, UTS network settings]
+- [alignment.md, Dynamic programming alignment]
 theme: readthedocs
