@@ -13,6 +13,26 @@ Just save this script wherever is convenient and open it with a text editor.
 ## Implement the computation of scores in the script
 
 This requires the score calculation to be implemented for each of the three predecessor cells in the matrix -- the cell above, to the left, and diagonal.
+To do so, edit lines 33-49 of the script to implement the scoring function described in the lecture notes.
+
+```
+        # 
+        # 'scores' must be filled in here
+        #
+        scores = [-999,-999,-999]
+        if( i>0 and j>0 ):  
+            # score diagonal
+            # scores[1] = 
+            pass
+        if( i>0 ): 
+            # score up: gap in sequence 2
+            # scores[2] = 
+            pass
+        if( j>0 ): 
+            # score left: gap in sequence 1
+            # scores[0] = 
+            pass
+```
 
 ## Run the script
 

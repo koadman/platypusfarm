@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 import numpy as np
 
+seq_1 = "TACG"
+seq_2 = "TGG"
+
 subst_matrix = [
 # A  C  G  T
 [+1,-1,-1,-1],  # A
@@ -9,9 +12,6 @@ subst_matrix = [
 [-1,-1,-1,+1]   # T
 ]
 gap_penalty = -4
-
-seq_1 = "TACG"
-seq_2 = "TGG"
 
 # maps between chars and substitution matrix indices
 ch = {"A":0,"C":1,"G":2,"T":3}
@@ -34,15 +34,18 @@ for i in range(len(seq_1)+1):
         # 'scores' must be filled in here
         #
         scores = [-999,-999,-999]
-        if( i>0 ):
-            pass
-            # scores[2] = 
-        if( j>0 ):
-            pass
-            # scores[0] = 
-        if( i>0 and j>0 ):
-            pass
+        if( i>0 and j>0 ):  
+            # score diagonal
             # scores[1] = 
+            pass
+        if( i>0 ): 
+            # score up: gap in sequence 2
+            # scores[2] = 
+            pass
+        if( j>0 ): 
+            # score left: gap in sequence 1
+            # scores[0] = 
+            pass
 
         # select the best previous cell
         best = max(scores)
@@ -56,7 +59,7 @@ print dp_matrix
 print "\nBack pointers:"
 print back_ptr
 
-# read out the backtrace
+# read out the backtrace to get the best alignment
 aln_1 = ""
 aln_2 = ""
 i=len(seq_1)
