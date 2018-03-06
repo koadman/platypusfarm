@@ -13,13 +13,16 @@ twitter: [@koadman](http://twitter.com/koadman) | [google scholar](http://schola
 
 **Daniela Gaio** -- Ph.D. student<br/>
 
+**Maylis Dadvisard** -- Research intern (Ecole Polytechnique)<br/>
+
 **Dr. Michael Imelfort** -- Binfie<br/>
 [google scholar](https://scholar.google.com.au/citations?user=Ya40TnAAAAAJ&hl=en&oi=ao) | [github](https://github.com/minillinim) | [twitter](https://twitter.com/minillinim)
 
 **Liza Kretzschmar** -- Ph.D. student, cosupervised with [A/Prof Shauna Murray](http://www.uts.edu.au/staff/shauna.murray)<br/>
 [UTS profile](http://www.uts.edu.au/research-and-teaching/our-research/climate-change-cluster/our-people/research-students/anna-liza) | [github](https://github.com/bubblegirl/) | [twitter](https://twitter.com/hydra_hamster)
 
-**Priyanka Hastak** -- Ph.D. student, cosupervised with [Dr. Piklu Roy Chowdhury](http://www.uts.edu.au/staff/piklu.bhattacharya)<br/>
+**Kevin Ying** -- Binfie<br/>
+[github](https://github.com/kevyin)<br/>
 
 **Matt Z. DeMaere** -- Ph.D. student<br/>
 [google scholar](http://scholar.google.com.au/citations?user=hQTEUsIAAAAJ&hl=en&oi=ao) | [github](https://github.com/cerebis) | [twitter](https://twitter.com/cerebis1)
