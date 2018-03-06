@@ -1,6 +1,6 @@
 # Getting online at UTS and around the world
 
-If you have just joined UTS you will have been assigned a student or staff ID number. 
+If you have just joined UTS you will have been assigned a student or staff ID number.
 This number can be used to log into the UTS-WPA wireless network and the *eduroam* network while at other academic institutions around the world.
 
 ## Connecting to UTS-WPA wifi with Android & Linux
@@ -13,17 +13,17 @@ UTS uses Microsoft Exchange email services, however there are IMAP & SMTP server
 
 Receiving mail:
 
-* IMAP server: mailbox.adsroot.uts.edu.au
+* IMAP server: outlook.office365.com
 * Security: STARTTLS
 * Port: 143
-* Username: your UTS staff/student ID
+* Username: your UTS email address
 
 Sending mail:
 
-* Server address: postoffice.uts.edu.au
+* Server address: smtp-mail.outlook.com
 * Security: STARTTLS
 * Port: 587
-* Username: your UTS staff/student ID
+* Username: your UTS email address
 
 ## Connecting to eduroam from an Android device
 
@@ -35,7 +35,7 @@ When connecting to eduroam from an Android device it is necessary to set a few c
 
 ## Connecting to eduroam from an iPhone
 
-You will first have to obtain and install the UTS "mobile configuration file". 
+You will first have to obtain and install the UTS "mobile configuration file".
 
 Chrome does not recognise this file type as something special and will simply offer to download it. Therefore, use Safari and click on this link to [the UTS ios config page](http://m.uts.edu.au/current-students/managing-your-course/using-uts-systems/uts-wireless/eduroam/connecting-ios-device)
 
@@ -48,5 +48,3 @@ The process and settings required to connect from linux are very similar to Andr
 ## Reading papers from closed access academic journals
 
 The UTS library runs an ezproxy but the interface can be very cumbersome to use. Alternatively, it is possible to use [google scholar via the ezproxy](https://scholar-google-com-au.ezproxy.lib.uts.edu.au/) to find the paper you would like to read
-
-
