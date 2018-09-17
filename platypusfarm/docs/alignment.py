@@ -4,17 +4,16 @@ import numpy as np
 seq_1 = "TACG"
 seq_2 = "TGG"
 
-subst_matrix = [
-# A  C  G  T
-[+1,-1,-1,-1],  # A
-[-1,+1,-1,-1],  # C
-[-1,-1,+1,-1],  # G
-[-1,-1,-1,+1]   # T
-]
+# A:A, C:C, etc get +1
+# any mismatch gets -1
+subst_matrix = {
+'A': {'A': 1,'C':-1,'G':-1,'T':-1}, 
+'C': {'A':-1,'C': 1,'G':-1,'T':-1}, 
+'G': {'A':-1,'C':-1,'G': 1,'T':-1},
+'T': {'A':-1,'C':-1,'G':-1,'T': 1},
+}
 gap_penalty = -4
 
-# maps between chars and substitution matrix indices
-ch = {"A":0,"C":1,"G":2,"T":3}
 
 # this will store our dynamic programming matrix
 dp_matrix = np.ndarray(shape=(len(seq_1)+1,len(seq_2)+1), dtype=int)
@@ -30,21 +29,24 @@ for i in range(len(seq_1)+1):
     for j in range(len(seq_2)+1):
         if i==0 and j==0: continue # skip the first cell
 
+        char_1 = seq_1[i-1] # current character at seq 1
+        char_2 = seq_2[j-1] # current character at seq 2
+
         # 
-        # 'scores' must be filled in here
+        # YOUR TASK: 'scores' must be filled in here
         #
         scores = [-999,-999,-999]
         if( i>0 and j>0 ):  
             # score diagonal
-            # scores[1] = 
+            #scores[1] = 
             pass
         if( i>0 ): 
             # score up: gap in sequence 2
-            # scores[2] = 
+            #scores[2] = 
             pass
         if( j>0 ): 
             # score left: gap in sequence 1
-            # scores[0] = 
+            #scores[0] = 
             pass
 
         # select the best previous cell
@@ -54,10 +56,10 @@ for i in range(len(seq_1)+1):
             if scores[k] == best:
                 back_ptr[i,j] = k
 
-print "Dynamic programming matrix:"
-print dp_matrix
-print "\nBack pointers:"
-print back_ptr
+print("Dynamic programming matrix:")
+print(dp_matrix)
+print("\nBack pointers:")
+print(back_ptr)
 
 # read out the backtrace to get the best alignment
 aln_1 = ""
@@ -83,7 +85,7 @@ while i>0 or j>0:
 aln_1 = aln_1[::-1] # reverses the string
 aln_2 = aln_2[::-1]
 
-print "\nAlignment:"
+print("\nAlignment:")
 print(aln_1)
 print(aln_2)
 
