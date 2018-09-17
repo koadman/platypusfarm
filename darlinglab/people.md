@@ -25,7 +25,7 @@ twitter: [@koadman](http://twitter.com/koadman) | [google scholar](http://schola
 **Matt Z. DeMaere** -- Ph.D. student<br/>
 [google scholar](http://scholar.google.com.au/citations?user=hQTEUsIAAAAJ&hl=en&oi=ao) | [github](https://github.com/cerebis) | [twitter](https://twitter.com/cerebis1)
 
-**Dr. Kay Anantanawat** -- Postdoctoral Research Associate<br/>
+**Dr. Kay Anantanawat** -- High-throughput DNA sequencing facility manager<br/>
 [UTS profile](https://www.uts.edu.au/staff/kay.anantanawat)
 
 **Dr. Mathieu Fourment** -- Postdoctoral Research Associate<br/>
