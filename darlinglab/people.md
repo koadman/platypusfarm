@@ -11,15 +11,17 @@ permalink: /people/
 email: aaron.darling (_at_) uts.edu.au<br/>
 twitter: [@koadman](http://twitter.com/koadman) | [google scholar](http://scholar.google.com/citations?user=TE8_LDwAAAAJ&hl=en&oi=ao) | [UTS staff profile](http://www.uts.edu.au/staff/aaron.darling)
 
-**Daniela Gaio** -- Ph.D. student<br/>
+**Daniela Gaio** -- Ph.D. student, metagenomics of probiotic and antibiotic treatments in a model system<br/>
 
-**Dr. Michael Imelfort** -- Binfie<br/>
+**Frederick Jaya** -- Masters student, bioinformatic analysis of recombination<br/>
+
+**Brent Bevear** -- Honours student 2019, bioinformatics of single molecule HIV data<br/>
+Cosupervised by [Dr. Barbara Brito-Rodriguez (UTS)](https://www.uts.edu.au/staff/barbara.britorodriguez), [Dr. Martin Smith (Garvan)](https://www.garvan.org.au/people/marsmi), and Dr. Kirston Barton (Garvan/KCCG)
+
+**Dr. Michael Imelfort** -- Binfie, long-read sequencing technologies<br/>
 [google scholar](https://scholar.google.com.au/citations?user=Ya40TnAAAAAJ&hl=en&oi=ao) | [github](https://github.com/minillinim) | [twitter](https://twitter.com/minillinim)
 
-**Liza Kretzschmar** -- Ph.D. student<br/>
-[UTS profile](http://www.uts.edu.au/research-and-teaching/our-research/climate-change-cluster/our-people/research-students/anna-liza) | [github](https://github.com/bubblegirl/) | [twitter](https://twitter.com/hydra_hamster)
-
-**Kevin Ying** -- Binfie<br/>
+**Kevin Ying** -- Binfie, long-read sequencing technologies<br/>
 [github](https://github.com/kevyin)<br/>
 
 **Matt Z. DeMaere** -- Ph.D. student<br/>
@@ -28,17 +30,23 @@ twitter: [@koadman](http://twitter.com/koadman) | [google scholar](http://schola
 **Dr. Kay Anantanawat** -- High-throughput DNA sequencing facility manager<br/>
 [UTS profile](https://www.uts.edu.au/staff/kay.anantanawat)
 
-**Dr. Mathieu Fourment** -- Postdoctoral Research Associate<br/>
+**Dr. Mathieu Fourment** -- Postdoctoral Research Associate, phylogenetics<br/>
 [google scholar](https://scholar.google.com.au/citations?user=dUOgPoYAAAAJ&hl=en&oi=ao) | [github](https://github.com/4ment)
 
-**Dr. Leigh Monahan** -- Postdoctoral Research Associate<br/>
+**Dr. Leigh Monahan** -- Postdoctoral Research Associate, long-read sequencing technologies<br/>
 [UTS staff profile](http://www.uts.edu.au/staff/leigh.monahan)
 
-**Joyce To** -- Senior Research Assistant, UTS<br/>
-[UTS staff profile](http://www.uts.edu.au/staff/joyce.to)
+**Dr. Barbara Brito-Rodriguez** -- Chancellor's postdoctoral fellow, joint with NSW Dept. of Primary Industries<br/>
+[UTS staff profile](https://www.uts.edu.au/staff/barbara.britorodriguez)
 
 
 ### Lab Alumni
+
+**Liza Kretzschmar** -- Ph.D. student in algae toxin transcriptomics and phylogenetics, now AMSI intern at Lion<br/>
+[github](https://github.com/bubblegirl/) | [twitter](https://twitter.com/hydra_hamster)
+
+**Joyce To** -- now Senior Research Assistant with Prof Cynthia Whitchurch, UTS<br/>
+[UTS staff profile](http://www.uts.edu.au/staff/joyce.to)
 
 **Maylis Dadvisard** -- Research intern (Ecole Polytechnique, Paris)<br/>
 
