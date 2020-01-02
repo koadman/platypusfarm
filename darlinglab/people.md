@@ -18,23 +18,11 @@ twitter: [@koadman](http://twitter.com/koadman) | [google scholar](http://schola
 **Nehleh Kargarfard** -- Ph.D. student, real-time inference of phylogeny<br/>
 Cosupervised by [Dr. Mathieu Fourment](https://www.uts.edu.au/staff/mathieu.fourment)
 
-**Brent Bevear** -- Honours student 2019, bioinformatics of single molecule HIV data<br/>
-Cosupervised by [Dr. Barbara Brito-Rodriguez (UTS)](https://www.uts.edu.au/staff/barbara.britorodriguez), [Dr. Martin Smith (Garvan)](https://www.garvan.org.au/people/marsmi), and Dr. Kirston Barton (Garvan/KCCG)
-
-**Dr. Michael Imelfort** -- Binfie, long-read sequencing technologies<br/>
-[google scholar](https://scholar.google.com.au/citations?user=Ya40TnAAAAAJ&hl=en&oi=ao) | [github](https://github.com/minillinim) | [twitter](https://twitter.com/minillinim)
-
-**Kevin Ying** -- Binfie, long-read sequencing technologies<br/>
-[github](https://github.com/kevyin)<br/>
-
 **Dr. Matt Z. DeMaere** -- Postdoctoral Research Associate, computational metagenomics and Hi-C data analysis<br/>
 [google scholar](http://scholar.google.com.au/citations?user=hQTEUsIAAAAJ&hl=en&oi=ao) | [github](https://github.com/cerebis) | [twitter](https://twitter.com/cerebis1)
 
 **Dr. Kay Anantanawat** -- High-throughput DNA sequencing facility manager<br/>
 [UTS profile](https://www.uts.edu.au/staff/kay.anantanawat)
-
-**Dr. Mathieu Fourment** -- Postdoctoral Research Associate, phylogenetics<br/>
-[google scholar](https://scholar.google.com.au/citations?user=dUOgPoYAAAAJ&hl=en&oi=ao) | [github](https://github.com/4ment)
 
 **Dr. Leigh Monahan** -- Postdoctoral Research Associate, long-read sequencing technologies<br/>
 [UTS staff profile](http://www.uts.edu.au/staff/leigh.monahan)
@@ -42,12 +30,28 @@ Cosupervised by [Dr. Barbara Brito-Rodriguez (UTS)](https://www.uts.edu.au/staff
 **Dr. Barbara Brito-Rodriguez** -- Chancellor's postdoctoral fellow, joint with NSW Dept. of Primary Industries<br/>
 [UTS staff profile](https://www.uts.edu.au/staff/barbara.britorodriguez)
 
-**Sidaswar Krishnan** -- computational metagenomics for the OUTBREAK project<br/>
+**Sidaswar (Sid) Krishnan** -- computational metagenomics for the OUTBREAK project<br/>
 
 **Christian Cabato** -- data analyst for long read sequencing technology development<br/>
 
 
 ### Lab Alumni
+
+
+**Kevin Ying** -- Binfie, long-read sequencing technologies<br/>
+[github](https://github.com/kevyin)<br/>
+Went on to [Longas Technologies Pty Ltd](https://longastech.com)
+
+**Dr. Michael Imelfort** -- Binfie, long-read sequencing technologies<br/>
+[google scholar](https://scholar.google.com.au/citations?user=Ya40TnAAAAAJ&hl=en&oi=ao) | [github](https://github.com/minillinim) | [twitter](https://twitter.com/minillinim)<br/>
+Went on to [Longas Technologies Pty Ltd](https://longastech.com)
+
+**Dr. Mathieu Fourment** -- Postdoctoral Research Associate, phylogenetics<br/>
+[google scholar](https://scholar.google.com.au/citations?user=dUOgPoYAAAAJ&hl=en&oi=ao) | [github](https://github.com/4ment)<br/>
+Went on to an independent faculty position
+
+**Brent Bevear** -- Honours student 2019, bioinformatics of single molecule HIV data<br/>
+Cosupervised by [Dr. Barbara Brito-Rodriguez (UTS)](https://www.uts.edu.au/staff/barbara.britorodriguez), [Dr. Martin Smith (Garvan)](https://www.garvan.org.au/people/marsmi), and Dr. Kirston Barton (Garvan/KCCG)
 
 **Liza Kretzschmar** -- Ph.D. student in algae toxin transcriptomics and phylogenetics, went on to AMSI internship at Lion Brewing<br/>
 [github](https://github.com/bubblegirl/) | [twitter](https://twitter.com/hydra_hamster)
