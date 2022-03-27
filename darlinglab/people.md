@@ -11,7 +11,7 @@ The group was disbanded in 2021. Everyone listed here was once a part of the gro
 
 ### Members as of 2021
 
-**Aaron Darling** -- Group Leader<br/>
+**Aaron Darling** -- Formerly: Group Leader; Now Director of Software Development at Illumina<br/>
 [University of Technology Sydney, Building 4](http://goo.gl/maps/wyLKP), Level 7<br/>
 email: aaron.darling (_at_) uts.edu.au<br/>
 twitter: [@koadman](http://twitter.com/koadman) | [google scholar](http://scholar.google.com/citations?user=TE8_LDwAAAAJ&hl=en&oi=ao) | [UTS staff profile](http://www.uts.edu.au/staff/aaron.darling)
