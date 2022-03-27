@@ -1,0 +1,910 @@
+main::scan_file() called too early to check prototype at /usr/local/bin/aclocal line 617.
+main::scan_file() called too early to check prototype at /usr/local/bin/aclocal line 617.
+Useless use of /d modifier in transliteration operator at /usr/local/share/automake-1.11/Automake/Wrap.pm line 58.
+configure.ac:8: installing `config/config.guess'
+configure.ac:8: installing `config/config.sub'
+configure.ac:61: installing `config/install-sh'
+configure.ac:61: installing `config/missing'
+libGenome/Makefile.am: installing `config/depcomp'
+Makefile.am: installing `./INSTALL'
+Makefile.am: installing `./COPYING' using GNU General Public License v3 file
+Makefile.am:     Consider adding the COPYING file to the version control system
+Makefile.am:     for your code, to avoid questions about which license your project uses.
+configure: WARNING: doxygen not found - will not generate any doxygen documentation
+tar: libGenome-1.3.1/: Numeric user ID too large
+tar: libGenome-1.3.1/aclocal.m4: Numeric user ID too large
+tar: libGenome-1.3.1/AUTHORS: Numeric user ID too large
+tar: libGenome-1.3.1/ChangeLog: Numeric user ID too large
+tar: libGenome-1.3.1/config/: Numeric user ID too large
+tar: libGenome-1.3.1/config.h.in: Numeric user ID too large
+tar: libGenome-1.3.1/configure: Numeric user ID too large
+tar: libGenome-1.3.1/configure.ac: Numeric user ID too large
+tar: libGenome-1.3.1/COPYING: Numeric user ID too large
+tar: libGenome-1.3.1/doxygen.am: Numeric user ID too large
+tar: libGenome-1.3.1/INSTALL: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome-1.3.pc.in: Numeric user ID too large
+tar: libGenome-1.3.1/m4/: Numeric user ID too large
+tar: libGenome-1.3.1/Makefile.am: Numeric user ID too large
+tar: libGenome-1.3.1/Makefile.in: Numeric user ID too large
+tar: libGenome-1.3.1/NEWS: Numeric user ID too large
+tar: libGenome-1.3.1/projects/: Numeric user ID too large
+tar: libGenome-1.3.1/README: Numeric user ID too large
+tar: libGenome-1.3.1/projects/libGenome.doxygen: Numeric user ID too large
+tar: libGenome-1.3.1/projects/libGenome.nsi: Numeric user ID too large
+tar: libGenome-1.3.1/projects/libGenome.sln: Numeric user ID too large
+tar: libGenome-1.3.1/projects/libGenome.vcproj: Numeric user ID too large
+tar: libGenome-1.3.1/m4/ax_prog_doxygen.m4: Numeric user ID too large
+tar: libGenome-1.3.1/m4/libtool.m4: Numeric user ID too large
+tar: libGenome-1.3.1/m4/ltoptions.m4: Numeric user ID too large
+tar: libGenome-1.3.1/m4/ltsugar.m4: Numeric user ID too large
+tar: libGenome-1.3.1/m4/ltversion.m4: Numeric user ID too large
+tar: libGenome-1.3.1/m4/lt~obsolete.m4: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/coordMapper.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnABISource.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnBaseFeature.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnBaseFeature.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnBaseFilter.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnBaseHeader.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnBaseQualifier.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnBaseSource.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnBaseSpec.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnClone.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnCompare.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnCompare.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnContigSpec.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnContigSpec.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnDataBaseSource.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnDebug.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnDefs.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnDefs.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnDNASequence.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnException.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnException.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnExceptionCode.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnFASSource.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnFASSource.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnFastTranslator.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnFastTranslator.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnFeature.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnFeature.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnFileContig.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnFileContig.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnFileSource.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnFileSource.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnFilter.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnFilter.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnFragmentSpec.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnFragmentSpec.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnGBKSource.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnGBKSource.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnGenomeSpec.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnGenomeSpec.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnLocation.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnLocation.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnMultiSpec.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnPosSpecificTranslator.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnPosSpecificTranslator.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnProteinSequence.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnRAWSource.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnRAWSource.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnRNASequence.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnSEQSource.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnSEQSource.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnSequence.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnSequence.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnSetup.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnSourceFactory.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnSourceFactory.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnSourceHeader.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnSourceHeader.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnSourceQualifier.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnSourceQualifier.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnSourceSpec.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnSourceSpec.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnStringHeader.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnStringQualifier.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnStringSpec.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnStringSpec.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnStringTools.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnStringTools.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnTranslator.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnTranslator.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/gnVersion.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/IntervalSequenceTree.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/Makefile.am: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/Makefile.in: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/OmpGuard.h: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/test-o-matic.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/testgnSequence.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/TestRevComp.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/testSource.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/testSourceFactory.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/testSourceSeq.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/libGenome/testTests.cpp: Numeric user ID too large
+tar: libGenome-1.3.1/config/config.guess: Numeric user ID too large
+tar: libGenome-1.3.1/config/config.sub: Numeric user ID too large
+tar: libGenome-1.3.1/config/depcomp: Numeric user ID too large
+tar: libGenome-1.3.1/config/install-sh: Numeric user ID too large
+tar: libGenome-1.3.1/config/ltmain.sh: Numeric user ID too large
+tar: libGenome-1.3.1/config/missing: Numeric user ID too large
+main::scan_file() called too early to check prototype at /usr/local/bin/aclocal line 617.
+main::scan_file() called too early to check prototype at /usr/local/bin/aclocal line 617.
+Useless use of /d modifier in transliteration operator at /usr/local/share/automake-1.11/Automake/Wrap.pm line 58.
+configure.ac:64: installing `config/config.guess'
+configure.ac:64: installing `config/config.sub'
+configure.ac:52: installing `config/install-sh'
+configure.ac:52: installing `config/missing'
+libMUSCLE/Makefile.am: installing `config/depcomp'
+Makefile.am: installing `./INSTALL'
+configure: WARNING: doxygen not found - will not generate any doxygen documentation
+alpha.cpp:86:10: warning: enumeration value 'ALPHA_Undefined' not handled in switch [-Wswitch]
+        switch (Alpha)
+                ^
+1 warning generated.
+bittraceback.cpp:20:29: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        static TLSstr<char[9]> Str("xM xD xI");
+                                   ^
+In file included from bittraceback.cpp:1:
+In file included from ../libMUSCLE/muscle.h:31:
+../libMUSCLE/threadstorage.h:57:30: warning: sizeof on array function parameter will return size of 'char *' instead of 'char [9]' [-Wsizeof-array-argument]
+                        memcpy(t[i], t_val, sizeof(t_val));
+                                                  ^
+bittraceback.cpp:20:25: note: in instantiation of member function 'TLSstr<char [9]>::TLSstr' requested here
+        static TLSstr<char[9]> Str("xM xD xI");
+                               ^
+../libMUSCLE/threadstorage.h:55:12: note: declared here
+        TLSstr( T t_val ){
+                  ^
+../libMUSCLE/threadstorage.h:57:31: warning: 'memcpy' call operates on objects of type 'char' while the size is based on a different type 'char *' [-Wsizeof-pointer-memaccess]
+                        memcpy(t[i], t_val, sizeof(t_val));
+                                     ~~~~~         ^~~~~
+../libMUSCLE/threadstorage.h:57:31: note: did you mean to provide an explicit length?
+                        memcpy(t[i], t_val, sizeof(t_val));
+                                                   ^~~~~
+3 warnings generated.
+clust.cpp:169:10: warning: enumeration value 'JOIN_Undefined' not handled in switch [-Wswitch]
+        switch (m_JoinStyle)
+                ^
+clust.cpp:297:10: warning: enumeration value 'LINKAGE_Undefined' not handled in switch [-Wswitch]
+        switch (m_CentroidStyle)
+                ^
+clust.cpp:613:10: warning: enumeration value 'JOIN_Undefined' not handled in switch [-Wswitch]
+        switch (m_JoinStyle)
+                ^
+3 warnings generated.
+glbalndimer.cpp:126:10: warning: enumeration values 'PPSCORE_Undefined' and 'PPSCORE_SPN' not handled in switch [-Wswitch]
+        switch (g_PPScore.get())
+                ^
+1 warning generated.
+msa2.cpp:360:10: warning: enumeration value 'SEQWEIGHT_Undefined' not handled in switch [-Wswitch]
+        switch (Method)
+                ^
+1 warning generated.
+objscore2.cpp:24:10: warning: enumeration value 'TERMGAPS_Undefined' not handled in switch [-Wswitch]
+        switch (g_TermGaps.get())
+                ^
+1 warning generated.
+objscore.cpp:33:10: warning: enumeration values 'OBJSCORE_Undefined' and 'OBJSCORE_SPM' not handled in switch [-Wswitch]
+        switch (OS)
+                ^
+1 warning generated.
+params.cpp:449:10: warning: enumeration value 'PPSCORE_Undefined' not handled in switch [-Wswitch]
+        switch (g_PPScore.get())
+                ^
+1 warning generated.
+In file included from profdb.cpp:9:
+In file included from ../libMUSCLE/clustsetmsa.h:5:
+../libMUSCLE/msadist.h:26:10: warning: 10 enumeration values not handled in switch: 'DISTANCE_Undefined', 'DISTANCE_Kmer6_6', 'DISTANCE_Kmer20_3'... [-Wswitch]
+                switch(m_Distance)
+                       ^
+1 warning generated.
+profilefrommsa.cpp:233:10: warning: enumeration value 'ALPHA_Undefined' not handled in switch [-Wswitch]
+        switch (g_Alpha.get())
+                ^
+1 warning generated.
+In file included from refine.cpp:9:
+In file included from ../libMUSCLE/clustsetmsa.h:5:
+../libMUSCLE/msadist.h:26:10: warning: 10 enumeration values not handled in switch: 'DISTANCE_Undefined', 'DISTANCE_Kmer6_6', 'DISTANCE_Kmer20_3'... [-Wswitch]
+                switch(m_Distance)
+                       ^
+1 warning generated.
+spfast.cpp:20:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        case LL: return "LL";
+                        ^
+spfast.cpp:21:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        case LG: return "LG";
+                        ^
+spfast.cpp:22:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        case GL: return "GL";
+                        ^
+spfast.cpp:23:18: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        case GG: return "GG";
+                        ^
+spfast.cpp:26:9: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        return "?";
+               ^
+5 warnings generated.
+subfams.cpp:46:25: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        for (unsigned i = 0; i < uNodeCount; ++i)
+                             ~ ^ ~~~~~~~~~~
+1 warning generated.
+In file included from treefrommsa.cpp:5:
+In file included from ../libMUSCLE/clustsetmsa.h:5:
+../libMUSCLE/msadist.h:26:10: warning: 10 enumeration values not handled in switch: 'DISTANCE_Undefined', 'DISTANCE_Kmer6_6', 'DISTANCE_Kmer20_3'... [-Wswitch]
+                switch(m_Distance)
+                       ^
+1 warning generated.
+typetostr.cpp:15:39: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+        sprintf(Str.get(), "%02d:%02d:%02d", hh, mm, ss);
+                            ~~~~             ^~
+                            %02ld
+typetostr.cpp:15:43: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+        sprintf(Str.get(), "%02d:%02d:%02d", hh, mm, ss);
+                                 ~~~~            ^~
+                                 %02ld
+typetostr.cpp:15:47: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+        sprintf(Str.get(), "%02d:%02d:%02d", hh, mm, ss);
+                                      ~~~~           ^~
+                                      %02ld
+3 warnings generated.
+make[1]: *** No rule to make target `../libMUSCLE/libMUSCLE-3.7.la', needed by `muscle'.  Stop.
+make[1]: *** Waiting for unfinished jobs....
+make: *** [all-recursive] Error 1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-blosumla.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-glbalign352.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-globalslinux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-globalswin32.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-gotowt.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-nwdasimple2.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-nwdasmall.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-nwrec.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-objscoreda.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-pam200mafft.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-validateids.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-blosumla.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-glbalign352.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-globalslinux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-globalswin32.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-gotowt.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-nwdasimple2.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-nwdasmall.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-nwrec.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-objscoreda.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-pam200mafft.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMUSCLE-3.7.a(libMUSCLE_3_7_la-validateids.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/117335/development/build_scripts/build/lib/libMUSCLE-3.7.a(libMUSCLE_3_7_la-blosumla.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/117335/development/build_scripts/build/lib/libMUSCLE-3.7.a(libMUSCLE_3_7_la-glbalign352.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/117335/development/build_scripts/build/lib/libMUSCLE-3.7.a(libMUSCLE_3_7_la-globalslinux.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/117335/development/build_scripts/build/lib/libMUSCLE-3.7.a(libMUSCLE_3_7_la-globalswin32.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/117335/development/build_scripts/build/lib/libMUSCLE-3.7.a(libMUSCLE_3_7_la-gotowt.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/117335/development/build_scripts/build/lib/libMUSCLE-3.7.a(libMUSCLE_3_7_la-nwdasimple2.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/117335/development/build_scripts/build/lib/libMUSCLE-3.7.a(libMUSCLE_3_7_la-nwdasmall.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/117335/development/build_scripts/build/lib/libMUSCLE-3.7.a(libMUSCLE_3_7_la-nwrec.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/117335/development/build_scripts/build/lib/libMUSCLE-3.7.a(libMUSCLE_3_7_la-objscoreda.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/117335/development/build_scripts/build/lib/libMUSCLE-3.7.a(libMUSCLE_3_7_la-pam200mafft.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/117335/development/build_scripts/build/lib/libMUSCLE-3.7.a(libMUSCLE_3_7_la-validateids.o) has no symbols
+tar: libMUSCLE-1.0.0/: Numeric user ID too large
+tar: libMUSCLE-1.0.0/aclocal.m4: Numeric user ID too large
+tar: libMUSCLE-1.0.0/AUTHORS: Numeric user ID too large
+tar: libMUSCLE-1.0.0/ChangeLog: Numeric user ID too large
+tar: libMUSCLE-1.0.0/config/: Numeric user ID too large
+tar: libMUSCLE-1.0.0/configure: Numeric user ID too large
+tar: libMUSCLE-1.0.0/configure.ac: Numeric user ID too large
+tar: libMUSCLE-1.0.0/COPYING: Numeric user ID too large
+tar: libMUSCLE-1.0.0/doxygen.am: Numeric user ID too large
+tar: libMUSCLE-1.0.0/INSTALL: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE-3.7.pc.in: Numeric user ID too large
+tar: libMUSCLE-1.0.0/m4/: Numeric user ID too large
+tar: libMUSCLE-1.0.0/Makefile.am: Numeric user ID too large
+tar: libMUSCLE-1.0.0/Makefile.in: Numeric user ID too large
+tar: libMUSCLE-1.0.0/NEWS: Numeric user ID too large
+tar: libMUSCLE-1.0.0/projects/: Numeric user ID too large
+tar: libMUSCLE-1.0.0/README: Numeric user ID too large
+tar: libMUSCLE-1.0.0/projects/libmuscle.doxygen: Numeric user ID too large
+tar: libMUSCLE-1.0.0/projects/libMUSCLE.vcproj: Numeric user ID too large
+tar: libMUSCLE-1.0.0/projects/muscle.vcproj: Numeric user ID too large
+tar: libMUSCLE-1.0.0/m4/ax_prog_doxygen.m4: Numeric user ID too large
+tar: libMUSCLE-1.0.0/m4/libtool.m4: Numeric user ID too large
+tar: libMUSCLE-1.0.0/m4/ltoptions.m4: Numeric user ID too large
+tar: libMUSCLE-1.0.0/m4/ltsugar.m4: Numeric user ID too large
+tar: libMUSCLE-1.0.0/m4/ltversion.m4: Numeric user ID too large
+tar: libMUSCLE-1.0.0/m4/lt~obsolete.m4: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/aligngivenpath.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/aligngivenpathsw.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/aligntwomsas.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/aligntwoprofs.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/aln.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/alpha.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/alpha.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/anchoredpp.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/anchors.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/bittraceback.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/blosum62.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/blosumla.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/clust.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/clust.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/cluster.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/cluster.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/clustset.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/clustsetdf.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/clustsetmsa.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/clwwt.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/color.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/cons.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/diaglist.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/diaglist.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/diffobjscore.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/diffpaths.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/difftrees.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/difftreese.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/distcalc.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/distcalc.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/distfunc.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/distfunc.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/distpwkimura.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/domuscle.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/dosp.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/dpregionlist.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/dpreglist.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/dpreglist.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/drawtree.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/edgelist.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/edgelist.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/enumopts.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/enumopts.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/enums.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/enumtostr.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/estring.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/estring.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/fasta.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/fasta2.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/fastclust.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/fastdist.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/fastdistjones.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/fastdistkbit.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/fastdistkmer.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/fastdistmafft.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/fastdistnuc.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/fastscorepath2.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/finddiags.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/finddiagsn.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/gapscoredimer.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/glbalign.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/glbalign352.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/glbaligndiag.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/glbalignle.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/glbalignsimple.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/glbalignsp.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/glbalignspn.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/glbalignss.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/glbalndimer.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/globals.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/globalslinux.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/globalsother.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/globalswin32.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/gonnet.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/gonnet.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/gotowt.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/henikoffweight.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/henikoffweightpb.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/html.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/hydro.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/intmath.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/intmath.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/local.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/main.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/Makefile.am: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/Makefile.in: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/makerootmsa.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/makerootmsab.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/maketree.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/mhack.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/mpam200.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/msa.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/msa.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/msa2.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/msadist.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/msadistkimura.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/msf.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/muscle.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/muscle.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/muscleout.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/nucmx.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/nwdasimple.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/nwdasimple2.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/nwdasmall.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/nwrec.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/nwsmall.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/objscore.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/objscore.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/objscore2.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/objscoreda.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/onexception.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/options.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/outweights.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/pam200mafft.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/params.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/params.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/phy.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/phy2.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/phy3.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/phy4.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/phyfromclust.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/phyfromfile.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/physeq.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/phytofile.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/posgap.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/ppscore.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/profdb.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/profile.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/profile.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/profilefrommsa.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/progalign.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/progress.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/progressivealign.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/pwpath.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/pwpath.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/readmx.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/realigndiffs.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/realigndiffse.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/refine.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/refine.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/refinehoriz.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/refinesubfams.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/refinetree.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/refinetreee.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/refinevert.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/refinew.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/savebest.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/scoredist.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/scoregaps.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/scorehistory.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/scorehistory.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/scorepp.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/seq.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/seq.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/seqvect.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/seqvect.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/setblosumweights.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/setgscweights.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/setnewhandler.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/spfast.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/sptest.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/stabilize.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/subfam.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/subfams.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/sw.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/termgaps.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/textfile.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/textfile.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/threadstorage.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/threewaywt.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/timing.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/tomhydro.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/traceback.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/tracebackopt.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/tracebacksw.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/tree.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/treefrommsa.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/types.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/typetostr.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/unixio.h: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/upgma2.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/usage.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/validateids.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/vtml2.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/libMUSCLE/writescorefile.cpp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/config/config.guess: Numeric user ID too large
+tar: libMUSCLE-1.0.0/config/config.sub: Numeric user ID too large
+tar: libMUSCLE-1.0.0/config/depcomp: Numeric user ID too large
+tar: libMUSCLE-1.0.0/config/install-sh: Numeric user ID too large
+tar: libMUSCLE-1.0.0/config/ltmain.sh: Numeric user ID too large
+tar: libMUSCLE-1.0.0/config/missing: Numeric user ID too large
+main::scan_file() called too early to check prototype at /usr/local/bin/aclocal line 617.
+main::scan_file() called too early to check prototype at /usr/local/bin/aclocal line 617.
+Useless use of /d modifier in transliteration operator at /usr/local/share/automake-1.11/Automake/Wrap.pm line 58.
+configure.ac:66: installing `config/config.guess'
+configure.ac:66: installing `config/config.sub'
+configure.ac:54: installing `config/install-sh'
+configure.ac:54: installing `config/missing'
+libMems/Makefile.am: installing `config/depcomp'
+configure: WARNING: doxygen not found - will not generate any doxygen documentation
+FileSML.cpp:407:31: warning: adding 'smlSeqI_t' (aka 'unsigned int') to a string does not append to the string [-Wstring-plus-int]
+                        errmsg += tmp_mer.position + " is out of range\n";
+                                  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+FileSML.cpp:407:31: note: use array indexing to silence this warning
+1 warning generated.
+gnAlignedSequences.cpp:961:24: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        while (line.find("//")<0 || line.find("//")>line.size())
+               ~~~~~~~~~~~~~~~^~
+gnAlignedSequences.cpp:1040:33: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        while (line.find("begin data;")<0 || line.find("begin data;")>line.length()) // searching for "begin data;"
+               ~~~~~~~~~~~~~~~~~~~~~~~~^~
+gnAlignedSequences.cpp:1248:56: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        while (alignmentFile.good() && (line.find("endblock;")<0 || line.find("endblock;")>line.length())) 
+                                        ~~~~~~~~~~~~~~~~~~~~~~^~
+3 warnings generated.
+In file included from Aligner.cpp:14:
+../libMems/DistanceMatrix.h:244:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                                                else
+                                                ^
+../libMems/DistanceMatrix.h:249:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                                                else
+                                                ^
+Aligner.cpp:1405:30: warning: '&&' within '||' [-Wlogical-op-parentheses]
+                if( memI >= print_interval && memI % print_interval == 0 || debug)
+                    ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~
+Aligner.cpp:1405:30: note: place parentheses around the '&&' expression to silence this warning
+                if( memI >= print_interval && memI % print_interval == 0 || debug)
+                                           ^
+                    (                                                   )
+Aligner.cpp:1495:30: warning: '&&' within '||' [-Wlogical-op-parentheses]
+                if( memI >= print_interval && memI % print_interval == 0 || debug)
+                    ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~
+Aligner.cpp:1495:30: note: place parentheses around the '&&' expression to silence this warning
+                if( memI >= print_interval && memI % print_interval == 0 || debug)
+                                           ^
+                    (                                                   )
+4 warnings generated.
+In file included from MuscleInterface.cpp:18:
+/Users/117335/development/build_scripts/build/include/libMUSCLE-3.7/libMUSCLE/muscle.h:54:9: warning: 'assert' macro redefined
+#define assert(exp)     ((void)0)
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/assert.h:92:9: note: previous definition is here
+#define assert(e) \
+        ^
+1 warning generated.
+In file included from ProgressiveAligner.cpp:26:
+../libMems/DistanceMatrix.h:244:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                                                else
+                                                ^
+../libMems/DistanceMatrix.h:249:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                                                else
+                                                ^
+2 warnings generated.
+HomologyHMM/homology.cc:386:18: warning: self-comparison always evaluates to true [-Wtautological-compare]
+        if (iPos0==iPos0) {} // avoid 'unused variable' warnings
+                 ^
+HomologyHMM/homology.cc:450:18: warning: self-comparison always evaluates to true [-Wtautological-compare]
+        if (iPos0==iPos0) {} // avoid 'unused variable' warnings
+                 ^
+HomologyHMM/homology.cc:539:18: warning: self-comparison always evaluates to true [-Wtautological-compare]
+        if (iPos0==iPos0) {} // avoid 'unused variable' warnings
+                 ^
+HomologyHMM/homology.cc:643:18: warning: self-comparison always evaluates to true [-Wtautological-compare]
+        if (iPos0==iPos0) {} // avoid 'unused variable' warnings
+                 ^
+HomologyHMM/homology.cc:700:18: warning: self-comparison always evaluates to true [-Wtautological-compare]
+        if (iPos0==iPos0) {} // avoid 'unused variable' warnings
+                 ^
+5 warnings generated.
+GreedyBreakpointElimination.cpp:209:4: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                        else
+                        ^
+dmSML/aPOSIXaio.c:115:21: warning: passing 'struct aiocb *[1]' to parameter of type 'const struct aiocb *const *' discards qualifiers in nested pointer types [-Wincompatible-pointer-types-discards-qualifiers]
+        rval = aio_suspend(request_array, 1, &zero_wait);
+                           ^~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/sys/aio.h:216:45: note: passing argument to parameter 'aiocblist' here
+int             aio_suspend( const struct aiocb *const aiocblist[], 
+                                                       ^
+1 warning generated.
+dmSML/util.c:126:24: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+                rm_cmd = Fmt( "/bin/rm -fv %s", filename );
+                       ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dmSML/util.c:128:24: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+                rm_cmd = Fmt( "/bin/rm -f %s", filename );
+                       ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dmSML/util.c:129:16: warning: implicit declaration of function 'system' is invalid in C99 [-Wimplicit-function-declaration]
+        return system( rm_cmd );
+               ^
+3 warnings generated.
+dmSML/dmsort.c:828:21: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+                        fprintf( stderr, buf );
+                                         ^~~
+1 warning generated.
+1 warning generated.
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMems-1.6.a(PhyloTree.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMems-1.6.a(alinuxaio.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMems-1.6.a(alibc.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMems-1.6.a(awin32aio.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMems-1.6.a(sorting.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMems-1.6.a(PhyloTree.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMems-1.6.a(alinuxaio.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMems-1.6.a(alibc.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMems-1.6.a(awin32aio.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libMems-1.6.a(sorting.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/117335/development/build_scripts/build/lib/libMems-1.6.a(PhyloTree.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/117335/development/build_scripts/build/lib/libMems-1.6.a(alinuxaio.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/117335/development/build_scripts/build/lib/libMems-1.6.a(alibc.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/117335/development/build_scripts/build/lib/libMems-1.6.a(awin32aio.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/117335/development/build_scripts/build/lib/libMems-1.6.a(sorting.o) has no symbols
+tar: libMems-1.6.0/: Numeric user ID too large
+tar: libMems-1.6.0/aclocal.m4: Numeric user ID too large
+tar: libMems-1.6.0/AUTHORS: Numeric user ID too large
+tar: libMems-1.6.0/ChangeLog: Numeric user ID too large
+tar: libMems-1.6.0/config/: Numeric user ID too large
+tar: libMems-1.6.0/config.h.in: Numeric user ID too large
+tar: libMems-1.6.0/configure: Numeric user ID too large
+tar: libMems-1.6.0/configure.ac: Numeric user ID too large
+tar: libMems-1.6.0/COPYING: Numeric user ID too large
+tar: libMems-1.6.0/doxygen.am: Numeric user ID too large
+tar: libMems-1.6.0/INSTALL: Numeric user ID too large
+tar: libMems-1.6.0/libMems/: Numeric user ID too large
+tar: libMems-1.6.0/libMems-1.6.pc.in: Numeric user ID too large
+tar: libMems-1.6.0/m4/: Numeric user ID too large
+tar: libMems-1.6.0/Makefile.am: Numeric user ID too large
+tar: libMems-1.6.0/Makefile.in: Numeric user ID too large
+tar: libMems-1.6.0/NEWS: Numeric user ID too large
+tar: libMems-1.6.0/projects/: Numeric user ID too large
+tar: libMems-1.6.0/README: Numeric user ID too large
+tar: libMems-1.6.0/TODO: Numeric user ID too large
+tar: libMems-1.6.0/projects/libMems.doxygen: Numeric user ID too large
+tar: libMems-1.6.0/projects/libMems.sln: Numeric user ID too large
+tar: libMems-1.6.0/projects/libMems.vcproj: Numeric user ID too large
+tar: libMems-1.6.0/m4/ac_cxx_namespaces.m4: Numeric user ID too large
+tar: libMems-1.6.0/m4/ax_prog_doxygen.m4: Numeric user ID too large
+tar: libMems-1.6.0/m4/boost.m4: Numeric user ID too large
+tar: libMems-1.6.0/m4/libtool.m4: Numeric user ID too large
+tar: libMems-1.6.0/m4/ltoptions.m4: Numeric user ID too large
+tar: libMems-1.6.0/m4/ltsugar.m4: Numeric user ID too large
+tar: libMems-1.6.0/m4/ltversion.m4: Numeric user ID too large
+tar: libMems-1.6.0/m4/lt~obsolete.m4: Numeric user ID too large
+tar: libMems-1.6.0/m4/pkg.m4: Numeric user ID too large
+tar: libMems-1.6.0/libMems/AbstractGappedAlignment.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/AbstractMatch.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/Aligner.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/Aligner.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/Backbone.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/Backbone.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/CompactGappedAlignment.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/configuration.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/DenseAbstractMatch.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/DistanceMatrix.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/: Numeric user ID too large
+tar: libMems-1.6.0/libMems/DNAFileSML.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/DNAFileSML.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/DNAMemorySML.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/DNAMemorySML.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/Files.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/FileSML.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/FileSML.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/GappedAligner.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/GappedAlignment.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/GappedAlignment.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/gnAlignedSequences.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/gnAlignedSequences.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/gnRAWSequence.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/GreedyBreakpointElimination.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/GreedyBreakpointElimination.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/HomologyHMM/: Numeric user ID too large
+tar: libMems-1.6.0/libMems/HybridAbstractMatch.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/Interval.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/Interval.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/IntervalList.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/IntervalList.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/Islands.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/Islands.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/LCB.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/Makefile.am: Numeric user ID too large
+tar: libMems-1.6.0/libMems/Makefile.in: Numeric user ID too large
+tar: libMems-1.6.0/libMems/MaskedMemHash.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/MaskedMemHash.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/Match.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/MatchFinder.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/MatchFinder.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/MatchHashEntry.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/MatchHashEntry.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/MatchList.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/MatchList.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/MatchProjectionAdapter.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/Matrix.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/MemHash.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/MemHash.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/Memory.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/MemorySML.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/MemorySML.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/MuscleInterface.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/MuscleInterface.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/NumericMatrix.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/PairwiseMatchAdapter.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/PairwiseMatchFinder.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/PairwiseMatchFinder.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/PhyloTree.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/PhyloTree.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/ProgressiveAligner.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/ProgressiveAligner.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/RepeatHash.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/RepeatHash.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/RepeatMatch.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/RepeatMatch.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/RepeatMatchList.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/RepeatMatchList.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/Scoring.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/SeedMasks.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/SeedOccurrenceList.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/SlotAllocator.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/SortedMerList.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/SortedMerList.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/SparseAbstractMatch.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/SubstitutionMatrix.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/SuperInterval.cpp: Numeric user ID too large
+tar: libMems-1.6.0/libMems/SuperInterval.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/TreeUtilities.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/twister.c: Numeric user ID too large
+tar: libMems-1.6.0/libMems/twister.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/UngappedLocalAlignment.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/HomologyHMM/algebras.cc: Numeric user ID too large
+tar: libMems-1.6.0/libMems/HomologyHMM/algebras.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/HomologyHMM/dptables.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/HomologyHMM/homology.cc: Numeric user ID too large
+tar: libMems-1.6.0/libMems/HomologyHMM/homology.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/HomologyHMM/homology.xml: Numeric user ID too large
+tar: libMems-1.6.0/libMems/HomologyHMM/homologymain.cc: Numeric user ID too large
+tar: libMems-1.6.0/libMems/HomologyHMM/parameters.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/alibc.c: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/alibc.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/alinuxaio.c: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/alinuxaio.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/aPOSIXaio.c: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/aPOSIXaio.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/asyncio.c: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/asyncio.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/awin32aio.c: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/awin32aio.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/buffer.c: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/buffer.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/dmsort.c: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/dmsort.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/sml.c: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/sml.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/sorting.c: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/sorting.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/timing.c: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/timing.h: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/util.c: Numeric user ID too large
+tar: libMems-1.6.0/libMems/dmSML/util.h: Numeric user ID too large
+tar: libMems-1.6.0/config/config.guess: Numeric user ID too large
+tar: libMems-1.6.0/config/config.sub: Numeric user ID too large
+tar: libMems-1.6.0/config/depcomp: Numeric user ID too large
+tar: libMems-1.6.0/config/install-sh: Numeric user ID too large
+tar: libMems-1.6.0/config/ltmain.sh: Numeric user ID too large
+tar: libMems-1.6.0/config/missing: Numeric user ID too large
+main::scan_file() called too early to check prototype at /usr/local/bin/aclocal line 617.
+Useless use of /d modifier in transliteration operator at /usr/local/share/automake-1.11/Automake/Wrap.pm line 58.
+configure.ac:9: installing `config/config.guess'
+configure.ac:9: installing `config/config.sub'
+configure.ac:11: installing `config/install-sh'
+configure.ac:11: installing `config/missing'
+src/Makefile.am: installing `config/depcomp'
+Makefile.am: installing `./INSTALL'
+configure: WARNING: unrecognized options: --disable-shared
+configure: WARNING: unrecognized options: --disable-shared
+In file included from mauveAligner.cpp:31:
+/Users/117335/development/build_scripts/build/include/libMems-1.6/libMems/DistanceMatrix.h:244:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                                                else
+                                                ^
+/Users/117335/development/build_scripts/build/include/libMems-1.6/libMems/DistanceMatrix.h:249:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                                                else
+                                                ^
+mauveAligner.cpp:47:9: warning: 'NELEMS' macro redefined
+#define NELEMS(a) ( sizeof( a ) / sizeof( *a ) )
+        ^
+/Users/117335/development/build_scripts/build/include/libMUSCLE-3.7/libMUSCLE/threadstorage.h:22:9: note: previous definition is here
+#define NELEMS(o)       sizeof(o)/sizeof(o[0])
+        ^
+3 warnings generated.
+repeatoire.cpp:853:5: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                        }else{
+                         ^
+1 warning generated.
+In file included from getOrthologList.cpp:25:
+/Users/117335/development/build_scripts/build/include/libMems-1.6/libMems/DistanceMatrix.h:244:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                                                else
+                                                ^
+/Users/117335/development/build_scripts/build/include/libMems-1.6/libMems/DistanceMatrix.h:249:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                                                else
+                                                ^
+2 warnings generated.
+error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip: can't map file: /Users/117335/development/build_scripts/build/mauveAligner/src (Invalid argument)
+tar: mauvealigner-1.2.0/: Numeric user ID too large
+tar: mauvealigner-1.2.0/acinclude.m4: Numeric user ID too large
+tar: mauvealigner-1.2.0/aclocal.m4: Numeric user ID too large
+tar: mauvealigner-1.2.0/AUTHORS: Numeric user ID too large
+tar: mauvealigner-1.2.0/ChangeLog: Numeric user ID too large
+tar: mauvealigner-1.2.0/config/: Numeric user ID too large
+tar: mauvealigner-1.2.0/configure: Numeric user ID too large
+tar: mauvealigner-1.2.0/configure.ac: Numeric user ID too large
+tar: mauvealigner-1.2.0/COPYING: Numeric user ID too large
+tar: mauvealigner-1.2.0/INSTALL: Numeric user ID too large
+tar: mauvealigner-1.2.0/Makefile.am: Numeric user ID too large
+tar: mauvealigner-1.2.0/Makefile.in: Numeric user ID too large
+tar: mauvealigner-1.2.0/NEWS: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/: Numeric user ID too large
+tar: mauvealigner-1.2.0/README: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/addUnalignedIntervals.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/alignmentProjector.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/backbone_global_to_local.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/bbAnalyze.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/bbBreakOnGenes.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/bbFilter.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/calculateBackboneCoverage.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/calculateBackboneCoverage2.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/calculateCoverage.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/config.h.in: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/coordinateTranslate.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/countInPlaceInversions.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/createBackboneMFA.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/evd.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/extractBackbone.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/extractBackbone2.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/extractBCITrees.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/gappiness.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/getAlignmentWindows.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/getopt.c: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/getopt.h: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/getopt1.c: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/getOrthologList.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/joinAlignmentFiles.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/makeBadgerMatrix.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/Makefile.am: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/Makefile.in: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/makeMc4Matrix.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/MatchRecord.h: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/mauveAligner.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/mauveAligner.h: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/mauveToXMFA.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/mfa2xmfa.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/multiEVD.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/multiToRawSequence.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/pairCompare.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/progressiveMauve.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/projectAndStrip.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/randomGeneSample.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/repeatoire.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/scoreAlignment.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/scoreALU.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/SeedMatchEnumerator.h: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/sortContigs.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/stripGapColumns.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/stripSubsetLCBs.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/toGBKsequence.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/toGrimmFormat.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/toMultiFastA.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/toRawSequence.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/transposeCoordinates.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/unalign.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/UniqueMatchFinder.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/UniqueMatchFinder.h: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/uniqueMerCount.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/uniquifyTrees.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/src/xmfa2maf.cpp: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/calculateBackboneCoverage.vcproj: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/calculateBackboneCoverage2.vcproj: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/checkForLGT.vcproj: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/everything.sln: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/extractBackbone.vcproj: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/extractBCITrees.vcproj: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/extractSubalignments.vcproj: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/mauveAligner.dox: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/mauveAligner.sln: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/mauveAligner.vcproj: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/progressiveMauve.vcproj: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/repeatoire.vcproj: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/rootTrees.vcproj: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/scoreAlignment.vcproj: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/scoreALU.vcproj: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/sortContigs.vcproj: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/toEvoHighwayFormat.vcproj: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/toGrimmFormat.vcproj: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/transposeCoordinates.vcproj: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/unalign.vcproj: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/uniqueMerCount.vcproj: Numeric user ID too large
+tar: mauvealigner-1.2.0/projects/uniquifyTrees.vcproj: Numeric user ID too large
+tar: mauvealigner-1.2.0/config/config.guess: Numeric user ID too large
+tar: mauvealigner-1.2.0/config/config.sub: Numeric user ID too large
+tar: mauvealigner-1.2.0/config/depcomp: Numeric user ID too large
+tar: mauvealigner-1.2.0/config/install-sh: Numeric user ID too large
+tar: mauvealigner-1.2.0/config/missing: Numeric user ID too large
