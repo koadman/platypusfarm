@@ -4,10 +4,10 @@
     <title>the Darling lab | computational (meta)genomics</title>
     <description>The Darling lab at the University of Technology Sydney. We develop computational and molecular techniques to characterize the hidden world of microbes.
 </description>
-    <link>https://koadman.github.io/platypusfarm/</link>
-    <atom:link href="https://koadman.github.io/platypusfarm/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 27 Mar 2022 14:43:58 +1100</pubDate>
-    <lastBuildDate>Sun, 27 Mar 2022 14:43:58 +1100</lastBuildDate>
+    <link>https://darlinglab.org/platypusfarm/</link>
+    <atom:link href="https://darlinglab.org/platypusfarm/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 27 Mar 2022 14:51:38 +1100</pubDate>
+    <lastBuildDate>Sun, 27 Mar 2022 14:51:38 +1100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -19,8 +19,8 @@ Mathieu comes to us from Sydney Uni where he worked closely with &lt;a href=&quo
 
 </description>
         <pubDate>Fri, 16 Oct 2015 02:42:50 +1100</pubDate>
-        <link>https://koadman.github.io/platypusfarm/blog/2015/10/16/welcome-mathieu-fourment.html</link>
-        <guid isPermaLink="true">https://koadman.github.io/platypusfarm/blog/2015/10/16/welcome-mathieu-fourment.html</guid>
+        <link>https://darlinglab.org/platypusfarm/blog/2015/10/16/welcome-mathieu-fourment.html</link>
+        <guid isPermaLink="true">https://darlinglab.org/platypusfarm/blog/2015/10/16/welcome-mathieu-fourment.html</guid>
         
         
         <category>blog</category>
@@ -156,8 +156,8 @@ like this one, as FastTree does not account for recombination or gene conversion
 
 </description>
         <pubDate>Mon, 23 Mar 2015 18:19:50 +1100</pubDate>
-        <link>https://koadman.github.io/platypusfarm/blog/2015/03/23/not-so-fast-fasttree.html</link>
-        <guid isPermaLink="true">https://koadman.github.io/platypusfarm/blog/2015/03/23/not-so-fast-fasttree.html</guid>
+        <link>https://darlinglab.org/platypusfarm/blog/2015/03/23/not-so-fast-fasttree.html</link>
+        <guid isPermaLink="true">https://darlinglab.org/platypusfarm/blog/2015/03/23/not-so-fast-fasttree.html</guid>
         
         
         <category>blog</category>
@@ -255,8 +255,8 @@ The context in which a tool such as this would be used could be better introduce
 
 </description>
         <pubDate>Wed, 07 Jan 2015 18:19:50 +1100</pubDate>
-        <link>https://koadman.github.io/platypusfarm/reviews/2015/01/07/open-peer-review-of-nxrepair.html</link>
-        <guid isPermaLink="true">https://koadman.github.io/platypusfarm/reviews/2015/01/07/open-peer-review-of-nxrepair.html</guid>
+        <link>https://darlinglab.org/platypusfarm/reviews/2015/01/07/open-peer-review-of-nxrepair.html</link>
+        <guid isPermaLink="true">https://darlinglab.org/platypusfarm/reviews/2015/01/07/open-peer-review-of-nxrepair.html</guid>
         
         
         <category>reviews</category>
@@ -281,8 +281,8 @@ The context in which a tool such as this would be used could be better introduce
 
 </description>
         <pubDate>Thu, 20 Nov 2014 18:19:50 +1100</pubDate>
-        <link>https://koadman.github.io/platypusfarm/jekyll/update/2014/11/20/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">https://koadman.github.io/platypusfarm/jekyll/update/2014/11/20/welcome-to-jekyll.html</guid>
+        <link>https://darlinglab.org/platypusfarm/jekyll/update/2014/11/20/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">https://darlinglab.org/platypusfarm/jekyll/update/2014/11/20/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
@@ -310,8 +310,8 @@ Review of bwa mem. Aaron Darling. figshare.&lt;br /&gt;
 &lt;a href=&quot;http://dx.doi.org/10.6084/m9.figshare.714096&quot;&gt;http://dx.doi.org/10.6084/m9.figshare.714096&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 07 Jun 2013 17:19:50 +1000</pubDate>
-        <link>https://koadman.github.io/platypusfarm/reviews/2013/06/07/an-open-peer-review-of-bwa-mem.html</link>
-        <guid isPermaLink="true">https://koadman.github.io/platypusfarm/reviews/2013/06/07/an-open-peer-review-of-bwa-mem.html</guid>
+        <link>https://darlinglab.org/platypusfarm/reviews/2013/06/07/an-open-peer-review-of-bwa-mem.html</link>
+        <guid isPermaLink="true">https://darlinglab.org/platypusfarm/reviews/2013/06/07/an-open-peer-review-of-bwa-mem.html</guid>
         
         
         <category>reviews</category>
