@@ -13,11 +13,11 @@ Unfortunately the 2.4.0 release has a buggy interaction with the boost C++ libra
 
 **Mauve development snapshots**
 
-Windows	| |  [Mauve 2015-02-26](snapshots/2015/2015-02-26/windows/mauve_installer_20150226.exe) | |  [other programs](snapshots/2015/2015-02-26/windows/)
-Linux	| |  [Mauve 2015-02-13](snapshots/2015/2015-02-13/linux-x64/mauve_linux_snapshot_2015-02-13.tar.gz) | |  [other programs](snapshots/2015/2015-02-13/linux-x64/)
-Mac OS X 10.7+ | |  [Mauve 2015-02-25](snapshots/2015/2015-02-25/MacOS/Mauve-snapshot_2015-02-25.dmg) | |  [other programs](snapshots/2015/2015-02-25/MacOS/)
+Windows	| |  [Mauve 2015-02-26](snapshots/2015/2015-02-26/windows/mauve_installer_20150226.exe) | |  [other programs](snapshots/2015/2015-02-26/windows/index.html)
+Linux	| |  [Mauve 2015-02-13](snapshots/2015/2015-02-13/linux-x64/mauve_linux_snapshot_2015-02-13.tar.gz) | |  [other programs](snapshots/2015/2015-02-13/linux-x64/index.html)
+Mac OS X 10.7+ | |  [Mauve 2015-02-25](snapshots/2015/2015-02-25/MacOS/Mauve-snapshot_2015-02-25.dmg) | |  [other programs](snapshots/2015/2015-02-25/MacOS/index.html)
 
-The latest development snapshots may contain recent bugfixes. The complete archive of snapshots is [available here](snapshots/).
+The latest development snapshots may contain recent bugfixes. The complete archive of snapshots is [available here](snapshots/index.html).
 
 
 **Unsupported platforms**
@@ -30,7 +30,7 @@ Mac OS X 10.3.9 | |  [Mauve 2.3.1](downloads/Mauve-OSX10.3-2.3.1.dmg)
 
 **Mauve release archive**
 
-An [archive of earlier Mauve releases](http://darlinglab.org/mauve/downloads/) for all platforms is available
+An [archive of earlier Mauve releases](http://darlinglab.org/mauve/downloads/index.html) for all platforms is available
 
 ### Documentation
 
