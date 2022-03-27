@@ -9,10 +9,10 @@
   <title>Not so fast, FastTree</title>
   <meta name="description" content="important: see update at bottom of page Recently, much of the microbiology world has been sucked into a vortex called genomic epidemiology.This is not entire...">
 
-  <link rel="stylesheet" href="/platypusfarm//css/main.css">
-  <link rel="canonical" href="https://koadman.github.io/platypusfarm//blog/2015/03/23/not-so-fast-fasttree.html">
-  <link rel="alternate" type="application/atom+xml" title="the Darling lab | computational (meta)genomics" href="https://koadman.github.io/platypusfarm//feed.xml" />
-  <link rel="shortcut icon" href="/platypusfarm//site32.jpg" />
+  <link rel="stylesheet" href="/platypusfarm/css/main.css">
+  <link rel="canonical" href="https://koadman.github.io/platypusfarm/blog/2015/03/23/not-so-fast-fasttree.html">
+  <link rel="alternate" type="application/atom+xml" title="the Darling lab | computational (meta)genomics" href="https://koadman.github.io/platypusfarm/feed.xml" />
+  <link rel="shortcut icon" href="/platypusfarm/site32.jpg" />
 </head>
 
 
@@ -22,7 +22,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/platypusfarm//">the Darling lab | computational (meta)genomics</a>
+    <a class="site-title" href="/platypusfarm/">the Darling lab | computational (meta)genomics</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -64,41 +64,41 @@
           
         
           
-          <a class="page-link" href="/platypusfarm//mauve/mauve.html">Mauve</a>
+          <a class="page-link" href="/platypusfarm/mauve/mauve.html">Mauve</a>
           
         
           
         
           
-          <a class="page-link" href="/platypusfarm//openings/">Openings</a>
+          <a class="page-link" href="/platypusfarm/openings/">Openings</a>
           
         
           
         
           
-          <a class="page-link" href="/platypusfarm//people/">People</a>
+          <a class="page-link" href="/platypusfarm/people/">People</a>
           
         
           
         
           
-          <a class="page-link" href="/platypusfarm//projects/">Projects</a>
+          <a class="page-link" href="/platypusfarm/projects/">Projects</a>
           
         
           
-          <a class="page-link" href="/platypusfarm//publications/">Publications</a>
-          
-        
-          
-        
-          
-          <a class="page-link" href="/platypusfarm//reviews/">Reviews</a>
+          <a class="page-link" href="/platypusfarm/publications/">Publications</a>
           
         
           
         
           
-          <a class="page-link" href="/platypusfarm//software/">Software</a>
+          <a class="page-link" href="/platypusfarm/reviews/">Reviews</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/platypusfarm/software/">Software</a>
           
         
           
@@ -106,7 +106,7 @@
           
         
 	<!-- special link for tutorials pages, which are done with MkDocs -->
-        <a class="page-link" href="/platypusfarm//tutorials">Tutorials</a>
+        <a class="page-link" href="/platypusfarm/tutorials">Tutorials</a>
       </div>
     </nav>
 
@@ -148,7 +148,7 @@ After following a simplified genomic epidemiology workflow that carries out <a h
 At my suggestion the student then applied <a href="http://microbesonline.org/fasttree/">the FastTree software</a> to infer a phylogeny of the isolates.
 We used version 2.1.7. Et voilà, 55 seconds later we got a phylogeny(*):</p>
 
-<p><img src="/platypusfarm//assets/data/anonymous-2.1.7.png" alt="A bacterial genome phylogeny inferred with FastTree 2.1.7" /></p>
+<p><img src="/platypusfarm/assets/data/anonymous-2.1.7.png" alt="A bacterial genome phylogeny inferred with FastTree 2.1.7" /></p>
 
 <p>Look at that tree. Just look at it.</p>
 
@@ -159,7 +159,7 @@ If those branch lengths are to be believed, we have quite possibly discovered a 
 
 <p>Let’s dig a little deeper. What if we change the substitution model, does the tree change? What if we change the inference algorithm? We had RAxML handy so we gave that a go, and got the following tree:</p>
 
-<p><img src="/platypusfarm//assets/data/anonymous-RAxML.png" alt="A phylogeny inferred with RAxML on the same alignment" /></p>
+<p><img src="/platypusfarm/assets/data/anonymous-RAxML.png" alt="A phylogeny inferred with RAxML on the same alignment" /></p>
 
 <p>Hmmm.</p>
 
@@ -222,7 +222,7 @@ And there it was. The answer. It turns out FastTree by default uses single preci
 
 <p>Let’s see how our tree looks after making these changes:</p>
 
-<p><img src="/platypusfarm//assets/data/anonymous_2.1.7_precise.png" alt="A phylogeny inferred with double precision FastTree on the same alignment" /></p>
+<p><img src="/platypusfarm/assets/data/anonymous_2.1.7_precise.png" alt="A phylogeny inferred with double precision FastTree on the same alignment" /></p>
 
 <p>Now that looks better! And a comparison of the cophenetic matrix to the raw distances looks good too.
 Another way to check whether we’ve improved model fit is to run FastTree with the -gamma option, so that the log likelihoods reported can be compared across two different runs. If we do this with the vanilla FastTree-2.1.7 it reports <code class="language-plaintext highlighter-rouge">Gamma(20) LogLk = -40634.725</code>. Running the same analysis with the modified double-precision FastTree yields <code class="language-plaintext highlighter-rouge">Gamma(20) LogLk = -40182.654</code>. In other words, the tree inferred by the double precision version is about <code class="language-plaintext highlighter-rouge">e^452</code> times more likely to have generated the observed data. That’s no small improvement in model fit. Interestingly, the double-precision build actually runs faster than the single precision build on this dataset and on my laptop, so it seems the sacrifice of precision didn’t even buy us a speedup.</p>
@@ -308,7 +308,7 @@ like this one, as FastTree does not account for recombination or gene conversion
 </p>
       </div>
     </div>
-    <img alt="tree of bacterial and archaeal life, showing human gut lineages in blue" src="/platypusfarm//assets/tree.png">
+    <img alt="tree of bacterial and archaeal life, showing human gut lineages in blue" src="/platypusfarm/assets/tree.png">
 
   </div>
 </footer>

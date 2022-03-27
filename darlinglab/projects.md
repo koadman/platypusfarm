@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-Our group has several ongoing research projects that roughly fall into the following themes.
+Prior to being disbanded in 2021, the group had several research projects that roughly fall into the following themes.
 
 
 - <h4>Algorithms for metagenome analysis</h4> Our work in this space includes the development of new analysis methods as well as contributing to community-driven efforts to evaluate the performance of publicly available metagenome data analysis methods. Examples of our work in this space include:

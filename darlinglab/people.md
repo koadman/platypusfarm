@@ -7,38 +7,44 @@ permalink: /people/
 ![Our research group in Feb 2019](../assets/group_photo_2019_scaled.jpg)
 Our group during a coastal research retreat in February 2019.
 
-### Current members
+The group was disbanded in 2021. Everyone listed here was once a part of the group.
+
+### Members as of 2021
 
 **Aaron Darling** -- Group Leader<br/>
 [University of Technology Sydney, Building 4](http://goo.gl/maps/wyLKP), Level 7<br/>
 email: aaron.darling (_at_) uts.edu.au<br/>
 twitter: [@koadman](http://twitter.com/koadman) | [google scholar](http://scholar.google.com/citations?user=TE8_LDwAAAAJ&hl=en&oi=ao) | [UTS staff profile](http://www.uts.edu.au/staff/aaron.darling)
 
-**Daniela Gaio** -- Ph.D. student, metagenomics of probiotic and antibiotic treatments in a model system<br/>
+**Dr. Daniela Gaio** -- Ph.D. student -> Postdoc, metagenomics of probiotic and antibiotic treatments in a model system<br/>
 
 **Sidaswar (Sid) Krishnan** -- Ph.D. student, recombination and gene flow in microbial communities<br/>
-Cosupervised by [Dr. Matt DeMaere](https://scholar.google.com.au/citations?user=hQTEUsIAAAAJ&hl=en&oi=ao) and [A/Prof. Dominik Beck](https://www.uts.edu.au/staff/dominik.beck)
+Cosupervised by [Dr. Matt DeMaere](https://scholar.google.com.au/citations?user=hQTEUsIAAAAJ&hl=en&oi=ao), [A/Prof. Dominik Beck](https://www.uts.edu.au/staff/dominik.beck), and [Prof. Justin Seymour](https://www.uts.edu.au/staff/justin.seymour)
 
-**Frederick Jaya** -- Masters student, bioinformatic analysis of recombination<br/>
+**Frederick Jaya** -- Completed a Masters Research degree on bioinformatic analysis of recombination. Went on to become research staff at the University of Sydney.<br/>
 
 **Nehleh Kargarfard** -- Ph.D. student, scalable inference of recombination from bacterial phylogenies<br/>
 Cosupervised by [Dr. Mathieu Fourment](https://www.uts.edu.au/staff/mathieu.fourment)
 
 **Dr. Matt Z. DeMaere** -- Postdoctoral Research Associate, computational metagenomics and Hi-C data analysis<br/>
+Went on to become the institute bioinformatics lead at the UTS C3 institute.<br/>
 [google scholar](http://scholar.google.com.au/citations?user=hQTEUsIAAAAJ&hl=en&oi=ao) | [github](https://github.com/cerebis) | [twitter](https://twitter.com/cerebis1)
 
 **Dr. Kay Anantanawat** -- High-throughput DNA sequencing facility manager<br/>
+Went on to a continuing staff role at Illumina Australia Pty Ltd<br/>
 [UTS profile](https://www.uts.edu.au/staff/kay.anantanawat)
 
 **Dr. Leigh Monahan** -- Postdoctoral Research Associate, long-read sequencing technologies<br/>
+Went on to a continuing staff role at Illumina Australia Pty Ltd<br/>
 [UTS staff profile](http://www.uts.edu.au/staff/leigh.monahan)
 
 **Dr. Barbara Brito-Rodriguez** -- Chancellor's postdoctoral fellow, joint with NSW Dept. of Primary Industries<br/>
+Went on to a staff role at the NSW Department of Primary Industries<br/>
 [UTS staff profile](https://www.uts.edu.au/staff/barbara.britorodriguez)
 
 **Dr. Johanna Wong** -- Postdoctoral Fellow, bioinformatics for the [OUTBREAK project](https://outbreakproject.com.au/)<br/>
+Went on to a staff role at the NSW Department of Primary Industries<br/>
 [UTS staff profile](https://www.uts.edu.au/staff/johanna.wong) | [twitter: @johannawhwong](https://twitter.com/johannawhwong)
-
 
 
 ### Lab Alumni
@@ -46,11 +52,11 @@ Cosupervised by [Dr. Mathieu Fourment](https://www.uts.edu.au/staff/mathieu.four
 
 **Kevin Ying** -- Binfie, long-read sequencing technologies<br/>
 [github](https://github.com/kevyin)<br/>
-Went on to [Longas Technologies Pty Ltd](https://longastech.com)
+Went on to a continuing staff role at Illumina Australia Pty Ltd
 
 **Dr. Michael Imelfort** -- Binfie, long-read sequencing technologies<br/>
 [google scholar](https://scholar.google.com.au/citations?user=Ya40TnAAAAAJ&hl=en&oi=ao) | [github](https://github.com/minillinim) | [twitter](https://twitter.com/minillinim)<br/>
-Went on to [Longas Technologies Pty Ltd](https://longastech.com)
+Went on to Longas Technologies Pty Ltd
 
 **Dr. Mathieu Fourment** -- Postdoctoral Research Associate, phylogenetics<br/>
 [google scholar](https://scholar.google.com.au/citations?user=dUOgPoYAAAAJ&hl=en&oi=ao) | [github](https://github.com/4ment)<br/>

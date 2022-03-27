@@ -4,9 +4,9 @@ title: Software
 permalink: /software/
 ---
 
-### Current software projects
+### Past software projects
 
-Our group is currently involved in the following software development projects
+Darling lab members have contributed to the following software projects in the past but are no longer actively participating in these projects.
 
 [**Mauve** - multiple genome alignment](http://darlinglab.org/mauve/mauve.html)<br/>
 Mauve is a software tool to compute whole genome multiple alignments among bacteria and small eukaryotic genomes (usually no bigger than Drosophila). The software includes a Java-based visualization module and a set of alignment programs written in C++, available for Linux, Mac, and Windows. Source code is currently available on [sourceforge.net](http://sf.net/p/mauve).
@@ -19,10 +19,6 @@ A5-miseq is an updated software pipeline for de novo assembly of microbial isola
 
 [**The beagle library** - a library for phylogenetic likelihood calculation on the CPU and GPU](https://github.com/beagle-dev/beagle-lib)<br/>
 libhmsbeagle, also known as the beagle library, is a software development library for calculating phylogenetic likelihoods using a variety of compute hardware types. Currently supported hardware types and features include graphics processing units (GPUs) via CUDA and OpenCL, standard CPUs using SSE for fine-scale parallelism and OpenMP for coarse parallelism, and others. The library works on Linux, Mac, and Windows. Further development on this software is being led by [Daniel Ayres].
-
-###Past software projects
-
-Darling lab members have contributed to the following software projects in the past but are no longer actively participating in these projects.
 
 
 [**STS** - the Sequential Tree Sampler](https://github.com/OnlinePhylo/sts)<br/>
