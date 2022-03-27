@@ -1,0 +1,217 @@
+
+/***************************************************************************
+ * Inversion movie maker
+ * (c) 2007-2008 Aaron Darling, free, open-source, licensed under the GPL
+ * warning: this code has not been engineered for prettiness or ease of use
+ * instructions: replace the code in the initData() function and the my_bug array 
+ * with your own values. optionally specify a name for a video file.  
+ * when the program is running, space bar can play/pause
+ ***************************************************************************/
+
+import processing.opengl.*;
+import surface.*;
+import processing.core.PGraphics;
+import processing.video.*;
+
+int[][] my_bug = {{233,352},{41,592},{29,577},{5,540}};
+void initData()
+{
+  ter_segment = 284;
+  organism_name = "Yersinia pestis Nepal516";
+  //movieFilename = "Fig_S5_YpNepal516.mpg";
+  inv_array = my_bug;
+}
+
+
+MovieMaker mm;  // Declare MovieMaker object
+
+Torus s;
+int segments = 600;
+int sides = 6;
+float speed = 6;
+int sizer = 700;
+float scaler = 80;
+int inv_time = 180;
+PFont it_font; 
+boolean play = false;
+String movieFilename = null;  // set to null to avoid recording a movie
+
+int ori_color = 0;
+int ter_color = 0xFFFF22AA;
+
+int ter_segment = 300;
+String organism_name = "Unknown superbug";
+int[][] inv_array = {{233,352},{41,592},{29,577},{5,540}};
+
+
+void initColors()
+{
+  int lendo = segments;
+  int[] hcols = new int[lendo];
+  
+  for( int i = 0; i < ter_segment; i++ )
+  {
+    int r = ( (int)((i*256) / ter_segment) << 16 );
+//    int g = ( (int)((i*256) / ter_segment) << 8 );
+    int g = 0xFF00;
+    int b = ( (int)((i*256) / ter_segment) );
+    hcols[i] = 0xFF000000 + r + g + b;
+  }
+  int c = 0;
+  for( int i = lendo-1; i >= ter_segment; i-- )
+  {
+    int r = ( (int)((c*256) / (lendo-ter_segment)) << 16 );
+    int g = ( (int)((c*256) / (lendo-ter_segment)) << 8 );
+    int b = 0;
+//    int b = ( (int)((c*256) / ter_segment) );
+    hcols[i] = 0xFF0000FF + r + g + b;
+    c++;
+  }
+  hcols[lendo-1] = ori_color;
+  hcols[0] = ori_color;
+  hcols[ter_segment-1] = ter_color;
+  hcols[ter_segment] = ter_color;
+  s.initVerticalColors(hcols);
+}
+
+void setup(){
+  size(sizer,sizer,OPENGL);
+  s=new Torus(g, segments, sides, 3f, .15f);
+  initData();
+  initColors();
+  it_font = loadFont("Arial-ItalicMT-32.vlw");
+  textFont(it_font); 
+  textAlign(CENTER);
+
+  if(movieFilename != null )
+  {
+    // Create MovieMaker object with size, filename,
+    // compression codec and quality, framerate
+    mm = new MovieMaker(this, width, height, movieFilename,
+                       30, MovieMaker.ANIMATION, MovieMaker.HIGH);
+    play = true;
+    speed=4;
+  }
+   
+}
+
+void colorSwap(Torus s, int lend, int rend)
+{
+      int[][] prev_colors = s.colors();      
+      int rev_total = (rend-lend)/2;
+      for(int i = 0; i < rev_total; i++)
+      {
+        for( int j = 0; j < prev_colors[0].length; j++ )
+        {
+          int[] plus_array = prev_colors[lend + i];
+          int[] minus_array = prev_colors[rend - i];
+          int tmp = plus_array[j];
+          plus_array[j] = minus_array[j];
+          minus_array[j] = tmp;
+        }
+      }
+      s.initColors(prev_colors);
+}
+
+int prev_inv = 0;
+int frameBase = 0;
+
+void draw(){
+  background(255);
+  lights();
+  
+  translate(sizer/2,sizer/2);
+  s.setScale(scaler);
+  noStroke();
+
+  fill( color(0xFFCC4444) );
+  text(organism_name, 0, 0, 0); 
+
+  fill( color(ori_color) );
+  text("origin", 0, -sizer/2.5925925925, 0); 
+  fill( color(ter_color) );
+  text("terminus", 0, sizer/2.33333, 0); 
+
+  pushMatrix();
+  rotateZ(-HALF_PI);
+
+  // are we playing?  or are we paused?
+  if(!play)
+  {
+    s.draw();
+    popMatrix();
+    return;
+  }
+
+  // which inversion are we drawing?
+  int ticker = (int)((float)(frameCount-frameBase)*speed);
+  int inv_index = ticker / inv_time;
+
+  // if we switched to drawing a new inversion, then update the colors
+  if(inv_index != prev_inv)
+  {
+    if(prev_inv >= 0 && prev_inv < inv_array.length)
+        colorSwap(s,inv_array[prev_inv][0],inv_array[prev_inv][1]);
+    prev_inv = inv_index;
+  }
+  
+  if(inv_index >= inv_array.length)
+  {
+    s.draw();
+    popMatrix();
+    if(movieFilename != null)
+    {
+      mm.addFrame();
+      mm.finish();  // done making inversions
+    }
+    return;
+  }
+
+  int inv_start = inv_array[inv_index][0];
+  int inv_end = inv_array[inv_index][1];
+
+  // draw the stationary segment
+  s.drawPart(0,inv_start,0,sides);
+  s.drawPart(inv_end,segments,0,sides);
+  
+  // draw the inverting segment
+  float inv_middle = ((float)(inv_end + inv_start))/2f;
+  float rotZ = inv_middle * (TWO_PI / (float)segments) - HALF_PI;
+  pushMatrix();
+  float flop = (ticker % 360 > 180) ? 1 : -1;
+  int tranz = ticker % 180;
+  tranz = tranz > 90 ? 180 - tranz : tranz;
+  translate(0,0,(sizer/9.333)*flop*radians(tranz));
+  rotateZ(rotZ);
+  pushMatrix();
+  rotateY(radians(ticker % 180));
+  pushMatrix();
+  rotateZ(-rotZ);
+  s.drawPart(inv_start,inv_end,0,sides);
+  popMatrix();
+  popMatrix();
+  popMatrix();
+  popMatrix();
+  if(movieFilename != null)
+  {
+    mm.addFrame();  // Add window's pixels to movie
+  }
+}
+
+void keyPressed() {
+  if (key == ' ') {
+    if(!play)
+    {
+      play = true;    
+      frameBase = frameCount;    
+      initColors();
+    }else
+    {
+      play = false;
+    }
+  }
+  if (key == 'r') {
+    frameBase = frameCount;    
+    initColors();
+  }
+}

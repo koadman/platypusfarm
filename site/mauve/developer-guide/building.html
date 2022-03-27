@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>the Darling lab | computational (meta)genomics</title>
+  <meta name="description" content="The Darling lab at the University of Technology Sydney. We develop computational and molecular techniques to characterize the hidden world of microbes.
+">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://darlinglab.org/mauve/developer-guide/building.html">
+  <link rel="alternate" type="application/atom+xml" title="the Darling lab | computational (meta)genomics" href="http://darlinglab.org/feed.xml" />
+  <link rel="shortcut icon" href="/site32.jpg" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">the Darling lab | computational (meta)genomics</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/mauve/mauve.html">Mauve</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/openings/">Openings</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/people/">People</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/projects/">Projects</a>
+          
+        
+          
+          <a class="page-link" href="/publications/">Publications</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/reviews/">Reviews</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/software/">Software</a>
+          
+        
+          
+        
+          
+        
+	<!-- special link for tutorials pages, which are done with MkDocs -->
+        <a class="page-link" href="/tutorials">Tutorials</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <head>
+  <link rel="shortcut icon" href="/mauve/favicon.ico" />
+</head>
+
+
+
+
+  <table>
+  <tr>
+  <td width="175" valign="top">
+  
+<h4 id="download-mauve"><a href="/mauve/download.html"><strong>Download Mauve</strong></a></h4>
+
+<h4 id="user-guide"><strong>User Guide:</strong></h4>
+<ul>
+  <li><a href="/mauve/user-guide/introduction.html">Introduction</a></li>
+  <li><a href="/mauve/user-guide/installing.html">Installing</a></li>
+  <li><a href="/mauve/user-guide/aligning.html">Aligning genomes</a></li>
+  <li><a href="/mauve/user-guide/viewer.html">The viewer</a></li>
+  <li><a href="/mauve/user-guide/files.html">File formats</a></li>
+  <li><a href="/mauve/user-guide/reordering.html">Reordering contigs</a></li>
+  <li><a href="/mauve/user-guide/mauvealigner.html">mauveAligner</a></li>
+  <li><a href="/mauve/user-guide/progressivemauve.html">progressiveMauve</a></li>
+  <li><a href="/mauve/user-guide/versions.html">Version history</a></li>
+  <li><a href="/mauve/user-guide/screenshots.html">Screenshots</a></li>
+</ul>
+
+<h4 id="developer-guide"><strong>Developer Guide:</strong></h4>
+<ul>
+  <li><a href="/mauve/developer-guide/overview.html">Overview</a></li>
+  <li><a href="/mauve/developer-guide/building.html">Building from source</a></li>
+  <li><a href="/mauve/developer-guide/developing-the-gui.html">Developing the GUI</a></li>
+  <li><a href="/mauve/developer-guide/building-on-windows.html">Windows builds</a></li>
+  <li><a href="/mauve/developer-guide/building-on-mac.html">Mac builds</a></li>
+  <li><a href="/mauve/developer-guide/deploying-mauve-releases.html">Deploying Mauve</a></li>
+  <li><a href="/mauve/developer-guide/benchmarking.html">Benchmarking</a></li>
+</ul>
+
+
+  </td>
+  <td valign="top">  
+
+
+<div class="post">
+
+  <article class="post-content">
+    <h3 id="compiling-mauvealigner-from-source-on-linux">Compiling mauveAligner from source on Linux</h3>
+
+<p>Although Mauve is provided as a pre-compiled binary for Windows, Linux, and Mac OS X, we also make the source code available so that users can modify Mauve and compile it on other platforms. This chapter describes the procedure for compiling the command-line mauveAligner and progressiveMauve tools from source code on a unix system. Project files for Microsoft Visual studio are included to compile Mauve in a Windows environment.</p>
+
+<h4 id="brief-instructions-for-the-lazy">Brief instructions for the lazy</h4>
+
+<ol>
+  <li>Ensure that all prerequisites are installed (step 0 below)</li>
+  <li><code class="language-plaintext highlighter-rouge">svn co https://svn.code.sf.net/p/mauve/code/build_scripts</code></li>
+  <li><code class="language-plaintext highlighter-rouge">cd build_scripts</code></li>
+  <li><code class="language-plaintext highlighter-rouge">./build_linux_x64.sh</code></li>
+</ol>
+
+<p>The resulting GUI build will be located in
+<code class="language-plaintext highlighter-rouge">build/mauve/dist/</code></p>
+
+<h4 id="0-prerequisites">0. Prerequisites</h4>
+
+<p>The following command will install all prerequisites on debian and ubuntu:</p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo apt-get update ; sudo apt-get install g++ make pkg-config subversion libtool autoconf libbz2-dev libz-dev subversion bzip2 ant openjdk-7-jdk</code></p>
+
+<h4 id="1-obtain-mauve-source-code">1. Obtain Mauve source code</h4>
+
+<p>The command-line aligner tools are contained in a source package called “mauveAligner”. mauveAligner depends on several additional software packages. 
+Each of these packages must be downloaded and installed in order to compile mauveAligner successfully.  The easiest way to obtain the code is to check it out directly from the sourceforge subversion repository, especially if the code will be modified and changes will be committed back to the repository.  To do so, execute the following series of commands inside a development directory:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>svn co svn://svn.code.sf.net/p/mauve/code/libGenome/trunk libGenome
+svn co svn://svn.code.sf.net/p/mauve/code/libMems/trunk libMems
+svn co svn://svn.code.sf.net/p/mauve/code/muscle/trunk muscle
+svn co svn://svn.code.sf.net/p/mauve/code/sgEvolver/trunk sgEvolver
+svn co svn://svn.code.sf.net/p/mauve/code/mauveAligner/trunk mauveAligner
+svn co svn://svn.code.sf.net/p/mauve/code/mauve/trunk mauve
+</code></pre></div></div>
+
+<p>The developers make no guarantee that the latest source code will compile or otherwise work.</p>
+
+<h4 id="1-installing-boost">1. Installing Boost</h4>
+
+<p>Boost may be installed as a package on Linux systems using apt-get or yum, or from source on Windows and Mac OS X. We recommend building boost from source on all platforms.  To do so it is necessary to ensure zlib-devel and bzip2-devel packages are already installed. A default build of the boost source may be done using the commands:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./bootstrap.sh --prefix=$HOME --with-libraries=filesystem,iostreams,program_options,system
+./b2 -a -j4 link=static install
+</code></pre></div></div>
+
+<h4 id="2-installing-libgenome">2. Installing libGenome</h4>
+
+<p>Once downloaded and untarred, libGenome can be compiled and installed using the following commands from within the libGenome directory:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./configure --prefix=$HOME
+make
+make install
+</code></pre></div></div>
+
+<p>libGenome is installed by default in the /usr/local directory. The –prefix argument to ./configure is optional and specifies the location where libGenome gets installed.</p>
+
+<h4 id="3-installing-muscle">3. Installing muscle</h4>
+
+<p>The installation procedure for the muscle library is similar to that for libGenome. From the software package’s directory, execute the following commands:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./configure --prefix=$HOME
+make
+make install
+</code></pre></div></div>
+
+<p>An error usually occurs after running the ‘make’ command.  It is safe to ignore and simply continue with ‘make install’.  Again, the –prefix is an optional argument to ./configure which specifies the location where the library gets installed.</p>
+
+<h4 id="4-installing-libmems">4. Installing libMems</h4>
+
+<p>Since libMems depends on the functionality provided by libGenome, muscle, and boost these packages must be installed before libMems. Also, libMems requires the pkg-config software to determine the location of libGenome and muscle during the installation process. From the libMems directory, execute the following commands:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./configure --prefix=$HOME --with-boost=/path/to/boost
+make
+make install
+</code></pre></div></div>
+
+<p>Here <code class="language-plaintext highlighter-rouge">/path/to/boost</code> must be replaced with the location of your boost installation. If you’ve got a systemwide installation this might be <code class="language-plaintext highlighter-rouge">/usr/</code>. If boost was installed to your home directory it might be <code class="language-plaintext highlighter-rouge">$HOME</code>. Also, if muscle or libGenome were installed to a non-standard directory, the directory may need to be added to the PKG_CONFIG_PATH environment variable. For example, if libGenome were installed in the prefix $HOME, the PKG_CONFIG_PATH variable could be set with this command: <code class="language-plaintext highlighter-rouge">export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:$HOME/lib/pkgconfig"</code> It’s a good idea to add PKG_CONFIG_PATH to the .profile or .bashrc or another login script so it doesn’t need to be set manually every time the user logs in. As with the other packages, the installation prefix can be specified using the –prefix argument.</p>
+
+<h4 id="5-compiling-mauvealigner">5. Compiling mauveAligner</h4>
+
+<p>Once libGenome, muscle, and libMems are installed, the aligner software can be compiled. From the mauveAligner directory, issue the following commands:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./configure
+make
+make install
+</code></pre></div></div>
+
+<p>In addition to mauveAligner and progressiveMauve, several supporting applications will be compileld. We do not have explicit documentation for them. Many of them are self-explanatory and give their usage instructions when run without arguments.</p>
+
+<p>The statically linked version of mauveAligner is called mauveStatic. It includes the necessary part of the support libraries directly in the program and can be used on other systems without first installing the support libraries. Note that Mac OS X doesn’t support static linking and any applications built on OS X will be dynamically linked.</p>
+
+<h4 id="compiling-from-a-source-snapshot">Compiling from a source snapshot</h4>
+
+<p>The development code in the source code repositories do not have a complete build system. In order to build these, the build system must be regenerated using a recent version of the autotools software. To prepare the source for a build, execute the following command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./autogen.sh
+</code></pre></div></div>
+
+<p>You will need GNU autotools installed, including autoconf, automake, and libtool. The source directory will now be ready for a build with the usual configure, make, make install procedure.</p>
+
+<h4 id="a-complete-example">A complete example</h4>
+
+<p>The following series of commands will build all libraries and source code from the latest source snapshots on an x86 Linux system, installing software to the user’s home directory:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># create essential directories if they don't exist
+mkdir -p ~/bin
+mkdir -p ~/lib
+export PATH="$HOME/bin:$PATH"
+export LD_LIBRARY_PATH="$HOME/lib:$LD_LIBRARY_PATH"
+
+# make a build directory
+mkdir build
+cd build
+
+# download the source
+svn co svn://svn.code.sf.net/p/mauve/code/libGenome/trunk libGenome
+svn co svn://svn.code.sf.net/p/mauve/code/libMems/trunk libMems
+svn co svn://svn.code.sf.net/p/mauve/code/muscle/trunk muscle
+svn co svn://svn.code.sf.net/p/mauve/code/sgEvolver/trunk sgEvolver
+svn co svn://svn.code.sf.net/p/mauve/code/mauveAligner/trunk mauveAligner
+svn co svn://svn.code.sf.net/p/mauve/code/mauve/trunk mauve
+
+# build pkg-config
+curl -OL http://pkgconfig.freedesktop.org/releases/pkg-config-0.28.tar.gz
+tar -xzf pkg-config-0.28.tar.gz
+cd pkg-config-0.28
+./configure --with-internal-glib  --prefix=$HOME &amp;&amp; make &amp;&amp; make install
+export PKG_CONFIG_PATH="$HOME/lib/pkgconfig"
+cd ..
+
+# build boost
+curl -OL http://downloads.sourceforge.net/project/boost/boost/1.57.0/boost_1_57_0.tar.bz2
+tar -xjf boost_1_57_0.tar.bz2
+cd boost_1_57_0
+./bootstrap.sh --prefix=$HOME --with-libraries=filesystem,iostreams,program_options,system
+./b2 -a -j4 link=static install
+cd ..
+
+# build libraries
+cd libGenome
+./autogen.sh
+./configure --prefix=$HOME &amp;&amp; make install
+cd ..
+
+cd muscle
+./autogen.sh
+./configure --prefix=$HOME &amp;&amp; make ; make ; make install
+cd ..
+
+cd libMems
+./autogen.sh
+./configure --prefix=$HOME --with-boost=$HOME &amp;&amp; make install
+cd ..
+
+cd mauveAligner
+./autogen.sh
+./configure --prefix=$HOME &amp;&amp; make install
+cd ..
+
+cd sgEvolver
+./autogen.sh
+./configure --prefix=$HOME &amp;&amp; make install
+cd ..
+</code></pre></div></div>
+
+<p>If you will be building the source more than once, or especially if you will be editing and recompiling the source, it will be desirable to have <code class="language-plaintext highlighter-rouge">PATH</code>, <code class="language-plaintext highlighter-rouge">LD_LIBRARY_PATH</code>, and <code class="language-plaintext highlighter-rouge">PKG_CONFIG_PATH</code> set automatically on login. Edit one of <code class="language-plaintext highlighter-rouge">$HOME/.profile</code> or <code class="language-plaintext highlighter-rouge">$HOME/.bashrc</code> or <code class="language-plaintext highlighter-rouge">$HOME/.profile.local</code> to set the environment variables.</p>
+
+<p>To build the GUI, execute the following additional commands:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cp mauveAligner/src/mauveStatic mauve/linux-x86/mauveAligner
+cp mauveAligner/src/progressiveMauveStatic mauve/linux-x86/progressiveMauve
+cd mauve
+ant dist
+</code></pre></div></div>
+
+<p>The Mauve GUI build will reside in <code class="language-plaintext highlighter-rouge">mauve/dist/</code></p>
+
+  </article>
+
+</div>
+
+
+  </td>
+  </table>
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>the Darling lab | computational (meta)genomics</li>
+          <li><a href="mailto:aaron.darling@uts.edu.au">aaron.darling@uts.edu.au</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/koadman">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">koadman</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/koadman">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">koadman</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">The Darling lab at the University of Technology Sydney. We develop computational and molecular techniques to characterize the hidden world of microbes.
+</p>
+      </div>
+    </div>
+    <img alt="tree of bacterial and archaeal life, showing human gut lineages in blue" src="/assets/tree.png">
+
+  </div>
+</footer>
+
+
+  </body>
+
+</html>

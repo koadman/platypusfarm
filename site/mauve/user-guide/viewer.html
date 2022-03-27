@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>the Darling lab | computational (meta)genomics</title>
+  <meta name="description" content="The Darling lab at the University of Technology Sydney. We develop computational and molecular techniques to characterize the hidden world of microbes.
+">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://darlinglab.org/mauve/user-guide/viewer.html">
+  <link rel="alternate" type="application/atom+xml" title="the Darling lab | computational (meta)genomics" href="http://darlinglab.org/feed.xml" />
+  <link rel="shortcut icon" href="/site32.jpg" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">the Darling lab | computational (meta)genomics</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/mauve/mauve.html">Mauve</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/openings/">Openings</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/people/">People</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/projects/">Projects</a>
+          
+        
+          
+          <a class="page-link" href="/publications/">Publications</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/reviews/">Reviews</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/software/">Software</a>
+          
+        
+          
+        
+          
+        
+          
+        
+	<!-- special link for tutorials pages, which are done with MkDocs -->
+        <a class="page-link" href="/tutorials">Tutorials</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <head>
+  <link rel="shortcut icon" href="/mauve/favicon.ico" />
+</head>
+
+
+
+
+  <table>
+  <tr>
+  <td width="175" valign="top">
+  
+<h4 id="download-mauve"><a href="/mauve/download.html"><strong>Download Mauve</strong></a></h4>
+
+<h4 id="user-guide"><strong>User Guide:</strong></h4>
+<ul>
+  <li><a href="/mauve/user-guide/introduction.html">Introduction</a></li>
+  <li><a href="/mauve/user-guide/installing.html">Installing</a></li>
+  <li><a href="/mauve/user-guide/aligning.html">Aligning genomes</a></li>
+  <li><a href="/mauve/user-guide/viewer.html">The viewer</a></li>
+  <li><a href="/mauve/user-guide/files.html">File formats</a></li>
+  <li><a href="/mauve/user-guide/reordering.html">Reordering contigs</a></li>
+  <li><a href="/mauve/user-guide/mauvealigner.html">mauveAligner</a></li>
+  <li><a href="/mauve/user-guide/progressivemauve.html">progressiveMauve</a></li>
+  <li><a href="/mauve/user-guide/versions.html">Version history</a></li>
+  <li><a href="/mauve/user-guide/screenshots.html">Screenshots</a></li>
+</ul>
+
+<h4 id="developer-guide"><strong>Developer Guide:</strong></h4>
+<ul>
+  <li><a href="/mauve/developer-guide/overview.html">Overview</a></li>
+  <li><a href="/mauve/developer-guide/building.html">Building from source</a></li>
+  <li><a href="/mauve/developer-guide/developing-the-gui.html">Developing the GUI</a></li>
+  <li><a href="/mauve/developer-guide/building-on-windows.html">Windows builds</a></li>
+  <li><a href="/mauve/developer-guide/building-on-mac.html">Mac builds</a></li>
+  <li><a href="/mauve/developer-guide/deploying-mauve-releases.html">Deploying Mauve</a></li>
+  <li><a href="/mauve/developer-guide/benchmarking.html">Benchmarking</a></li>
+</ul>
+
+
+  </td>
+  <td valign="top">  
+
+
+<div class="post">
+
+  <article class="post-content">
+    <h3 id="the-display-layout">The display layout</h3>
+
+<p>The alignment display is organized into one horizontal “panel” per input genome sequence. Each genome’s panel contains the name of the genome sequence, a scale showing the sequence coordinates for that genome, and a single black horizontal center line. Colored block outlines appear above and possibly below the center line. Each of these block outlines surrounds a region of the genome sequence that aligned to part of another genome, and is presumably homologous and internally free from genomic rearrangement. When a block lies above the center line the aligned region is in the forward orientation relative to the first genome sequence. Blocks below the center line indicate regions that align in the reverse complement (inverse) orientation. Regions outside blocks lack detectable homology among the input genomes.  Inside each block Mauve draws a similarity profile of the genome sequence. The height of the similarity profile corresponds to the average level of conservation in that region of the genome sequence. Areas that are completely white were not aligned and probably contain sequence elements specific to a particular genome. The height of the similarity profile is calculated to be inversely proportional to the average alignment column entropy over a region of the alignment.</p>
+
+<p><img src="threeway_example.png" alt="Mauve displaying an E. coli and two Shigella genomes" /></p>
+
+<p>Figure 1 (above) shows an alignment of <em>E. coli</em> K12 MG1655, <em>S. flexneri</em> 2a 301, and <em>S. flexneri</em> 2457T. Notice how inverted regions in the <em>S. flexneri</em> are clearly depicted as blocks below a genome’s center line.  These three genomes were taken from the NCBI FTP site and aligned with Progressive Mauve using default parameters, as described in the previous section.</p>
+
+<p>In Figure 1, colored blocks in the first genome are connected by lines to similarly colored blocks in the second and third genomes. These lines indicate which regions in each genome are homologous. Notice the crossing “X” pattern of lines, which happen to occur in the vicinity of the predicted origin and terminus of replication in these organisms.  When viewing genomes with complex rearrangements, the LCB connecting lines can be confusing and they can be hidden (or made visible again) by typing <strong>Shift+L</strong> (pressing shift and L simultaneously) or using the “View” menu.</p>
+
+<p>In the standard color scheme, the region of sequence covered by a colored block is entirely collinear and homologous among the genomes. The boundaries of colored blocks usually indicate the breakpoints of genome rearrangement, unless sequence has been gained or lost in the breakpoint region.</p>
+
+<h4 id="the-backbone-color-scheme">The Backbone color scheme</h4>
+
+<p>When an alignment has been computed with Progressive Mauve,  a display mode is available that colors regions conserved among all genomes differently than regions conserved among subsets of the genomes.  We term regions conserved among all genomes as “backbone,” which are drawn in mauve color.  Applying the color mode to the alignment of three <em>E. coli</em> and <em>Shigella</em>, and disabling LCB outlines in the “View-&gt;Style” menu yields:</p>
+
+<p><img src="threeway_backbone.png" alt="Backbone color view of three _E. coli_ and Shigella genomes" /></p>
+
+<p>Figure 2 (above) shows the same alignment of <em>E. coli</em> K12 MG1655, <em>S. flexneri</em> 2a 301, and <em>S. flexneri</em> 2457T, but displayed with different style settings. Parts of the similarity plot which are colored mauve are conserved among all three genomes, while portions colored green are segments conserved only among the <em>Shigella flexneri</em>.  Segments conserved among <em>E. coli</em> and <em>S. flexneri</em> 2457T are colored brown, but are too small to notice in a whole-genome view (see below).  The black box follows the mouse cursor and highlights the homologous site in each genome.  Clicking the similarity plot will line up orthologous regions</p>
+
+<h4 id="zooming-in-on-annotated-features">Zooming in on Annotated Features</h4>
+
+<p>If the aligned genome sequences were in GenBank files containing annotated features Mauve will display the annotated features next to the sequence similarity profiles. For efficiency reasons, annotated features appear only when less than 1Mbp of sequence is being displayed.  To zoom in on the alignment, either use the magnifying glass buttons from the toolbar, or use the keyboard shortcuts <strong>Ctrl+Up</strong> to zoom in (press Control and up arrow key simultaneously) and <strong>Ctrl+Down</strong> to zoom out. On Mac OS X, all of these shortcuts use the <strong>Command</strong> key instead, so zooming in is <strong>Command+Up</strong> etc.  Once viewing less than 1Mbp of sequence, annotated CDS features show up as white boxes, tRNAs are green, rRNAs are red, and misc_RNA features are blue. Mauve displays the /product qualifier when the mouse cursor is held over a feature. When a feature is clicked, Mauve shows a detailed listing of feature qualifiers in a popup window, in addition to a menu that links to the NCBI Entrez protein entry corresponding to the gene.</p>
+
+<p><img src="threeway_variable.png" alt="A multidrug efflux protein missing from one Shigella isolate" /></p>
+
+<p>Figure 3 (above) shows the same alignment zoomed in on a region 3.85Mbp into the <em>E. coli</em> K12 genome where the gene emrD is encoded.  Annotated genes are shown as white boxes, with genes transcribed from the reverse strand shifted downward.  The mouse cursor (shown as a black line) is hovering over the emrD CDS in <em>E. coli</em> K12.  The similarity plot for the N-terminal end of the gene and the upstream region is colored brown, indicating that the segment of DNA is missing from the <em>S. flexneri</em> 2a 301 isolate.  The segmental deletion could potentially have consequences for gene regulation in this <em>S. flexneri</em> 2a 301.</p>
+
+<h3 id="navigating-the-display">Navigating the display</h3>
+
+<h4 id="zooming-and-shifting-the-display">Zooming and shifting the display</h4>
+
+<p>The alignment display is interactive, providing the ability to zoom in on particular regions and shift the display to the left and right. Navigating through the alignment visualization can be accomplished by using the magnifying glass and arrow control buttons on the toolbar immediately above the display. Alternatively, keyboard shortcuts allow rapid movement through the alignment display. The keystrokes Ctrl+up arrow and Ctrl+down arrow zoom the display in and out, while <strong>Ctrl+left</strong> arrow and <strong>Ctrl+right</strong> arrow shift left and right, respectively (Command+left or Command+right on the mac).  Holding down the “shift” key with Ctrl+left and Ctrl+right accelerates the shifting leftward and rightward.</p>
+
+<h4 id="mouse-control">Mouse control</h4>
+
+<p>When moving the mouse over the alignment display Mauve will highlight the aligned and homologous sites of each genome with a black vertical bar. By clicking the mouse in the sequence similarity plot, Mauve will line up the positionally homologous sites of each genome.  Finally, a portion of the alignment can be selected by clicking and dragging over the similarity plot while holding down the “shift” key.</p>
+
+<h4 id="reordering-sequences-and-changing-the-reference-genome">Reordering sequences and changing the reference genome</h4>
+
+<p>When viewing alignments of many genomes, it is often desirable to reorder the genome sequences.  This can be accomplished by clicking the up and down arrow buttons to the left of each genome.  By default, Mauve uses the first genome sequence as the reference genome for assigning a reference orientation to inverted blocks.  The reference genome can be changed by clicking the “R” button for the desired reference sequence, also to the left of the genome sequence display.  The following figure shows the alignment of three <em>E. coli</em> and <em>Shigella</em> after it has been reordered and the reference was changed:</p>
+
+<p><img src="threeway_reordered.png" alt="Reordering genome sequences and changing the reference genome" /></p>
+
+<h4 id="hiding-sequences">Hiding sequences</h4>
+
+<p>When viewing an alignment with a large number of genome sequences, it can be helpful to simplify the view by restricting the display to genomes of interest.  This can be accomplished by clicking the minus button at the left of the display.  For example, here is a view of an alignment of 21 genomes, with many of them hidden from view.</p>
+
+<p><img src="hidden_example.png" alt="A 21-way alignment with some genomes hidden from view" /></p>
+
+<h4 id="searching-for-annotated-features">Searching for annotated features</h4>
+
+<p>Every good molecular biologist has a favorite gene.  Since version 2.0.0, Mauve has a convenient interface to make finding your favorite gene easy.  Annotation can be searched by by gene name, product description, amino acid sequence, and other information.  The search feature can be activated by clicking on the binoculars button in the toolbar, or through the “View-&gt;Go To-&gt;Find Features” menu item.  Mauve will then present a search interface window:</p>
+
+<p><img src="threeway_navigator.png" alt="The sequence navigator seraching for genes that encode products related to penicillin" /></p>
+
+<p>In the present example, the alignment of three <em>E. coli</em> and <em>Shigella</em> has been searched for genes that encode products related to penicillin.  The search results for each genome are shown at right.  A particular gene, dacC has been selected.  When dacC is clicked, the display refocuses itself onto the region surrounding the dacC gene, which is highlighted in light blue:</p>
+
+<p><img src="threeway_pbp_pseudogene.png" alt="A gene encoding a penicillin binding protein has been pseudogenized in Shigella flexneri" /></p>
+
+<p>Interestingly, the penicillin binding protein encoded by dacC appears to have been pseudogenized in the <em>Shigella</em> genomes.   Inspection of the surrounding region reveals two CDS annotated as IS600, a well known transposable element that has colonized the <em>Shigella</em>.  The IS600 has inserted itself near the end of the dacC gene.</p>
+
+<h4 id="creating-publication-quality-graphics-with-mauve">Creating publication quality graphics with Mauve</h4>
+
+<p>Although Mauve offers a means to export an image file of the current display, using the “File-&gt;Export Image…” menu item, the exported images are raster graphics and may not be ideal for journal publication.  To create publication quality EPS or PDF graphics with Mauve, it is better to print directly to a postscript file or a PDF.  This is done by selecting “File-&gt;Print” and then choosing a PDF or postscript output from the print dialog.  On Mac OS X, there is an option in the print dialog to “Save to PDF” which can easily be used.  Under Windows, there is no built in PDF renderer, although several third-parties sell software with this feature.  Adobe Acrobat includes a PDF renderer, and companies such as <a href="http://www.cutepdf.com/products/cutepdf/writer.asp">CutePDF</a> and <a href="http://www.pdf995.com">pdf995</a> offer free PDF rendering software.  Another option is to use the “Print to file…” checkbox in the windows print dialog.  If a postscript printer driver has been installed, the resulting file will be in postscript (EPS) format.  A postscript printer driver can be installed in Windows without actually connecting a real printer, by going to the Printers control panel, and choosing “Add printer.”  Select a “local printer attached to this computer” and do not “Automatically detect and install my Plug and Play printer”.  Click Next.  Select “Use the following port” and select “FILE: (Print to File)”.  Click Next.  When prompted for a printer model, select Apple Color LW 12/660 PS.  Click Next.  Choose a printer name and you’re done.</p>
+
+<p>Once a postscript or PDF file has been created, it is often desirable to edit the file.  The best program to do so is <a href="http://www.adobe.com/products/illustrator.html">Adobe Illustrator</a>, as it has been designed for editing vector graphics files such as postscript and PDF.  Alternative graphics editing software such as the open-source <a href="https://inkscape.org">Inkscape</a> may be worth investigating.</p>
+
+<p>While it may seem like a hassle to process Mauve images in vector formats like PDF or EPS, your effort will be rewarded with crisp print quality that far exceeds a grainy and pixelated screenshot.  Moreover, Mauve graphics in PDF or EPS format can be scaled to print in large multi-page formats or on posters without loss of visual quality.</p>
+
+<h4 id="exporting-sets-of-positionally-positionally-homologous-features-genes-cds-trna-and-so-on">Exporting sets of positionally positionally homologous features (genes, CDS, tRNA, and so on)</h4>
+
+<p>Beginning with version 2.3.0, Mauve has the ability to identify sets of positionally homologous sequence features and export a list of such annotated features.  Annotated features can be CDS, gene, rRNA, tRNA, or misc_RNA.  With an alignment generated by progressiveMauve, the positionally homologs can be exported by selecting “Tools-&gt;Export-&gt;Export Positional Orthologs” from the menu.  A window will then appear requesting the location to save the positionally homologs output file(s) along with some configurable parameters for the positionally homologs identification algorithm.  One parameter is the permissible range of nucleotide identity for positionally homologs sequences.  To be called as positionally homologs, a pair of annotated features must have an average pairwise nucleotide identity within the specified range.  The nucleotide identity is calculated only over conserved regions shared by the pair of annotated features, not including large gaps.  A second parameter is the “coverage” of the pair of annotated features in the alignment.  The coverage is calculated as the fraction of a feature that is aligned to the other feature.  If X% of the length of feature A is aligned to feature B, and Y% of the length of B is aligned to feature A, and X and Y are both within the user-specified range of allowable coverage, then A and B will be considered positionally homologs.</p>
+
+<p>Once Mauve has identified all pairs of positionally homologous features in the input genomes, it then applies transitivity to the positional homolog predictions.  If A is found homologous to B, and B to C, then A must also be homologous to C, even if A and C do not meet the nucleotide identity or coverage requirements specified above.</p>
+
+<h5 id="why-are-these-positional-homologs-and-not-orthologs">Why are these positional homologs and not orthologs?</h5>
+<p>It has been argued in the literature that the evolutionary relationship of orthology can not be applied transitively.  This is true in general, and for this reason one should consider positionally homologous features inferred by Mauve as just that: inferences, which could be incorrect in some cases.  Frequently homologous genes located in the same chromosomal context will indeed be orthologs and so inference of orthologs by transitive application of orthology will usually yield correct results.  But occasionally evolutionary processes such as gene conversion with duplicate gene copies may create a situation where the positional homolog is a paralog.  For this reason we suggest that users of the positional homolog export feature exercise caution when interpreting the evolutionary history of homologs generated by Mauve. In previous versions of this document and in the software, these features are called “positional orthologs”. This description has been revised to “positional homologs” to help clarify that some exported features may have evolutionary histories that are not consistent with orthology.</p>
+
+<p>In addition to parameters controlling the positional homolog inference procedure, the export window contains an option to output a file of multiple alignments corresponding to each positional homolog set. The /locus_tag qualifier of GenBank annotations is used to give names for features in the output files.</p>
+
+<h4 id="keyboard-control-reference">Keyboard control reference</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Function</strong></th>
+      <th><strong>Keystroke</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Zoom in</td>
+      <td>Ctrl + Up</td>
+    </tr>
+    <tr>
+      <td>Zoom out</td>
+      <td>Ctrl + Down</td>
+    </tr>
+    <tr>
+      <td>Scroll display left</td>
+      <td>Ctrl + Left</td>
+    </tr>
+    <tr>
+      <td>Scroll display right</td>
+      <td>Ctrl + Right</td>
+    </tr>
+    <tr>
+      <td>Large left scroll</td>
+      <td>Shift + Ctrl + Left</td>
+    </tr>
+    <tr>
+      <td>Large right scroll</td>
+      <td>Shift + Ctrl + Right</td>
+    </tr>
+    <tr>
+      <td>Open an existing alignment file</td>
+      <td>Ctrl + O</td>
+    </tr>
+    <tr>
+      <td>Print the current view</td>
+      <td>Ctrl + P</td>
+    </tr>
+    <tr>
+      <td>Set the page layout for printing</td>
+      <td>Ctrl + Shift + P</td>
+    </tr>
+    <tr>
+      <td>Export the current view as an image</td>
+      <td>Ctrl + E</td>
+    </tr>
+    <tr>
+      <td>Close the current alignment window</td>
+      <td>Ctrl + W</td>
+    </tr>
+    <tr>
+      <td>Quit Mauve</td>
+      <td>Ctrl + Q</td>
+    </tr>
+    <tr>
+      <td>Show or hide LCB connecting lines</td>
+      <td>Shift + L</td>
+    </tr>
+    <tr>
+      <td>Show or hide LCB outlines</td>
+      <td>q</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Note: On Mac OS X the <strong>Command</strong> key must be used instead of the control key in the above keyboard shortcuts.</p>
+
+<h4 id="other-color-schemes">Other Color Schemes</h4>
+
+<p>When the “Full Alignment” option has been disabled, several color schemes become available. These color schemes are not available when viewing a full alignment with a similarity profile display.</p>
+
+<h5 id="lcb-color">LCB Color</h5>
+
+<p>Each locally collinear block (LCB) is assigned a unique color.</p>
+
+<h5 id="multiplicity-color">Multiplicity Color</h5>
+
+<p>Matches are colored differently based on their Multiplicity, where Multiplicity is defined as the number of matching genomes. e.g. A match with multiplicity=5 indicates that 5 genomes contain that homologous region of sequence.</p>
+
+<h5 id="multiplicity-type-color">Multiplicity Type Color</h5>
+
+<p>Matches are colored differently based on which genomes they match in, or their multiplicity type. For example, regions that match in genomes A, B, and D would be colored differently than regions matching in B, C, and D, even though the matches have the same multiplicity. The normalized version of multiplicity type color mode makes the colors used more distinguishable by eliminating unused multiplicity types from the color palette.</p>
+
+<h5 id="offset-color">Offset Color</h5>
+
+<p>Matches are colored based on their generalized offset. The generalized offset is a number that summarizes the relative positioning of the match in each genome. Matches with similar generalized offsets will generally be collinear with each other. Thus regions of potential collinearity can be visualized using this color mode without actually performing LCB detection. This can be especially useful when comparing a large set of diverse genomes because the current implementation of LCB detection doesn’t identify rearranged regions that exist in only a subset of the genomes being aligned. With offset color, such regions will appear as a continuously colored region in the Mauve viewer.</p>
+
+  </article>
+
+</div>
+
+
+  </td>
+  </table>
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>the Darling lab | computational (meta)genomics</li>
+          <li><a href="mailto:aaron.darling@uts.edu.au">aaron.darling@uts.edu.au</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/koadman">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">koadman</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/koadman">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">koadman</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">The Darling lab at the University of Technology Sydney. We develop computational and molecular techniques to characterize the hidden world of microbes.
+</p>
+      </div>
+    </div>
+    <img alt="tree of bacterial and archaeal life, showing human gut lineages in blue" src="/assets/tree.png">
+
+  </div>
+</footer>
+
+
+  </body>
+
+</html>

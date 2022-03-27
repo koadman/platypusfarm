@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>the Darling lab | computational (meta)genomics</title>
+    <description>The Darling lab at the University of Technology Sydney. We develop computational and molecular techniques to characterize the hidden world of microbes.
+</description>
+    <link>http://darlinglab.org/</link>
+    <atom:link href="http://darlinglab.org/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 27 Mar 2022 11:55:04 +1100</pubDate>
+    <lastBuildDate>Sun, 27 Mar 2022 11:55:04 +1100</lastBuildDate>
+    <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Welcome Mathieu Fourment</title>
+        <description>&lt;p&gt;Welcome Mathieu Fourment! Mathieu Fourment has joined our group as a postdoc, and brings expertise on phylogenetic methods applied to infectious disease.
+Mathieu comes to us from Sydney Uni where he worked closely with &lt;a href=&quot;http://sydney.edu.au/science/people/edward.holmes.php&quot;&gt;Eddie Holmes&lt;/a&gt;. He has published on methods to infer rate variation in phylogenies, and developed the &lt;a href=&quot;https://code.google.com/p/physher/&quot;&gt;Physher software&lt;/a&gt; to implement those (and other) models. He has &lt;a href=&quot;https://scholar.google.com.au/citations?user=dUOgPoYAAAAJ&amp;amp;hl=en&amp;amp;oi=ao&quot;&gt;published extensively&lt;/a&gt; on other topics, and has &lt;a href=&quot;https://github.com/4ment&quot;&gt;developed other software&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As we continue to grow the &lt;a href=&quot;http://ausgem.org&quot;&gt;AusGEM&lt;/a&gt; initiative phylogenetics will be an integral part of what we do, so stay tuned for more great work from Mathieu and the collaborations that emerge with him in the group.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 16 Oct 2015 02:42:50 +1100</pubDate>
+        <link>http://darlinglab.org/blog/2015/10/16/welcome-mathieu-fourment.html</link>
+        <guid isPermaLink="true">http://darlinglab.org/blog/2015/10/16/welcome-mathieu-fourment.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Not so fast, FastTree</title>
+        <description>&lt;p&gt;&lt;strong&gt;important: see update at bottom of page&lt;/strong&gt; Recently, much of the microbiology world has been sucked into a vortex called genomic epidemiology.
+This is not entirely a bad thing. Genomic data can be orders of magnitude more informative than MLST data when it comes to inferring the ancestry of an isolated microbe. Genomic data gives information on gene content. And with bacterial whole genome sequencing costs approaching parity with the cost of MLST, why sequence a few genes when you could have whole genomes? Indeed these are exciting times for microbiology. But wait, there’s a fly in the ointment.&lt;/p&gt;
+
+&lt;p&gt;The typical genomic epidemiology workflow goes something like this:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;sequence genomic DNA from a bunch of cultured isolates&lt;/li&gt;
+  &lt;li&gt;map each isolate’s reads to a closely related reference genome&lt;/li&gt;
+  &lt;li&gt;call variants relative to the reference&lt;/li&gt;
+  &lt;li&gt;format the variants and (hopefully!) invariant sites into a multiple alignment&lt;/li&gt;
+  &lt;li&gt;Infer a phylogeny&lt;/li&gt;
+  &lt;li&gt;Interpret the phylogeny&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Much has been written about potential pitfalls in each stage of this process.
+For an overview of some of the issues I like &lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/24600054&quot;&gt;the REALPHY paper&lt;/a&gt;.
+It describes the problems with leaving out invariant sites, discusses pitfalls of using a single reference genome, and even touches on the thorny issue of recombination, albeit without presenting a solution. That said, I think their software implementation leaves a bit to be desired, and &lt;a href=&quot;https://bacpathgenomics.wordpress.com/2014/03/25/are-we-doing-fakephy-realphy-paper-in-mbe-and-the-inaccuracy-of-phylogenies-based-on-whole-genome-snps-identified-by-mapping-to-a-reference/&quot;&gt;Kat Holt’s blog post&lt;/a&gt; is worth reading for a balanced view on the single reference issue. The sky is not falling.&lt;/p&gt;
+
+&lt;p&gt;Last year a student I work with became involved in a genomic epidemiology project.
+After following a simplified genomic epidemiology workflow that carries out &lt;a href=&quot;http://darlinglab.org/tutorials/marker_phylogeny/&quot;&gt;marker gene phylogeny based on the PhyloSift software&lt;/a&gt;, the student had an alignment with 21,327 columns which fall into 630 different site patterns.
+At my suggestion the student then applied &lt;a href=&quot;http://microbesonline.org/fasttree/&quot;&gt;the FastTree software&lt;/a&gt; to infer a phylogeny of the isolates.
+We used version 2.1.7. Et voilà, 55 seconds later we got a phylogeny(*):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/data/anonymous-2.1.7.png&quot; alt=&quot;A bacterial genome phylogeny inferred with FastTree 2.1.7&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Look at that tree. Just look at it.&lt;/p&gt;
+
+&lt;p&gt;Does something look funny to you? The taxon names perhaps?&lt;/p&gt;
+
+&lt;p&gt;Look at those nice step-like internal branches in the lower half of the tree, and remember that branch lengths are given as substitutions per site – because we’re not cladists and &lt;em&gt;this ain’t no freakin’ cladogram&lt;/em&gt;.
+If those branch lengths are to be believed, we have quite possibly discovered a wholly new evolutionary process. A process that regularly gives rise to divergence events after an exact number of mutations have occurred. Incredible! Stockholm is calling! Either that, or we have an inference problem. Hmmm…&lt;/p&gt;
+
+&lt;p&gt;Let’s dig a little deeper. What if we change the substitution model, does the tree change? What if we change the inference algorithm? We had RAxML handy so we gave that a go, and got the following tree:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/data/anonymous-RAxML.png&quot; alt=&quot;A phylogeny inferred with RAxML on the same alignment&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hmmm.&lt;/p&gt;
+
+&lt;p&gt;What’s going on here? Which tree is right? To get some basic idea of this, Matt DeMaere (who works with me at UTS) and I had a look at how the cophenetic matrices compare to raw pairwise distance matrices derived from the genome alignments. Matt used the &lt;a href=&quot;http://cran.r-project.org/web/packages/ape/index.html&quot;&gt;APE package&lt;/a&gt; from R to calculate &lt;a href=&quot;http://svitsrv25.epfl.ch/R-doc/library/ape/html/cophenetic.phylo.html&quot;&gt;cophenetic matrices&lt;/a&gt; from the inferred trees. Doing the comparison between the FastTree 2.1.7 cophenetic matrix, the RAxML cophenetic matrix, and the raw distance matrix, we find that the RAxML tree matches the raw distances much better than the FastTree 2.1.7 tree does.&lt;/p&gt;
+
+&lt;p&gt;At this stage we became concerned. After all, the venerable FastTree program is in wide use, so how could it produce such erratic results? I headed over to the FastTree web site to see if there was any documentation on the issue; any indication of a bug or a bugfix. And there, in bold header about 75% of the way down the very long page, is a section entitled &lt;a href=&quot;http://microbesonline.org/fasttree/#BranchLen&quot;&gt;&lt;strong&gt;Why does FastTree report so many branch lengths of 0.0005 or 0.0001, or even negative branch lengths?&lt;/strong&gt;&lt;/a&gt;
+And there it was. The answer. It turns out FastTree by default uses single precision arithmetic and has a hard-coded limit on branch length precision. If you have data with branch lengths near that precision limit, they will either get rounded to 0 or the limit, e.g. 0.0001. This is a serious issue for many genomic epidemiology studies, where it is not uncommon to observe divergence among isolates on the order of 0.00001 to 0.0001 substitutions per site. Fortunately, the issue is easily resolved. There are a few places in the code that can be edited to enable double precision arithmetic and reduce the hard-coded limit on precision to a more reasonable value. The code diff is:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;--- FastTree-2.1.7.c	2013-01-30 07:22:04.000000000 +1100
++++ FastTree_accu.c	2015-03-24 11:59:34.447129977 +1100
+@@ -1,4 +1,10 @@
+ /*
++ * 2014/12/11 - Modifications to raise the precision of branch length
++ *              estimation. This should accompany setting USE_DOUBLE.
++ *              Search tolerances have been decreased to 1e-9 from 
++ *              their original 1e-4.
++ *
++ * 
+  * FastTree -- inferring approximately-maximum-likelihood trees for large
+  * multiple sequence alignments.
+  *
+@@ -852,10 +858,13 @@
+    were increased to prevent numerical problems in rare cases.
+    If compiled with -DUSE_DOUBLE then these minimums could be decreased.
+ */
+-const double MLMinBranchLengthTolerance = 1.0e-4; /* absolute tolerance for optimizing branch lengths */
++const double MLMinBranchLengthTolerance = 1.0e-9; /* absolute tolerance for optimizing branch lengths */
+ const double MLFTolBranchLength = 0.001; /* fractional tolerance for optimizing branch lengths */
+-const double MLMinBranchLength = 5.0e-4;
+-const double MLMinRelBranchLength = 2.5e-4; /* minimum of rate * length */
++const double MLMinBranchLength = 5.0e-9;
++const double MLMinRelBranchLength = 2.5e-9; /* minimum of rate * length */
++
++const double fPostTotalTolerance = 1.0e-20; /* mzd 2015/01/06, added as original assertion is violated when 
++	                                           MLMMinBranchLengthTolerance is decreased to 1e-9. */
+ 
+ int mlAccuracy = 1;		/* Rounds of optimization of branch lengths; 1 means do 2nd round only if close */
+ double closeLogLkLimit = 5.0;	/* If partial optimization of an NNI looks like it would decrease the log likelihood
+@@ -4962,7 +4971,7 @@
+       double fPostTot = 0;
+       for (j = 0; j &amp;lt; 4; j++)
+ 	fPostTot += fPost[j];
+-      assert(fPostTot &amp;gt; 1e-10);
++      assert(fPostTot &amp;gt; fPostTotalTolerance);
+       double fPostInv = 1.0/fPostTot;
+ #if 0 /* SSE3 is slower */
+       vector_multiply_by(fPost, fPostInv, 4);
+@@ -5025,7 +5034,7 @@
+ 	fPost[j] = value &amp;gt;= 0 ? value : 0;
+       }
+       double fPostTot = vector_sum(fPost, 20);
+-      assert(fPostTot &amp;gt; 1e-10);
++      assert(fPostTot &amp;gt; fPostTotalTolerance);
+       double fPostInv = 1.0/fPostTot;
+       vector_multiply_by(/*IN/OUT*/fPost, fPostInv, 20);
+       int ch = -1;		/* the dominant character, if any */
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;These changes set the resolution limit to about 1 substitution per billion sites, which seems ample for bacteria that typically have genome sizes up to around 10 million nucleotides. It’s then necessary to compile the code with -DUSE_DOUBLE, e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcc -DUSE_DOUBLE -O3 -finline-functions -funroll-loops -Wall -o FastTree-2.1.7 FastTree-2.1.7.c -lm&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s see how our tree looks after making these changes:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/data/anonymous_2.1.7_precise.png&quot; alt=&quot;A phylogeny inferred with double precision FastTree on the same alignment&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that looks better! And a comparison of the cophenetic matrix to the raw distances looks good too.
+Another way to check whether we’ve improved model fit is to run FastTree with the -gamma option, so that the log likelihoods reported can be compared across two different runs. If we do this with the vanilla FastTree-2.1.7 it reports &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gamma(20) LogLk = -40634.725&lt;/code&gt;. Running the same analysis with the modified double-precision FastTree yields &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gamma(20) LogLk = -40182.654&lt;/code&gt;. In other words, the tree inferred by the double precision version is about &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;e^452&lt;/code&gt; times more likely to have generated the observed data. That’s no small improvement in model fit. Interestingly, the double-precision build actually runs faster than the single precision build on this dataset and on my laptop, so it seems the sacrifice of precision didn’t even buy us a speedup.&lt;/p&gt;
+
+&lt;p&gt;Perhaps this is just a case of RTFM. But how many of us actually do that? In retrospect I feel we were lucky to have identified this issue relatively early on in our data analysis. If the dataset were different, without so many genomes having divergences right around the limit of FastTree’s precision, the problem might have gone entirely unnoticed. That’s not to say it would be unimportant, though, because even just a few branches with such imprecise length estimates could in principle yield substantially reduced model fit. I am not sure to what extent this could lead to topological inaccuracy as well, but it does seem possible. Of course these issues of precision might be rather trivial compared to the effects of model misspecification, e.g. fitting a tree to a dataset with a substantial number of sites affected by recombination, and there are other tools like &lt;a href=&quot;http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004041&quot;&gt;ClonalFrameML&lt;/a&gt; that implement models which address that issue. That said, even if the model is wrong (and when analyzing real data the model is wrong by definition) I’d like to have the best possible fit to the data. Wouldn’t you?&lt;/p&gt;
+
+&lt;p&gt;Thanks to &lt;a href=&quot;https://scholar.google.com.au/citations?user=hQTEUsIAAAAJ&amp;amp;hl=en&amp;amp;oi=ao&quot;&gt;Matt DeMaere&lt;/a&gt; for assistance preparing this blog post.&lt;/p&gt;
+
+&lt;p&gt;(*) Note that isolate names have been anonymized to protect the innocent.&lt;/p&gt;
+
+&lt;h3 id=&quot;update-25th-march-2015&quot;&gt;Update: 25th March 2015&lt;/h3&gt;
+
+&lt;p&gt;Morgan Price emailed to let me know that the above described changes, along with some others, have been incorporated into version 2.1.8 of FastTree. It’s available from the &lt;a href=&quot;http://microbesonline.org/fasttree/&quot;&gt;usual place&lt;/a&gt;. The increased precision is not enabled in the precompiled binaries, e.g. it’s still necessary to build with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-DUSE_DOUBLE&lt;/code&gt;, but the precompiled binary supplies some helpful warning messages to let users know if their data may be in the danger zone:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;WARNING! This alignment consists of closely-related and very-long sequences.
+This version of FastTree may not report reasonable branch lengths!
+Consider recompiling FastTree with -DUSE_DOUBLE.
+For more information, visit
+http://www.microbesonline.org/fasttree/#BranchLen
+
+WARNING! FastTree (or other standard maximum-likelihood tools)
+may not be appropriate for aligments of very closely-related sequences
+like this one, as FastTree does not account for recombination or gene conversion
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Happy FastTreeing!&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 23 Mar 2015 18:19:50 +1100</pubDate>
+        <link>http://darlinglab.org/blog/2015/03/23/not-so-fast-fasttree.html</link>
+        <guid isPermaLink="true">http://darlinglab.org/blog/2015/03/23/not-so-fast-fasttree.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>An open peer review of NxRepair</title>
+        <description>&lt;p&gt;I was recently asked to carry out a peer review for a manuscript discussing a topic which I have previously worked &amp;amp; published on.
+The manuscript describes an algorithm to detect misassembled genome sequences, and the manuscript draft is available as a preprint on PeerJ:
+&lt;a href=&quot;https://peerj.com/preprints/747/&quot;&gt;NxRepair: Error correction in de novo sequence assembly using Nextera mate pairs&lt;/a&gt;. I have to applaud the authors of the work for aggressively pursuing the path open science, not only by publishing their code and putting a preprint online, but also by choosing to work with a venue that facilitates open peer review. I’m already a fan.&lt;/p&gt;
+
+&lt;p&gt;But wait, there’s a flipside. As you’ll discover in the review below, I am concerned that the work may need some pretty heavy duty revision. Since the preprint is available to the general public I would like to communicate my thoughts about the manuscript to the same audience. Of course the manuscript’s authors will undoubtedly see these comments too, possibly from this blog post even before the journal sends them. I sincerely hope that my comments can be taken constructively, viewed in a positive light, and used to help improve the science. Candid communication and critical thinking are going to be foundational elements that help us to advance the open science movement.&lt;/p&gt;
+
+&lt;p&gt;Review in PeerJ format follows.&lt;/p&gt;
+
+&lt;h3 id=&quot;basic-reporting&quot;&gt;Basic reporting&lt;/h3&gt;
+
+&lt;p&gt;The manuscript describes an algorithm and corresponding software implementation to detect misassemblies in de novo genome assemblies using mate pair sequence data. de novo genome assembly is a highly active area of research, driven by ongoing advances in sequencing technologies. Many of the current generation of assemblers are prone to misassembling regions of genomes that contain high identity repetitive elements, especially those that are at or above the read length or in some cases the size of k-mers used for de bruijn graph-based algorithms. It is exciting to see new efforts to solve these problems.
+The context in which a tool such as this would be used could be better introduced. One case is when the initial draft assembly algorithm is unable to incorporate mate-pair information, and a subsequent scaffolding step is to be carried out. In this situation, if the initial assembly contains errors, the scaffolder will be unable to accurately scaffold the assembly with mate-pair data unless the errors are detected and corrected prior to scaffolding. This approach is used for example in the A5 and A5-miseq pipelines. However, it is possible in principle to construct an assembler which leverages the mate pair information directly during the contigging process to avoid such errors in the first place. For such assemblers, a tool like this may not provide any added utility. This kind of information on the scope of applicability could be better introduced.&lt;/p&gt;
+
+&lt;h3 id=&quot;experimental-design&quot;&gt;Experimental Design&lt;/h3&gt;
+
+&lt;p&gt;Overall I think enough of the algorithm was described to understand how it works, however I have a number of questions about the rationale for the design of the method which I have detailed below in the General Comments section. Unfortunately I’m afraid that the design of the accuracy evaluation experiment leaves us with little idea of the method’s expected behavior on real datasets. This is because the method appears to have been tuned (T parameter, ROC curves) on the same data for which accuracy is reported. If this is not the case, then the manuscript text needs to be revised to clarify the issue. I am also concerned that no effort has been made to compare the method’s performance to previous work to solve the same problem, for example the A5qc module used by the A5 pipeline to detect and correct misassemblies. It is erroneously stated in the introduction that no other software is optimized to work with mate-pair data, yet A5qc does and in fact the use of mate-pairs to detect misassembled contigs was the main motivating use case in its development. The A5 manuscript (&lt;a href=&quot;http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0042304&quot;&gt;Tritt et al 2012 PLoS ONE&lt;/a&gt;) discusses its use with mate pair datasets explicitly. A5qc is by no means perfect and is likely to be a bit challenging to use independently of the rest of the pipeline, but that is no excuse for inaccurately representing its application scope and neglecting to benchmark it. Indeed, I suspect A5qc may be able to detect some misassemblies that the present method can not, because the present method is limited to identifying misassemblies where read pairs map entirely within a single contig, whereas A5qc can identify misassemblies involving read pairs that map to different contigs. I would also guess that the present method may be more sensitive than A5qc for the within-contig misassemblies. There could be other tools that are relevant for comparative benchmarking; I have not kept up with the literature in this area.&lt;/p&gt;
+
+&lt;h3 id=&quot;validity-of-the-findings&quot;&gt;Validity of the findings&lt;/h3&gt;
+
+&lt;p&gt;The main issue potentially impacting the validity of the findings is whether the test data were also used for selection of the T parameter. The test datasets are relatively limited, comprising less than 10 genomes, which leaves a non-negligible potential for parameter overfitting.&lt;/p&gt;
+
+&lt;p&gt;Note that I did not (yet) evaluate the software itself by running it on my own datasets, in light of the other issues that I think should be addressed first.&lt;/p&gt;
+
+&lt;h3 id=&quot;general-comments-for-the-author&quot;&gt;General comments for the author&lt;/h3&gt;
+
+&lt;p&gt;The following are specific notes that I made while reading the manuscript:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Abstract: de bruijn assemblers are clearly the most prevalent for Illumina data, but is the scope of applicability really limited to de bruijn assemblers?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Introduction, paragraph 2: The &lt;a href=&quot;http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0042304&quot;&gt;Tritt et al 2012&lt;/a&gt; citation is much more appropriate for A5 in this context, as it describes a technique to use mate pair reads to detect and correct assembly errors. The &lt;a href=&quot;http://arxiv.org/abs/1401.5130&quot;&gt;Coil et al 2014&lt;/a&gt; paper does not include details of that technique, nor does it contain any revisions of that technique.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“Statistical analysis of mate pair insert sizes” paragraph 1: The use of a uniform to model the mate-pair noise makes sense, but it’s not clear how appropriate the normal would be for nextera, unless a tight fragment size range has been gel extracted. If data from gel extraction is expected it should be mentioned, and some further discussion is warranted in either case.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;same section, paragraph 2: the definition of spanning is somewhat ambiguous. do the read pairs spanning site i include only read pairs with one read entirely before i and the other entirely after? or are pairs where one or both reads actually include i considered ‘spanning’? and for a region to be spanned, which of these definitions is correct?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;same section, eqn 1: an extra set of P’s in the second terms of the numerator &amp;amp; denom would help improve clarity, also there’s no need for the first equation – why not just define the notation for the prior \pi_x up-front and give eqn 2?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;same section, eqn 2: The same insert size on a contig of different lengths would give different values for this expression, because the uniform distribution has been defined only over the contig length. Is that intentional? Desirable? The rationale for this decision is not obvious and some explanation is in order.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;same section, paragraph 3: It seems like the same process used to estimate the insert size distribution parameters would naturally also yield an estimate of \pi_0. Is that used? I have seen mate pair error levels as high as 20% in some libraries. It’s highly sensitive to the lab conditions, so would be ideal to estimate from the data rather than use a fixed value.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;same section, eqn 4: what about circular molecules, e.g. plasmids? a large number of pairs near the contig ends will appear to be in the wrong orientation…&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;same section, eqn 5: why do we need to calculate these contig-specific distributions? is it to deal with local deviation in coverage? or is it because the distributions used in eqn. 1 have a contig-local domain? or something else? some explanation is needed.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;same section, eqn 6: it’s a bit strange that this approach starts out with the Bayesian framework (e.g. the use of a prior probability) then goes into a frequentist framework for the hypothesis test. One way to keep it Bayesian would be to set up a Bayes factor of the competing hypotheses of no misassembly vs. one or more misassemblies in the target window. then the threshold T could be applied to the Bayes factors instead of the standard deviation.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;section “Global Assembly Parameters”, eqn 7: the notation for MAD is not quite right, as it suggests taking the median of a single data point in Y.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;same section, eqn 7: at high enough levels of noise in the mate pair library, this approach is likely to overestimate the true insert size to some extent. The 30kbp threshold will help mitigate the problem, and the later steps to identify extreme divergence from a contig’s background will also reduce the noise, but this likely comes with a cost in sensitivity for misassembly detection.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;same section eqn 8: why use this approach instead of one of the other common approaches to calculate standard deviation?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;section “Interval Sequence Tree construction”: How is the interval sequence tree used in this algorithm? it’s not clear at what step in the breakpoint detection the IST gets queried. This should either be explained or the whole section omitted.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;section “ROC plots” eqn 10: The FPR here is sensitive to how finely the contigs are sliced into windows because it includes true negatives.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;section “Workflow pipeline”: nice to see the precision here: exact version &amp;amp; command line&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;same section: what version of QUAST? they do change a little from one release to the next.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;same section, bwa commands: again, versions would be good, even better would be a script that reproduces all the results!&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;same section nxrepair.py commands: you might want to indicate which version of NxRepair produced the results described here in case you ever fix bugs or make improvements…&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Wed, 07 Jan 2015 18:19:50 +1100</pubDate>
+        <link>http://darlinglab.org/reviews/2015/01/07/open-peer-review-of-nxrepair.html</link>
+        <guid isPermaLink="true">http://darlinglab.org/reviews/2015/01/07/open-peer-review-of-nxrepair.html</guid>
+        
+        
+        <category>reviews</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 20 Nov 2014 18:19:50 +1100</pubDate>
+        <link>http://darlinglab.org/jekyll/update/2014/11/20/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://darlinglab.org/jekyll/update/2014/11/20/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>An open peer review of BWA-MEM</title>
+        <description>&lt;p&gt;In the last two weeks I’ve noticed a lot of discussion on twitter about the failings of the private and anonymous peer review system as administered by traditional scientific journals. I am a fan of open peer review because I think the transparency has some major advantages over anonymous and private peer review (which I like to call the black hole of science): 1. readers can read the reviews and understand what aspects of the paper were reviewed and where weaknesses might be, 2. having the reviewer’s name attached creates an incentive for careful, honest work and opens the possibility that good review work can be given due credit, and 3. it makes explicit the social network of review so that it can be compared to, e.g. the social network of collaboration.&lt;/p&gt;
+
+&lt;p&gt;Among practicing bioinformaticians, a recent focal point for discussing open peer review was the rejection by Bioinformatics of Heng Li’s paper on bwa mem, as &lt;a href=&quot;http://biomickwatson.wordpress.com/2013/05/28/perhaps-there-is-a-chance-to-change-something/&quot;&gt;described on the opinionomics blog&lt;/a&gt;. In that post, Mick Watson suggested that a few people could create open peer reviews and that some action might be taken based on them.&lt;/p&gt;
+
+&lt;p&gt;At the same time, I have been working to launch a Bioinformatics discussion group at the University of Technology Sydney where I am just getting started. It occurred to me that a natural extension of a journal club would be the production of a short written review of the paper being discussed. And if that paper happened to be a preprint manuscript from a place like arxiv.org, the feedback could even reach the author early enough to help them improve the manuscript before “official” publication. These thoughts were churning in my head at the time the bwa mem paper rejection was publicized, and since the manuscript is &lt;a href=&quot;http://arxiv.org/abs/1303.3997&quot;&gt;available on arxiv&lt;/a&gt; it seemed like a natural choice for discussion and review at our first journal club meeting yesterday.&lt;/p&gt;
+
+&lt;p&gt;So I spent several hours dissecting bwa mem, writing about it, and conducting my own evaluation of its accuracy. I’ve &lt;a href=&quot;http://dx.doi.org/10.6084/m9.figshare.714096&quot;&gt;posted the review to figshare&lt;/a&gt;, where it has been assigned a citeable DOI. As part of this, I decided to compare bwa mem’s accuracy to one of my favorite pairwise sequence aligners, &lt;a href=&quot;http://last.cbrc.jp/&quot;&gt;LAST&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;At this stage I have no idea whether Heng Li will read what I’ve written, much less like what I’ve written. If I were the journal editor I would definitely ask for revisions to the manuscript. But there were no unfounded claims and the program appears to work as advertised, so a rejection seems unjustifiable.&lt;/p&gt;
+
+&lt;p&gt;In the long run I would like to see a slick web system for linking together reviews on preprints, the preprints, and the final published manuscript. For now though, I will suggest to Heng that if he finds any of my feedback useful for improving the manuscript that he should include a citation to the review DOI from within the Acknowledgements section of the final paper. I think this would be a nice way to encourage people to start contributing open review feedback on preprints until a smarter system emerges.&lt;/p&gt;
+
+&lt;p&gt;Citation:&lt;br /&gt;
+Review of bwa mem. Aaron Darling. figshare.&lt;br /&gt;
+&lt;a href=&quot;http://dx.doi.org/10.6084/m9.figshare.714096&quot;&gt;http://dx.doi.org/10.6084/m9.figshare.714096&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 07 Jun 2013 17:19:50 +1000</pubDate>
+        <link>http://darlinglab.org/reviews/2013/06/07/an-open-peer-review-of-bwa-mem.html</link>
+        <guid isPermaLink="true">http://darlinglab.org/reviews/2013/06/07/an-open-peer-review-of-bwa-mem.html</guid>
+        
+        
+        <category>reviews</category>
+        
+      </item>
+    
+  </channel>
+</rss>

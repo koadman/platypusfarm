@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>the Darling lab | computational (meta)genomics</title>
+  <meta name="description" content="The Darling lab at the University of Technology Sydney. We develop computational and molecular techniques to characterize the hidden world of microbes.
+">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://darlinglab.org/mauve/developer-guide/benchmarking.html">
+  <link rel="alternate" type="application/atom+xml" title="the Darling lab | computational (meta)genomics" href="http://darlinglab.org/feed.xml" />
+  <link rel="shortcut icon" href="/site32.jpg" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">the Darling lab | computational (meta)genomics</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/mauve/mauve.html">Mauve</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/openings/">Openings</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/people/">People</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/projects/">Projects</a>
+          
+        
+          
+          <a class="page-link" href="/publications/">Publications</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/reviews/">Reviews</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/software/">Software</a>
+          
+        
+          
+        
+          
+        
+	<!-- special link for tutorials pages, which are done with MkDocs -->
+        <a class="page-link" href="/tutorials">Tutorials</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <head>
+  <link rel="shortcut icon" href="/mauve/favicon.ico" />
+</head>
+
+
+
+
+  <table>
+  <tr>
+  <td width="175" valign="top">
+  
+<h4 id="download-mauve"><a href="/mauve/download.html"><strong>Download Mauve</strong></a></h4>
+
+<h4 id="user-guide"><strong>User Guide:</strong></h4>
+<ul>
+  <li><a href="/mauve/user-guide/introduction.html">Introduction</a></li>
+  <li><a href="/mauve/user-guide/installing.html">Installing</a></li>
+  <li><a href="/mauve/user-guide/aligning.html">Aligning genomes</a></li>
+  <li><a href="/mauve/user-guide/viewer.html">The viewer</a></li>
+  <li><a href="/mauve/user-guide/files.html">File formats</a></li>
+  <li><a href="/mauve/user-guide/reordering.html">Reordering contigs</a></li>
+  <li><a href="/mauve/user-guide/mauvealigner.html">mauveAligner</a></li>
+  <li><a href="/mauve/user-guide/progressivemauve.html">progressiveMauve</a></li>
+  <li><a href="/mauve/user-guide/versions.html">Version history</a></li>
+  <li><a href="/mauve/user-guide/screenshots.html">Screenshots</a></li>
+</ul>
+
+<h4 id="developer-guide"><strong>Developer Guide:</strong></h4>
+<ul>
+  <li><a href="/mauve/developer-guide/overview.html">Overview</a></li>
+  <li><a href="/mauve/developer-guide/building.html">Building from source</a></li>
+  <li><a href="/mauve/developer-guide/developing-the-gui.html">Developing the GUI</a></li>
+  <li><a href="/mauve/developer-guide/building-on-windows.html">Windows builds</a></li>
+  <li><a href="/mauve/developer-guide/building-on-mac.html">Mac builds</a></li>
+  <li><a href="/mauve/developer-guide/deploying-mauve-releases.html">Deploying Mauve</a></li>
+  <li><a href="/mauve/developer-guide/benchmarking.html">Benchmarking</a></li>
+</ul>
+
+
+  </td>
+  <td valign="top">  
+
+
+<div class="post">
+
+  <article class="post-content">
+    <h3 id="evaluating-alignment-quality-and-stress-testing-the-aligner">Evaluating alignment quality and stress-testing the aligner</h3>
+
+<h4 id="purpose">Purpose</h4>
+
+<p>When constructing a sequence alignment system various design decisions can have an impact on sequence alignment quality. To assess the effects each of these decisions can have on alignment quality, we have created a method to score alignment accuracy across numerous test cases using genome sequences that have diverged to varying degrees. We refer to such test results as “accuracy profiles” because they demonstrate the aligner’s average accuracy over many evolutionary scenarios.</p>
+
+<h4 id="overview-of-the-methodology">Overview of the methodology</h4>
+
+<ul>
+  <li>simulate evolution</li>
+  <li>align simulated genomes</li>
+  <li>score the alignment</li>
+  <li>do this many times using different parameter combinations to characterize the aligner’s behavior in the presence of different types of evolution</li>
+  <li>Use a high-throughput computing environment such as Condor to quickly process many simulations</li>
+</ul>
+
+<h4 id="using-the-evolver-software">Using the evolver software</h4>
+
+<p>The following components are necessary to compile the evolver software under Windows, Linux, or Mac OS X:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>libGenome</td>
+      <td>http://sf.net/p/mauve</td>
+    </tr>
+    <tr>
+      <td>libMems</td>
+      <td>http://sf.net/p/mauve</td>
+    </tr>
+    <tr>
+      <td>sgEvolver</td>
+      <td>http://sf.net/p/mauve</td>
+    </tr>
+    <tr>
+      <td>mauveAligner</td>
+      <td>http://sf.net/p/mauve</td>
+    </tr>
+    <tr>
+      <td>pkg-config</td>
+      <td>http://www.freedesktop.org/software/pkgconfig/releases/</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The following additional software supports automated aligner testing and generation of postscript accuracy plots:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>seq-gen</td>
+      <td>http://evolve.zoo.ox.ac.uk/software.html?id=seqgen</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>http://r-project.org</td>
+    </tr>
+    <tr>
+      <td>perl</td>
+      <td>http://perl.org</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>All of these packages must be installed in order to perform aligner accuracy profiling. Some of these packages may already be installed on your system.</p>
+
+<h4 id="necessary-hardware">Necessary hardware</h4>
+
+<p>Genome alignment software is notoriously CPU intensive. Performing all but the most rudimentary set of alignment experiments will require significant computation resources. This software is designed to work on large compute clusters with the condor job scheduler, however submission scripts for other scheduling systems should be straightforward.</p>
+
+<h4 id="compiling-sgevolver">Compiling sgEvolver</h4>
+
+<p>Follow instructions to <a href="building.html">compile mauveAligner from source</a>
+Then download the sgEvolver source and build as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>svn co http://svn.code.sf.net/p/mauve/code/sgEvolver/trunk sgEvolver
+cd sgEvolver
+./autogen.sh
+./configure --prefix=$HOME
+make
+make install
+</code></pre></div></div>
+
+<h4 id="how-to-simulate-evolution-and-test-an-aligners-accuracy">How to simulate evolution and test an aligner’s accuracy:</h4>
+
+<ol>
+  <li>
+    <p>Install the software listed above</p>
+  </li>
+  <li>
+    <p>Create a new directory for the simulation experiment and make a copy of simujobparams.pm in this directory.</p>
+  </li>
+  <li>
+    <p>Create a raw ancestral sequence file. The ancestral sequence must be at least twice as long as the size of genomes to be evolved, preferably longer. It must also be a “raw” sequence file, meaning that it has no Multi-FastA formatting and no deflines: just the characters { A,C,G,T,a,c,g,t } all on a single line. A utility application called toRawSequence is included with mauveAligner that can convert many major sequence formats to raw sequence.</p>
+  </li>
+  <li>
+    <p>Edit simujobparams.pm appropriately. At the very least be sure to set the name of the ancestral sequence file and the locations where software is installed. The simujobparams.pm file has detailed instructions describing each variable.</p>
+  </li>
+  <li>
+    <p>Run simujobgen.pl Running the simujobgen script will create a number of alignjob directories, each of which corresponds to a simulation and alignment job with a different combination of mutation parameters.</p>
+  </li>
+  <li>
+    <p>change into one of the alignjob directories</p>
+  </li>
+  <li>
+    <p>Run simujobrun.pl <aligner> where <aligner> is the aligner to use and can be one of none, mauve, mavid, mlagan, or slagan, assuming these aligners have been installed correctly. When none is selected, the procedure generates the evolved genomes without trying to align and score them.</aligner></aligner></p>
+  </li>
+  <li>
+    <p>In case something goes wrong, check the files command_lines.txt and all the files ending in .err. The .err files correspond to each program’s standard error output.</p>
+  </li>
+  <li>
+    <p>If none was selected for your aligner, then the evolved sequences will reside in the Multi-FastA file evolved_seqs.fas, and an alignment of orthologous regions will reside in evolved.dat. If an aligner was tested then the alignment scores are reported in the file scores.txt and the scores on regions conserved among all genomes (backbone) are in the file bb_scores.txt</p>
+  </li>
+</ol>
+
+<h4 id="using-the-condor-high-throughput-computing-environment-to-process-many-simulations-rapidly">Using the Condor High Throughput Computing environment to process many simulations rapidly</h4>
+
+<p>Follow steps 1 through 5 above. When editing simujobparams.pm be sure to set the paths to the aligners and the scoring tools. These paths must be accessible from the compute node running the job, thus they should be on shared storage. The simujobrun.pl script executes programs in order to carry out simulated evolution, alignment, and scoring of alignments. In particular, evolution requires dd, seq-gen, and sgEvolver. Alignment requires an aligner, and scoring requires scoreAlignment and extractBackbone.
+Step 5 will create a condor DagMan submission script called jobs.dag and a job submission script called mauveAlign.condor. Edit the mauveAlign.condor submission script to select the aligner you would like to test. Options are mauve, mavid, mlagan, slagan, and none. Optionally, the debug parameter may also be given to simujobrun. When debug is used none of the data files generated during the simulated evolution and alignment process are deleted and all get sent back to the job submission host. It may be necessary to set other condor-specific parameters as well.
+Submit the condor jobs with condor_submit_dag -maxjobs ## jobs.dag Here ## is the maximum number of condor jobs that will run simultaneously.
+When all jobs have completed successfully, use scoregen.pl to extract scores from the alignjob directories and generate a heat plot in postscript format. scoregen.pl depends on rgradientplot.R in your tools directory. When running multiple replicates of the simulation, scoregen.pl will automatically average together the scores for each replicate and plot a single average score for that combination of mutation rates.</p>
+
+
+  </article>
+
+</div>
+
+
+  </td>
+  </table>
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>the Darling lab | computational (meta)genomics</li>
+          <li><a href="mailto:aaron.darling@uts.edu.au">aaron.darling@uts.edu.au</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/koadman">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">koadman</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/koadman">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">koadman</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">The Darling lab at the University of Technology Sydney. We develop computational and molecular techniques to characterize the hidden world of microbes.
+</p>
+      </div>
+    </div>
+    <img alt="tree of bacterial and archaeal life, showing human gut lineages in blue" src="/assets/tree.png">
+
+  </div>
+</footer>
+
+
+  </body>
+
+</html>

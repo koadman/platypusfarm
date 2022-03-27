@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>the Darling lab | computational (meta)genomics</title>
+  <meta name="description" content="The Darling lab at the University of Technology Sydney. We develop computational and molecular techniques to characterize the hidden world of microbes.
+">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://darlinglab.org/mauve/user-guide/introduction.html">
+  <link rel="alternate" type="application/atom+xml" title="the Darling lab | computational (meta)genomics" href="http://darlinglab.org/feed.xml" />
+  <link rel="shortcut icon" href="/site32.jpg" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">the Darling lab | computational (meta)genomics</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/mauve/mauve.html">Mauve</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/openings/">Openings</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/people/">People</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/projects/">Projects</a>
+          
+        
+          
+          <a class="page-link" href="/publications/">Publications</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/reviews/">Reviews</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/software/">Software</a>
+          
+        
+          
+        
+          
+        
+	<!-- special link for tutorials pages, which are done with MkDocs -->
+        <a class="page-link" href="/tutorials">Tutorials</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <head>
+  <link rel="shortcut icon" href="/mauve/favicon.ico" />
+</head>
+
+
+
+
+  <table>
+  <tr>
+  <td width="175" valign="top">
+  
+<h4 id="download-mauve"><a href="/mauve/download.html"><strong>Download Mauve</strong></a></h4>
+
+<h4 id="user-guide"><strong>User Guide:</strong></h4>
+<ul>
+  <li><a href="/mauve/user-guide/introduction.html">Introduction</a></li>
+  <li><a href="/mauve/user-guide/installing.html">Installing</a></li>
+  <li><a href="/mauve/user-guide/aligning.html">Aligning genomes</a></li>
+  <li><a href="/mauve/user-guide/viewer.html">The viewer</a></li>
+  <li><a href="/mauve/user-guide/files.html">File formats</a></li>
+  <li><a href="/mauve/user-guide/reordering.html">Reordering contigs</a></li>
+  <li><a href="/mauve/user-guide/mauvealigner.html">mauveAligner</a></li>
+  <li><a href="/mauve/user-guide/progressivemauve.html">progressiveMauve</a></li>
+  <li><a href="/mauve/user-guide/versions.html">Version history</a></li>
+  <li><a href="/mauve/user-guide/screenshots.html">Screenshots</a></li>
+</ul>
+
+<h4 id="developer-guide"><strong>Developer Guide:</strong></h4>
+<ul>
+  <li><a href="/mauve/developer-guide/overview.html">Overview</a></li>
+  <li><a href="/mauve/developer-guide/building.html">Building from source</a></li>
+  <li><a href="/mauve/developer-guide/developing-the-gui.html">Developing the GUI</a></li>
+  <li><a href="/mauve/developer-guide/building-on-windows.html">Windows builds</a></li>
+  <li><a href="/mauve/developer-guide/building-on-mac.html">Mac builds</a></li>
+  <li><a href="/mauve/developer-guide/deploying-mauve-releases.html">Deploying Mauve</a></li>
+  <li><a href="/mauve/developer-guide/benchmarking.html">Benchmarking</a></li>
+</ul>
+
+
+  </td>
+  <td valign="top">  
+
+
+<div class="post">
+
+  <article class="post-content">
+    <h3 id="an-introduction-to-mauve">An introduction to Mauve</h3>
+
+<p>Over the course of evolution, genomes can undergo many small and large-scale changes. Local changes such as nucleotide substitution and indels have been observed in comparative studies of individual genes. Recombination, however, can cause large-scale changes such as gene loss, duplication, rearrangement, and horizontal transfer. Understanding the rates and patterns of each type of change is expected to yield insights into various biological processes.</p>
+
+<h3 id="genome-alignment---a-means-for-comparison">Genome Alignment - A means for comparison</h3>
+
+<p>The advent of genome sequencing provides the data needed to characterize rates and patterns of genome evolution. Genome alignments can identify evolutionary changes in the DNA by aligning homologous regions of sequence. Mauve is a software package that attempts to align orthologous and xenologous regions among two or more genome sequences that have undergone both local and large-scale changes.</p>
+
+<h3 id="locally-collinear-blocks">Locally Collinear Blocks</h3>
+
+<p>Because recombination can cause genome rearrangements, orthologous regions of one genome may be reordered or inverted relative to another genome. During the alignment process, Mauve identifies conserved segments that appear to be internally free from genome rearrangements. Such regions are referred to as Locally Collinear Blocks (LCBs).</p>
+
+<h3 id="the-original-mauve-algorithm">The original Mauve algorithm</h3>
+
+<p>This section gives a brief working overview of the Mauve algorithm. For more detail, please see the paper <a href="http://www.genome.org/cgi/content/abstract/14/7/1394">Mauve: Multiple Alignment of Conserved Genomic Sequence with Rearrangements</a> that appears in Genome Research.</p>
+
+<h5 id="anchored-alignment">Anchored alignment</h5>
+
+<p>Like many other genome alignment methods, Mauve uses the anchored alignment technique to rapidly align genomes. Unlike most genome alignment methods however, Mauve allows the order of alignment anchors to be rearranged in each genome permitting identification of genome rearrangements.</p>
+
+<h5 id="finding-anchors">Finding anchors</h5>
+
+<p>The current Mauve release uses inexact, ungapped matches as alignment anchors. The inexact matches are found using a seed-and-extend method, where each seed match conforms to a pattern of matching nucleotides. The approximate seed matching paradigm has previously been described by <a href="http://www.bioinformatics.uwaterloo.ca/papers/02ph.pdf">Ma. et. al 2002</a>. Mauve extends the pairwise seed matching paradigm to match multiple sequences simultaneously under the constraint that any seed must be unique in each genome. In order to be considered an anchor, the fully extended match must cover some minimum number of nucleotides. The minimum match length is user-definable, and Mauve has a default value that automatically adjusts for the size of genomes being aligned.</p>
+
+<h5 id="selecting-locally-collinear-blocks-lcbs">Selecting Locally Collinear Blocks (LCBs)</h5>
+
+<p>Among the initial set of anchors identified by Mauve, some will be random matches that should not be included in the correct genome alignment. Such random matches typically appear as small, insignificant genome rearrangements. In order to identify and discard such matches, Mauve requires that each collinear region of the alignment meets a “minimum weight” criteria. The weight of an LCB is defined as the sum of the lengths of matches in that LCB. Mauve removes matches composing low-weight LCBs from the set of alignment anchors before completing the alignment. The minimum LCB weight is a user-definable parameter, and by default Mauve chooses this value to be 3 times the minimum match size.</p>
+
+<h5 id="finishing-the-alignment">Finishing the alignment</h5>
+
+<p>Once a set of alignment anchors that define Locally Collinear Blocks have been determined, Mauve can complete a gapped global alignment of each LCB. Mauve applies the ClustalW or MUSCLE progressive global alignment algorithms to each LCB.</p>
+
+<h3 id="limitations-of-the-original-mauve-algorithm">Limitations of the original Mauve algorithm</h3>
+
+<ul>
+  <li>Mauve works best on closely-related organisms (like <em>E. coli</em> and <em>Salmonella</em> or <em>Y. pestis</em>)</li>
+  <li>Large regions shared by subsets of the genomes are not aligned</li>
+  <li>Rearranged regions shared by subsets of the genomes will not be identified</li>
+  <li>The minimum LCB weight must be manually determined for accurate estimation of genomic rearrangement</li>
+  <li>It has difficulty aligning genomes in which segmental duplications are common</li>
+</ul>
+
+<h3 id="the-progressivemauve-algorithm-addressing-limitations-of-the-original-algorithm">The progressiveMauve algorithm: addressing limitations of the original algorithm</h3>
+
+<p>Comparative genomics has revealed that closely-related bacteria often have highly divergent gene content.  While the original Mauve algorithm could align regions conserved among all organisms,  the portion of the genome conserved among all taxa (the core genome) shrinks as more taxa are added to the analysis.  As such, the original Mauve algorithm did not scale well to large numbers of taxa because it could not align regions conserved among subsets of the genomes under study. rogressiveMauve employs a different algorithmic approach to scoring alignments that allows alignment of segments conserved among subsets of taxa.  The progressiveMauve algorithm has been described in Aaron Darling’s Ph.D. Thesis, and is also the subject of a manuscript published in <a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0011147">PLoS ONE</a>.  A brief overview is given here.</p>
+
+<h3 id="finding-initial-local-multiple-alignments">Finding initial local multiple alignments</h3>
+
+<p>progressiveMauve elaborates on the original algorithm for finding local multiple alignments.  Instead of using a single seed pattern for match filtration, progressiveMauve uses a combination of three seed patterns for improved sensitivity.  The palindromic seed patterns have been described in Darling et al. 2006 “Procrastination leads to efficient filtration for local multiple alignment”</p>
+
+<p>Seed matches which represent a unique subsequence shared by two or more input genomes are subjected to ungapped extension until the seed pattern no longer matches.  The result is an ungapped local multiple alignment with at most one component from each of the input genome sequences.</p>
+
+<h3 id="computing-a-pairwise-genome-content-distance-matrix-and-guide-tree">Computing a pairwise genome content distance matrix and guide tree</h3>
+
+<p>progressiveMauve builds up genome alignments progressively according to a guide tree.  The guide tree is computed based on an estimate of the shared gene content among each pair of input genomes.  For a pair of input genomes, g.x and g.y, shared gene content is estimated by counting the number of nucleotides in gx and gy aligned to each other in the initial set of local multiple alignments.  The count is normalized to a similarity value between 0 and 1 by dividing by the average size of gx and gy.  The similarity value is subtracted from 1 to arrive at a distance estimate.  Neighbor joining is then applied to the matrix of distance estimates to yield a guide tree topology.  Note that the guide tree is not intended to be a phylogeny indicative of the genealogy of input genomes.  It is merely a computational crutch for progressive genome alignment.  Also note that alignments are later refined independently of a single guide tree toplogy to avoid biasing later phylogenetic inference.</p>
+
+<h3 id="computing-a-pairwise-breakpoint-distance-matrix">Computing a pairwise breakpoint distance matrix</h3>
+
+<p>Prior to alignment, progressiveMauve attempts to compute a conservative estimate of the number of rearrangement breakpoints among any pair of genomes.  For each pair of genomes, pairwise alignments are created from the local-multiple alignments and the pairwise alignments are subjected to greedy breakpoint elimination.  The breakpoint penalty used for greedy breakpoint elimination is set high for closely related genomes and scaled downward according to the estimate of genomic content distance.  Because the breakpoint penalty is high, the resulting set of locally collinear blocks represent robustly supported segmental homology, and a conservative estimate of the breakpoint distance can be made on this basis.  The conservative estimate of breakpoint distance is used later during progressive alignment to scale breakpoint penalties.</p>
+
+<h3 id="progressive-genome-alignment">Progressive genome alignment</h3>
+
+<p>A genome alignment is progressively built up according to the guide tree.  At each step of the progressive genome alignment, alignment anchors are selected from the initial set of local multiple alignments.  Anchors are selected so that they maximize a Sum-of-pairs scoring scheme which applies a penalty for predicting breakpoints among any pair of genomes.  Because rates of genomic rearrangement are highly variable, especially in some bacterial pathogens, some genomes may be expected to exhibit greater rearrangement than others.  As such, a single choice of scoring penalty is unlikely to yield accurate alignments for all genomes.  To cope with this phenomenon, progressiveMauve scales the breakpoint penalty according to the expected level of sequence divergence and the number of well-supported genomic rearrangements among the pair of input genomes.  These scaling values are taken from the distance matrices computed earlier in the algorithm.</p>
+
+<h3 id="anchored-alignment-1">Anchored alignment</h3>
+
+<p>Once anchors have been computed at a node in the guide tree, a global alignment is computed on the basis of the anchors.  Given a set of anchors among two genomes, a genome and an alignment, or a pair of alignments, a modified MUSCLE global alignment algorithm is applied to compute an anchored profile-profile alignment.  MUSCLE is then used to perform tree-independent iterative refinement on the global genome alignment.</p>
+
+<h3 id="rejecting-alignment-of-unrelated-sequence">Rejecting alignment of unrelated sequence</h3>
+
+<p>Although we compute a global alignment among sequences, genomes often contain lineage-specific sequence and are thus not globally related.  The global alignment will often contain forced alignment of unrelated sequence.  A simple hidden Markov model structure is used to detect forced alignment of unrelated sequence, which are then removed from the alignment.</p>
+
+<h3 id="strengths-of-the-progressivemauve-algorithm">Strengths of the progressiveMauve algorithm</h3>
+
+<ul>
+  <li>It can be applied to a much larger number of genomes than the original Mauve algorithm</li>
+  <li>It can align more divergent genomes than the original algorithm.  Genomes with as little as 50% nucleotide identity can be alignable</li>
+  <li>Manual adjustment of the alignment scoring parameters is usually not necessary</li>
+  <li>It aligns the pan-genome, e.g. regions conserved among subsets of the input genomes</li>
+  <li>It is more accurate than the previous Mauve algorithm</li>
+</ul>
+
+<h3 id="limitations-of-the-progressivemauve-algorithm">Limitations of the progressiveMauve algorithm</h3>
+
+<ul>
+  <li>It is substantially slower than the original Mauve algorithm</li>
+  <li>It consumes more memory than the original Mauve algorithm</li>
+</ul>
+
+
+  </article>
+
+</div>
+
+
+  </td>
+  </table>
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>the Darling lab | computational (meta)genomics</li>
+          <li><a href="mailto:aaron.darling@uts.edu.au">aaron.darling@uts.edu.au</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/koadman">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">koadman</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/koadman">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">koadman</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">The Darling lab at the University of Technology Sydney. We develop computational and molecular techniques to characterize the hidden world of microbes.
+</p>
+      </div>
+    </div>
+    <img alt="tree of bacterial and archaeal life, showing human gut lineages in blue" src="/assets/tree.png">
+
+  </div>
+</footer>
+
+
+  </body>
+
+</html>

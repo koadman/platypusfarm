@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>the Darling lab | computational (meta)genomics</title>
+  <meta name="description" content="The Darling lab at the University of Technology Sydney. We develop computational and molecular techniques to characterize the hidden world of microbes.
+">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://darlinglab.org/mauve/user-guide/files.html">
+  <link rel="alternate" type="application/atom+xml" title="the Darling lab | computational (meta)genomics" href="http://darlinglab.org/feed.xml" />
+  <link rel="shortcut icon" href="/site32.jpg" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">the Darling lab | computational (meta)genomics</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/mauve/mauve.html">Mauve</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/openings/">Openings</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/people/">People</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/projects/">Projects</a>
+          
+        
+          
+          <a class="page-link" href="/publications/">Publications</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/reviews/">Reviews</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/software/">Software</a>
+          
+        
+          
+        
+          
+        
+	<!-- special link for tutorials pages, which are done with MkDocs -->
+        <a class="page-link" href="/tutorials">Tutorials</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <head>
+  <link rel="shortcut icon" href="/mauve/favicon.ico" />
+</head>
+
+
+
+
+  <table>
+  <tr>
+  <td width="175" valign="top">
+  
+<h4 id="download-mauve"><a href="/mauve/download.html"><strong>Download Mauve</strong></a></h4>
+
+<h4 id="user-guide"><strong>User Guide:</strong></h4>
+<ul>
+  <li><a href="/mauve/user-guide/introduction.html">Introduction</a></li>
+  <li><a href="/mauve/user-guide/installing.html">Installing</a></li>
+  <li><a href="/mauve/user-guide/aligning.html">Aligning genomes</a></li>
+  <li><a href="/mauve/user-guide/viewer.html">The viewer</a></li>
+  <li><a href="/mauve/user-guide/files.html">File formats</a></li>
+  <li><a href="/mauve/user-guide/reordering.html">Reordering contigs</a></li>
+  <li><a href="/mauve/user-guide/mauvealigner.html">mauveAligner</a></li>
+  <li><a href="/mauve/user-guide/progressivemauve.html">progressiveMauve</a></li>
+  <li><a href="/mauve/user-guide/versions.html">Version history</a></li>
+  <li><a href="/mauve/user-guide/screenshots.html">Screenshots</a></li>
+</ul>
+
+<h4 id="developer-guide"><strong>Developer Guide:</strong></h4>
+<ul>
+  <li><a href="/mauve/developer-guide/overview.html">Overview</a></li>
+  <li><a href="/mauve/developer-guide/building.html">Building from source</a></li>
+  <li><a href="/mauve/developer-guide/developing-the-gui.html">Developing the GUI</a></li>
+  <li><a href="/mauve/developer-guide/building-on-windows.html">Windows builds</a></li>
+  <li><a href="/mauve/developer-guide/building-on-mac.html">Mac builds</a></li>
+  <li><a href="/mauve/developer-guide/deploying-mauve-releases.html">Deploying Mauve</a></li>
+  <li><a href="/mauve/developer-guide/benchmarking.html">Benchmarking</a></li>
+</ul>
+
+
+  </td>
+  <td valign="top">  
+
+
+<div class="post">
+
+  <article class="post-content">
+    <p>When a genome alignment is created, Mauve creates several output files containing data related to the alignment. Two of these files, the .mauve and .alignment files actually contain the alignment in two different formats. The other files contain auxiliary information such as the genome phylogenetic guide tree that was used for alignment, an identity matrix for the genomes, the location of backbone – regions conserved among all genomes, and the locations of islands – regions where one or a subset of the genomes has a unique sequence element.</p>
+
+<p>The following sections describe the information contained by each of these files and their associated file formats.</p>
+
+<h3 id="the-alignment-file-and-the-xmfa-file-format">The .alignment file and the XMFA file format</h3>
+
+<p>The .alignment file contains the complete genome alignment generated by Mauve in the eXtended Multi-FastA (XMFA) file format. This standard file format is also used by other genome alignment systems that align sequences with rearrangements. The XMFA file format supports the storage of several collinear sub-alignments, each separated with an = sign, that constitute a single genome alignment. Each sub-alignment consists of one FastA format sequence entry per genome where the entry’s defline gives the strand (orientation) and location in the genome of the sequence in the alignment.</p>
+
+<p>The general structure of the file format as described by its author (<a href="http://www.cs.toronto.edu/~brudno">Michael Brudno</a>) is as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;seq_num:start1-end1 ± comments (sequence name, etc.)
+AC-TG-NAC--TG
+AC-TG-NACTGTG
+...
+
+&gt; seq_num:startN-endN ± comments (sequence name, etc.)
+AC-TG-NAC--TG
+AC-TG-NACTGTG
+...
+= comments, and optional field-value pairs, i.e. score=12345
+
+&gt; seq_num:start1-end1 ± comments (sequence name, etc.)
+AC-TG-NAC--TG
+AC-TG-NACTGTG
+...
+
+&gt; seq_num:startN-endN ± comments (sequence name, etc.)
+AC-TG-NAC--TG
+AC-TG-NACTGTG
+...
+= comments, and optional field-value pairs, i.e. score=12345
+</code></pre></div></div>
+
+<h3 id="non-standard-xmfa-formatting-used-by-the-mauve-gui">Non-standard XMFA formatting used by the Mauve GUI</h3>
+
+<p>The Java-based Mauve alignment viewer requires some non-standard formatting of the XMFA file in order to display it.  Most importantly, the Mauve viewer requires that every nucleotide of the input genome sequences be recorded exactly once in the XMFA file.  Thus, nucleotides in one genome can not to multiple sites in a second genome.  For segments of a genome that did not align and were outside LCBs, these segments most be given as ungapped singleton entries in the XMFA:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; seq_num:startN-endN ± comments
+ACTCAGGTTATCG...
+=
+</code></pre></div></div>
+
+<p>A second non-standard formatting requirement is that the first LCB entry in the XMFA list all input genome sequences, even if they did not align in that LCB.  Genomes that have no sequence in that LCB are given using 0-0 as the coordinate range.  For example, in an alignment of four genomes where only two were aligned in the first LCB, the initial LCB might look like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; 1:0-0 +
+
+&gt;2:1-377 +
+ACGA---TAAAATTCCC...
+
+&gt;3:1-422 - 
+ACTACCCTACAATTGGC...
+
+&gt;4:0-0 + 
+=
+</code></pre></div></div>
+
+<h3 id="the-mauve-alignment-file-format">The Mauve alignment file format</h3>
+
+<p>The .mauve or .mln file also contains a representation of the genome alignment. Instead of including every aligned nucleotide as in the XMFA format, the Mauve alignment format stores the coordinates of large exactly matching regions to save space. For similar genomes the Mauve alignment format saves a significant amount of disk space over the XMFA format.</p>
+
+<p>The mauve alignment format begins with a single line stating the revision of the file format, followed by several lines describing the sequences that were aligned. Using the alignment of three Salmonella genomes as an example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FormatVersion 4
+SequenceCount 3
+Sequence0File D:\S_typhi.fas
+Sequence0Length 4809037
+Sequence1File D:\S_typhi2.fas
+Sequence1Length 4791961
+Sequence2File D:\S_typhimurium.fas
+Sequence2Length 4857432
+IntervalCount 69
+</code></pre></div></div>
+
+<p>Currently Mauve uses version 4 of its alignment file format. The next line contains the token SequenceCount which is used to specify the number of sequences aligned. Two lines are then given for each sequence, the first specifying the location of the original sequence file and the second specifying the sequence length in nucleotides. The final line contains the token IntervalCount which specifies the number of locally collinear blocks that were found among the aligned genomes.</p>
+
+<p>The remainder of the file contains a number of Interval definitions, each of which specifies an LCB– one collinear region of aligned sequence. Together, these LCBs make up a complete genome alignment with rearrangements. Here is an example interval definition:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Interval 3
+153 292618 -2687311 294793
+GappedAlignment
+7 292771 -2687304 294946
+GCCTGCG
+GCCTGCG
+CCATGTC
+53 292778 -2687251 294953
+GappedAlignment
+1 292831 -2687250 295006
+A
+A
+G
+127 292832 -2687123 295007
+</code></pre></div></div>
+
+<p>Each LCB begins with an Interval token specifying the relative position of the LCB within the first genome aligned (the reference genome). Subsequent lines specify the actual alignment. When constructing an alignment, Mauve chooses a set of multi-MUMs (exactly matching regions present in each genome aligned) to anchor its alignment with. Each Interval definition records the position of these multi-MUM anchors in addition to alignments of the regions between anchors that were calculated using Clustal-W. In the example above, the line 153 292618 -2687311 294793 records a multi-MUM of length 153, with a left-end at 292,618 in S_typhi, on the opposite strand at position 2,687,311 in S_typhi2, and at 294,793 in S_typhimurium.</p>
+
+<p>The next 5 lines in the example above give an alignment of inexactly matching sequence generated by ClustalW. The token ClustalResult indicates that the following lines belong to such an alignment. The next line gives the total length of the (possibly gapped) alignment and the left-end of the Clustal alignment in each genome. Finally, the next three lines (one per sequence aligned) record the actual alignment.</p>
+
+<p>Each Interval records one or more of the multi-MUM and Clustal alignment entries which, when strung together, can specify a complete alignment over the region spanned by the LCB.</p>
+
+<h3 id="the-islands-file">The islands file</h3>
+
+<p>The .islands file contains a tab-delimited text listing of genomic islands found in the alignment. Each island represents a region of the alignment where one or more genomes have a sequence element that one or more others lack. In the current Mauve implementation, an island is defined by the genome coordinates of one sequence where another genome contains a gap of length n or longer in that part of the alignment. The length of gaps that constitute islands can be set with the Minimum Island Size field of the Align sequences dialog box. For example, if n was defined as 5 for the following alignment:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Genome 0: ACACGTTCGCTTCGAAA
+Genome 1: ACAC------TTCGAA-
+Genome 2: ATACGATCGCTTCGTAA
+</code></pre></div></div>
+
+<p>We would say that genomes 0 and 2 have an island at positions 5 though 10. Each line of the .islands file records a single island in the form: GenomeA # <code class="language-plaintext highlighter-rouge">&lt;tab&gt;</code> leftA <code class="language-plaintext highlighter-rouge">&lt;tab&gt;</code> rightA <code class="language-plaintext highlighter-rouge">&lt;tab&gt;</code> GenomeB # <code class="language-plaintext highlighter-rouge">&lt;tab&gt;</code> leftB <code class="language-plaintext highlighter-rouge">&lt;tab&gt;</code> rightB. So in the .islands file, our example islands would be recorded as:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0 4 11 1 4 5
+1 4 5 2 4 11
+</code></pre></div></div>
+
+<p>The first line records that in Genome #0 nucleotides 4 through 11 align with nucleotides 4 though 5 in Genome #1. Similarly, the second line records that nucleotides 4 and 5 of Genome #1 align with nucleotides 4 through 11 of Genome #2. In both cases the island length is 6 and can be calculated as absolute((rightA - leftA) - (rightB - leftB)). Note that negative left and right values indicate the inverse orientation (the opposite strand).</p>
+
+<h3 id="the-original-mauve-backbone-file">The original Mauve backbone file</h3>
+
+<p>The .backbone file records regions of the alignment where sequence is conserved among all of the genomes being aligned. The current Mauve implementation defines a conserved region as an area of the alignment at least x nucleotides long that contains no gaps as long or longer than y nucleotides. When using the Align sequences window to perform an alignment, the values of x and y are fixed to the minimum island size. These values can be set explicitly using the command-line mauveAligner application.</p>
+
+<p>Each line of the .backbone file records a single conserved segment. Left and right end coordinates of the conserved segment are given for each genome sequence. For example, the line:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>22256 22371 20147 20299 22255 22370
+</code></pre></div></div>
+
+<p>Would indicate that nucleotides 22,256 through 22,371 from the first genome are conserved in the second and third genomes from 20,145 through 20,299, and 22,255 through 22,370 respectively. Two entries exist per genome, and each entry is tab-delimited. Negative valued coordinates indicate an inverted region (on the opposite strand).</p>
+
+<h3 id="the-progressive-mauve-backbone-file">The Progressive Mauve backbone file</h3>
+
+<p>Progressive Mauve utilizes a revised backbone file format which reflects its ability to align regions conserved among subsets of the genomes under study.  A short example of the backbone file format is:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>seq_0_leftend	seq_0_rightend	seq_1_leftend	seq_1_rightend	seq_2_leftend	seq_2_rightend
+1             15378          1            	15377          1             15377
+16728        	19795         	15378        	18446         	15378        	18445
+0            	0             	18447        	18668         	18446        	18667
+19796        	20566         	18669        	19439         	18668        	19438
+</code></pre></div></div>
+
+<p>The first line is a header line, indicating the information contained by each column.  Each subsequent line corresponds to a segment of DNA conserved among two or more genomes.  Thus, the first line indicates that the segment between coordinates 1 and 15378 in the first genome is homologous to the segment between coordinates 1 and 15377 of the second and third genomes.  Similarly, the second line indicates that the segment [16728-19795] in the first genome is homologous to [15378-18446] in the second genome and [15378-18445] in the third genome.</p>
+
+<p>An island exists in the first genome between [15379-16727], and its existence is given in the backbone file as a lack of any line containing that segment.  The seq_0_rightend column skips from 15378 on line 1 to 16728 on line two.  By default, the rows of the backbone file are sorted on the seq_0_leftend column (absolute value).  To infer islands in seq 0, we can thus simply compare the rightend of one line to the leftend from the subsequent line. The data can be trivially processed to observe islands in other genomes using a spreadsheet program like OpenOffice Calc or MS Excel.  Simply sort the rows on the absolute value of the column for a sequence (e.g. seq_2_leftend) and then compare right-end to left-end on the subsequent line.</p>
+
+<p>An island (or subset backbone) also exists in the second and third genomes.  The existence of the subset backbone is given on the third line, where seq_0_leftend and seq_0_rightend both have zero values to indicate that the first genome lacks any detectable homology to the segments [18447-18668] in the second genome and [18446-18667] in the third genome.</p>
+
+<h3 id="the-guide-tree-file">The guide tree file</h3>
+
+<p>The guide tree is the standard Newick tree file format. A decent description of the Newick tree file format can be read here: <a href="http://evolution.genetics.washington.edu/phylip/newicktree.html">http://evolution.genetics.washington.edu/phylip/newicktree.html</a></p>
+
+<h3 id="the-identity-matrix-file">The identity matrix file</h3>
+
+<p>This is tab-delimited text where rows and columns are genomes in the order input to the aligner. Identity scores range between 0 and 1, where 0 indicates that no identical homologous nucleotides were found, and 1 indicates that every homologous nucleotide was identical.</p>
+
+<h3 id="the-permutation-matrix-file">The permutation matrix file</h3>
+
+<p>This is a tab-delimited text file that records the order and orientation that each LCB occurs in the aligned genomes.  The permutation matrix file can be used to infer phylogenetic rearrangement history using tools such as BADGER, GRAPPA, MGR, and others.  This file is generated by adding the command-line option –permutation-matrix-output=<filename> when running mauveAligner.  An example of a file with three genomes and seven LCBs follows:</filename></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0   1   2   3   4   5   6
+1   2   3  -6  -5  -4   0
+0   1   2   3  -6  -5  -4 
+</code></pre></div></div>
+
+<p>Each genome is recorded on a single line, with lines ordered according to the order of input genomes.  The LCB arrangements are recorded on each line, with the first genome used as a reference genome to assign numeric identifiers to LCBs.  A minus sign (-) indicates that a block is inverted relative to the reference genome.</p>
+
+<h3 id="the-lcb-boundary-file">The LCB boundary file</h3>
+
+<p>This is another tab-delimited file that complements the permutation matrix file with information about the LCB boundaries.   This file can be used, for example, to derive the lengths of blocks and by extension, the lengths of genome rearrangements predicted by a rearrangement history reconstruction algorithm.  An example of the file format for three genomes follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#seq0_leftend  seq0_rightend  seq1_leftend  seq1_rightend  seq2_leftend  seq2_rightend
+1              11936          250           14147          1             11951
+13856          54361          16067         56756          -3398531      -3439222
+57092          120151         3854873       3917932        -41024        -106027
+... 
+</code></pre></div></div>
+
+<p>The file starts with a header line defining the content of each column.  Each subsequent row defines the left- and right-side LCB boundaries for one LCB.  Thus, the first row indicates that nucleotides 1-11936 from genome 0 correspond to nucleotides 250-14147 from genome 1 and nucleotides 1-11951 from genome 2.</p>
+
+<h3 id="the-snp-file">The SNP file</h3>
+
+<p>This tab-delimited file can be created from alignments using Mauve version 2.3.0 and later.  For every polymorphic site in an alignment, the SNP file records the nucleotides present in each genome at that site, along with the sequence coordinates of the site in each genome.  An example on three genomes is as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SNP pattern     sequence_1      sequence_2      sequence_3
+AAT     5276590 5246627 394
+TTC     5276784 5246821 588
+AAC     5277418 5247455 1222
+MAA     5278225 5248262 2030
+AAC     5282804 5252841 6609
+</code></pre></div></div>
+
+<p>The first column lists the SNP pattern with sequences ordered the same as when input for alignment. The top of the XMFA file can be used as a reference for sequence filenames. Each subsequent column contains coordinates for each of the genomes in turn.  Thus each line lists a SNP pattern and the location of that SNP in each genome.  Note that IUPAC nucleotide ambiguity codes are considered as possible SNPs – hence the M in the fourth example SNP above.</p>
+
+<h3 id="the-orthologs-file">The orthologs file</h3>
+
+<p>The orthologs file is a tab-delimited file that can be created from progressiveMauve alignments using Mauve version 2.3.0 and later.  The ortholog file lists groups of annotated and unannotated genes that are predicted to be positionally orthologous by whole-genome multiple alignment. Each row in the file lists a group of orthologous genes, along with the index of the genome from which the gene derives, the name of the gene (if given in the annotation file) and its sequence coordinates in the global coordinate system of that genome.  Entries within a line are tab-delmited and colon-delimited. An example for 4 genomes follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0:Z03:2818-3750  1:c04:3512-4444  2::2801-3733    3:ECSE_03:2800-3732
+0:Z04:3751-5037  1:c05:4445-5731  2::3734-5020    3:ECSE_04:3733-5019
+0:Z05:5251-5547  1:c07:5945-6241  1:c08:6021-6269  2::5234-5530  3:ECSE_05:5233-5529
+0:Z06:5700-6476  1:c10:6301-7077  3:ECSE_06:5682-6458
+</code></pre></div></div>
+
+<p>The first line lists a group of four orthologous genes, with one gene coming from each genome.  In the first entry 0:Z03:2818-3750, the leading 0 refers to the genome’s index, with indices assigned in the order the genomes were input for alignment.  Thus genome 0 is the first genome, 1 is the second, and so on.  The next part, Z03, refers to the locus_tag identifier for the annotated gene. The third colon-delimited part refers to the coordinate range of the annotated gene.  The remainder of the line lists out genes in the other three genomes found to be positionally orthologous.  In the case of genome 2 we have an entry 2::2801-3733.  In this case there was no gene annotated in the region, but a region was found to be positionally orthologous, and so the coordinates of that region are listed without a locus_tag.</p>
+
+<p>The third line in the example highlights a situation where multiple annotated genes in one genome are found to be orthologous to a single gene in other genomes.  In this case, two overlapping genes were annotated in genome 1, and each of those genes individually was predicted to be positionally orthologous to the corresponding genes in other genomes.  Since they overlap and are orthologous to the same genes in other genomes, they are considered a group of positional orthologs.  Thus, any group of positional orthologs may contain multiple genes from a single genome.</p>
+
+<p>The fourth line in the example illustrates the situation where one of the genomes does not have a positional ortholog of the genes.  In this case, genome 2 lacks a region predicted to be positionally orthologous.</p>
+
+  </article>
+
+</div>
+
+
+  </td>
+  </table>
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>the Darling lab | computational (meta)genomics</li>
+          <li><a href="mailto:aaron.darling@uts.edu.au">aaron.darling@uts.edu.au</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/koadman">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">koadman</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/koadman">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">koadman</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">The Darling lab at the University of Technology Sydney. We develop computational and molecular techniques to characterize the hidden world of microbes.
+</p>
+      </div>
+    </div>
+    <img alt="tree of bacterial and archaeal life, showing human gut lineages in blue" src="/assets/tree.png">
+
+  </div>
+</footer>
+
+
+  </body>
+
+</html>

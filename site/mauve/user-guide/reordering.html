@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>the Darling lab | computational (meta)genomics</title>
+  <meta name="description" content="The Darling lab at the University of Technology Sydney. We develop computational and molecular techniques to characterize the hidden world of microbes.
+">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://darlinglab.org/mauve/user-guide/reordering.html">
+  <link rel="alternate" type="application/atom+xml" title="the Darling lab | computational (meta)genomics" href="http://darlinglab.org/feed.xml" />
+  <link rel="shortcut icon" href="/site32.jpg" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">the Darling lab | computational (meta)genomics</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/mauve/mauve.html">Mauve</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/openings/">Openings</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/people/">People</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/projects/">Projects</a>
+          
+        
+          
+          <a class="page-link" href="/publications/">Publications</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/reviews/">Reviews</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/software/">Software</a>
+          
+        
+          
+        
+          
+        
+          
+        
+	<!-- special link for tutorials pages, which are done with MkDocs -->
+        <a class="page-link" href="/tutorials">Tutorials</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <head>
+  <link rel="shortcut icon" href="/mauve/favicon.ico" />
+</head>
+
+
+
+
+  <table>
+  <tr>
+  <td width="175" valign="top">
+  
+<h4 id="download-mauve"><a href="/mauve/download.html"><strong>Download Mauve</strong></a></h4>
+
+<h4 id="user-guide"><strong>User Guide:</strong></h4>
+<ul>
+  <li><a href="/mauve/user-guide/introduction.html">Introduction</a></li>
+  <li><a href="/mauve/user-guide/installing.html">Installing</a></li>
+  <li><a href="/mauve/user-guide/aligning.html">Aligning genomes</a></li>
+  <li><a href="/mauve/user-guide/viewer.html">The viewer</a></li>
+  <li><a href="/mauve/user-guide/files.html">File formats</a></li>
+  <li><a href="/mauve/user-guide/reordering.html">Reordering contigs</a></li>
+  <li><a href="/mauve/user-guide/mauvealigner.html">mauveAligner</a></li>
+  <li><a href="/mauve/user-guide/progressivemauve.html">progressiveMauve</a></li>
+  <li><a href="/mauve/user-guide/versions.html">Version history</a></li>
+  <li><a href="/mauve/user-guide/screenshots.html">Screenshots</a></li>
+</ul>
+
+<h4 id="developer-guide"><strong>Developer Guide:</strong></h4>
+<ul>
+  <li><a href="/mauve/developer-guide/overview.html">Overview</a></li>
+  <li><a href="/mauve/developer-guide/building.html">Building from source</a></li>
+  <li><a href="/mauve/developer-guide/developing-the-gui.html">Developing the GUI</a></li>
+  <li><a href="/mauve/developer-guide/building-on-windows.html">Windows builds</a></li>
+  <li><a href="/mauve/developer-guide/building-on-mac.html">Mac builds</a></li>
+  <li><a href="/mauve/developer-guide/deploying-mauve-releases.html">Deploying Mauve</a></li>
+  <li><a href="/mauve/developer-guide/benchmarking.html">Benchmarking</a></li>
+</ul>
+
+
+  </td>
+  <td valign="top">  
+
+
+<div class="post">
+
+  <article class="post-content">
+    <h3 id="when-to-use-mauve-contig-mover-mcm">When to use Mauve Contig Mover (MCM)</h3>
+
+<p>The Mauve Contig Mover (MCM) can be used to order a draft genome relative to a related reference genome.  The functionality of this software module has been described in <a href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp356">Rissman et al. 2009</a>, a publication in Bioinformatics. The Mauve Contig Mover can ease a comparative study between draft and reference sequences by ordering draft contigs according to the reference genome.  In many cases, true rearrangements in the draft relative to the reference can be identified.  The quality of the reorder is limited by the distance between the sequences, as indicated by the amount of shared gene content among the two organisms.  A more distant reference will usually yield fewer ordered draft genome contigs, and may also induce erroneous placements of draft contigs.  In addition to ordering contigs, MCM also orient them in the most likely orientation, and, if annotated sequence features are specified in an input file (e.g. with GenBank format input for the draft), MCM will output adjusted coordinates ranges for the features.</p>
+
+<h3 id="using-mauve-contig-mover">Using Mauve Contig Mover</h3>
+
+<p>Mauve Contig Mover can be launched from the Tools-&gt;Order Contigs Menu of The Mauve Viewer.</p>
+
+<p><img src="toolsmenu.png" alt="Starting the Mauve Contig Mover from within Mauve" /></p>
+
+<p>Once the Mauve Contig Mover has been launched, it starts by requesting the user to specify an output directory.  MCM will create a series of mauve alignments in the output directory, structured into several subfolders, so creating a new, empty output folder is often best to minimize clutter.  The output directory selection is shown below.</p>
+
+<p><img src="filedialog.png" alt="Dialog box to choose an output folder for the Mauve Contig Mover" /></p>
+
+<p>Once the output directory has been set, a window similar to the Progressive Mauve Alignment Window appears.  Using the Progressive Mauve alignment window is described in more detail in the section “Constructing a genome alignment “, but when used for reordering contigs,  the following additional notes and constraints apply:</p>
+<ol>
+  <li>Only two sequences should be entered.  The first must always be the reference, the second the draft genome to reorder.  The first may also be a draft, but only the second will be reordered.</li>
+  <li>The reference genome may be in any of the allowable file formats, the draft must either be in a fasta or genbank file.  If the draft is in genbank format, a unique identifier must be specified in either the LOCUS tag of each contig.</li>
+  <li>The alignment parameters have already been adjusted for what is generally best for draft genomes.  This may depend on the draft and reference, and can be adjusted if needed.</li>
+</ol>
+
+<h3 id="the-reordering-process">The Reordering Process</h3>
+
+<p>The reordering will begin when the start button is pressed.  It is an iterative process, and may take anywhere from a half hour to several hours.  It may be cancelled at any point (intermediate results will be viewable).  If it is canceled after the first reorder the reordered draft genome will be available in a Multi-FastA file in the corresponding output directory, although an alignment of the canceled ordering step will not be present.  If the ordering process is not manually ended, it will terminate when it finds an order has repeated.  Sometimes the order will cycle through several possibilities; this indicates it cannot determine which of them is most likely. Alignment parameters may be changed before reorder starts or any time between alignments.
+The following message will appear when the reorder process is complete:</p>
+
+<p><img src="reorderdone.png" alt="Notification that a contig reordering has completed" /></p>
+
+<h3 id="the-mcm-output-files">The MCM Output Files</h3>
+
+<p>MCM will output a series of folders called alignment1-alignmentX, representing each iteration of the reorder.  Each has the standard Mauve alignment files, as described in the section Mauve Output File Formats .  Each folder also has an additional file called name_of_genome_contigs.tab, where “name_of_genome” is the draft genome’s name.  This file is included for ease of interpreting reorder results, and also acts as an index to the fasta as the contig orders and orientations change (even if the draft was originally input as a genbank, after the first alignment, it will be converted to a fasta with annotation information preserved in a file described below).  The file is divided into 3 sections, each containing a list of contigs.  The data for each contig includes its label (name), its location in the genome (numbered in pseudocoordinates from the first to last contig; these coordinates can be entered into the View-&gt;Go To-&gt;Sequence Position menu option to jump to that contig using the Mauve Alignment Viewer), and whether it is oriented the same as originally input, or was complemented.  The three sections are described below:</p>
+
+<ol>
+  <li>
+    <p>Contigs to reverse:  This section contains contigs whose order is reversed with respect to the previous iteration.  Note that contigs in this section may be oriented the same as originally input, this can be determined from the forward orcomplement designation.</p>
+  </li>
+  <li>
+    <p>Ordered Contings:    This is a list of all the contigs in the order and orientation they appear in the fasta for the draft of this iteration of the reorder.  Since these include all the contigs in the original input, those with no ordering information (no aligned region) will be clustered at the end.  These will appear as contigs with no LCBs at the end of the draft genome.</p>
+  </li>
+  <li>
+    <p>Contigs with Conflicting Order information:    This is a list of contigs containing LCBs suggesting multiple possible locations.  These may be of interest to verify positioning, or to look at points of potential rearrangement or misassembly.</p>
+  </li>
+</ol>
+
+<p>If the draft was input as an annotated genbank file, a second file will appear in each alignment folder called name_of_genome_features.tab.  This file will contain a line for each annotation, information about its current orientation and location (which will change if the contig is inverted), coordinates from the previous iteration (indicating relative orientation), and whether it is reversed from the original input.  It will also have a label field used to identify each feature.  This will be gotten from the annotation, as checked in the following order:  db_xref, label, gene, and locus_tag.</p>
+
+<p>Thus, the folder with the highest numbered alignment contains a fasta and one (or possibly two) descriptor files representing the final order of the draft genome.</p>
+
+<h3 id="reordering-contigs-from-the-command-line-batch-mode">Reordering contigs from the command-line (batch mode)</h3>
+<p>In situations where it is necessary to order contigs in a large number of draft genomes it is often more desirable to automate the process using command-line interfaces and scripts. Mauve Contig Mover supports command-line operation through the Mauve Java JAR file.</p>
+
+<p>Given a reference genome file called “reference.gbk” and a draft genome called “draft.fasta”, one would invoke the reorder program with the following syntax:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java -Xmx500m -cp Mauve.jar org.gel.mauve.contigs.ContigOrderer -output results_dir -ref reference.gbk -draft draft.fasta
+</code></pre></div></div>
+
+<p>The file Mauve.jar is part of the Mauve distribution.  On windows systems it can usually be found in C:\Program Files\Mauve X\Mauve.jar where X is the version of Mauve.  On Mac OS X it is located inside the Mauve application.  For example, if Mauve has been placed in the OS X applications folder, Mauve.jar can be found at /Applications/Mauve.app/Contents/Resources/Java/Mauve.jar.  On Linux, Mauve.jar is simply at the top level of the tar.gz archive.  In the above example command, it will be necessary to specify the full path to the Mauve.jar file.</p>
+
+
+  </article>
+
+</div>
+
+
+  </td>
+  </table>
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>the Darling lab | computational (meta)genomics</li>
+          <li><a href="mailto:aaron.darling@uts.edu.au">aaron.darling@uts.edu.au</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/koadman">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">koadman</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/koadman">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">koadman</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">The Darling lab at the University of Technology Sydney. We develop computational and molecular techniques to characterize the hidden world of microbes.
+</p>
+      </div>
+    </div>
+    <img alt="tree of bacterial and archaeal life, showing human gut lineages in blue" src="/assets/tree.png">
+
+  </div>
+</footer>
+
+
+  </body>
+
+</html>

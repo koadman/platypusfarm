@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>the Darling lab | computational (meta)genomics</title>
+  <meta name="description" content="The Darling lab at the University of Technology Sydney. We develop computational and molecular techniques to characterize the hidden world of microbes.
+">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://darlinglab.org/mauve/developer-guide/building-on-mac.html">
+  <link rel="alternate" type="application/atom+xml" title="the Darling lab | computational (meta)genomics" href="http://darlinglab.org/feed.xml" />
+  <link rel="shortcut icon" href="/site32.jpg" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">the Darling lab | computational (meta)genomics</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/mauve/mauve.html">Mauve</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/openings/">Openings</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/people/">People</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/projects/">Projects</a>
+          
+        
+          
+          <a class="page-link" href="/publications/">Publications</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/reviews/">Reviews</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/software/">Software</a>
+          
+        
+          
+        
+          
+        
+	<!-- special link for tutorials pages, which are done with MkDocs -->
+        <a class="page-link" href="/tutorials">Tutorials</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <head>
+  <link rel="shortcut icon" href="/mauve/favicon.ico" />
+</head>
+
+
+
+
+  <table>
+  <tr>
+  <td width="175" valign="top">
+  
+<h4 id="download-mauve"><a href="/mauve/download.html"><strong>Download Mauve</strong></a></h4>
+
+<h4 id="user-guide"><strong>User Guide:</strong></h4>
+<ul>
+  <li><a href="/mauve/user-guide/introduction.html">Introduction</a></li>
+  <li><a href="/mauve/user-guide/installing.html">Installing</a></li>
+  <li><a href="/mauve/user-guide/aligning.html">Aligning genomes</a></li>
+  <li><a href="/mauve/user-guide/viewer.html">The viewer</a></li>
+  <li><a href="/mauve/user-guide/files.html">File formats</a></li>
+  <li><a href="/mauve/user-guide/reordering.html">Reordering contigs</a></li>
+  <li><a href="/mauve/user-guide/mauvealigner.html">mauveAligner</a></li>
+  <li><a href="/mauve/user-guide/progressivemauve.html">progressiveMauve</a></li>
+  <li><a href="/mauve/user-guide/versions.html">Version history</a></li>
+  <li><a href="/mauve/user-guide/screenshots.html">Screenshots</a></li>
+</ul>
+
+<h4 id="developer-guide"><strong>Developer Guide:</strong></h4>
+<ul>
+  <li><a href="/mauve/developer-guide/overview.html">Overview</a></li>
+  <li><a href="/mauve/developer-guide/building.html">Building from source</a></li>
+  <li><a href="/mauve/developer-guide/developing-the-gui.html">Developing the GUI</a></li>
+  <li><a href="/mauve/developer-guide/building-on-windows.html">Windows builds</a></li>
+  <li><a href="/mauve/developer-guide/building-on-mac.html">Mac builds</a></li>
+  <li><a href="/mauve/developer-guide/deploying-mauve-releases.html">Deploying Mauve</a></li>
+  <li><a href="/mauve/developer-guide/benchmarking.html">Benchmarking</a></li>
+</ul>
+
+
+  </td>
+  <td valign="top">  
+
+
+<div class="post">
+
+  <article class="post-content">
+    <h3 id="building-mauve-for-mac">Building Mauve for Mac</h3>
+
+<h4 id="brief-instructions-for-the-lazy">Brief instructions for the lazy</h4>
+
+<ol>
+  <li>Ensure that pkg-config is installed</li>
+  <li><code class="language-plaintext highlighter-rouge">svn co https://svn.code.sf.net/p/mauve/code/build_scripts</code></li>
+  <li><code class="language-plaintext highlighter-rouge">cd build_scripts</code></li>
+  <li><code class="language-plaintext highlighter-rouge">./build_osx.sh</code></li>
+</ol>
+
+<p>The resulting Mauve.app binaries will be located in
+<code class="language-plaintext highlighter-rouge">build/mauve/dist/</code>
+note that the build process will fail at the code signing stage, but the error can be safely ignored and the app used unsigned.</p>
+
+<h4 id="detailed-build-instructions">Detailed build instructions</h4>
+
+<h5 id="phase-0--install-xcode-developer-tools">Phase 0.  Install Xcode developer tools</h5>
+
+<p>This can be obtained from the App store</p>
+
+<h5 id="phase-1-install-autotools--pkg-config">Phase 1. Install autotools &amp; pkg-config</h5>
+
+<p>These are required to build Mauve, and many other open source tools:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -OL http://ftpmirror.gnu.org/autoconf/autoconf-2.69.tar.gz
+tar -xzf autoconf-2.69.tar.gz 
+cd autoconf-2.69
+./configure &amp;&amp; make &amp;&amp; sudo make install
+cd ..
+ 
+curl -OL http://ftpmirror.gnu.org/automake/automake-1.14.1.tar.gz
+tar -xzf automake-1.14.1.tar.gz
+cd automake-1.14.1
+./configure &amp;&amp; make &amp;&amp; sudo make install
+cd ..
+ 
+curl -OL http://ftpmirror.gnu.org/libtool/libtool-2.4.4.tar.gz
+tar -xzf libtool-2.4.4.tar.gz
+cd libtool-2.4.4
+./configure &amp;&amp; make &amp;&amp; sudo make install
+cd ..
+
+curl -OL http://pkgconfig.freedesktop.org/releases/pkg-config-0.28.tar.gz
+tar -xzf pkg-config-0.28.tar.gz
+cd pkg-config-0.28
+./configure --with-internal-glib &amp;&amp; make &amp;&amp; sudo make install
+cd ..
+</code></pre></div></div>
+
+<h5 id="phase-2--build-the-aligners">Phase 2.  Build the aligners</h5>
+
+<p>Once Xcode, autotools, and pkg-config have been installed, it’s necessary to set CFLAGS and CXXFLAGS appropriately:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export CFLAGS="-O3 -g -mmacosx-version-min=10.7 -arch i386 -arch x86_64"
+export CXXFLAGS="-O3 -g -mmacosx-version-min=10.7 -arch i386 -arch x86_64" 
+</code></pre></div></div>
+
+<p><strong>the above do not permit linking with boost libs!</strong></p>
+
+<p>It may be desirable to set these variables inside $HOME/.profile so they get configured automatically on login.  Other important environment variables and their settings may be:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PKG_CONFIG_PATH="$HOME/lib/pkgconfig" 
+export LD_LIBRARY_PATH="$HOME/lib"
+export SVN_EDITOR=vi
+export PATH="/usr/local/bin:$HOME/bin:$PATH"
+</code></pre></div></div>
+
+<p>At this point, the mauveAligner source and libraries can be built with the usual procedure.  When running ./configure, it is necessary to add both –disable-shared for an OS X build:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -OL http://downloads.sourceforge.net/project/boost/boost/1.57.0/boost_1_57_0.tar.bz2
+tar -xjf boost_1_57_0.tar.bz2
+cd boost_1_57_0
+./bootstrap.sh --prefix=$HOME --with-libraries=filesystem,iostreams,program_options,system
+./b2 -a -j4 toolset=darwin link=static install
+cd ..
+
+cd libGenome ; ./autogen.sh
+./configure --prefix=$HOME --disable-shared
+make install ; cd ..
+
+cd muscle ; ./autogen.sh
+./configure --prefix=$HOME --disable-shared
+make ; make install ; cd ..
+
+cd libMems ; ./autogen.sh
+./configure --prefix=$HOME --disable-shared
+make install ; cd ..
+
+cd mauveAligner ; ./autogen.sh
+./configure --prefix=$HOME --disable-shared
+make install ; cd ..
+
+cd sgEvolver ; ./autogen.sh
+./configure --prefix=$HOME --disable-shared
+make install ; cd ..
+</code></pre></div></div>
+
+<h5 id="phase-3--build-the-java-gui-and-make-a-disk-image">Phase 3.  Build the Java GUI and make a disk image</h5>
+
+<p>This part of the build requires a <a href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">Java Development Kit</a> and <a href="http://ant.apache.org">Apache Ant</a> to be installed.  With that done, copy the freshly build <code class="language-plaintext highlighter-rouge">mauveAligner</code> and <code class="language-plaintext highlighter-rouge">progressiveMauve</code> binaries into the mauve/osx subdirectory and strip them of debugging symbols:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>strip osx/mauveAligner
+strip osx/progressiveMauve
+</code></pre></div></div>
+
+<p>That reduces the distributable binary size from &gt;100Mb to less than 10Mb.  Then run:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ant macdist
+</code></pre></div></div>
+
+<h4 id="historical-information-on-building-for-mac-os-x-103">Historical information on building for Mac OS X 10.3</h4>
+
+<p>Since Apple’s migration to Intel CPUs, Mac software should be compiled for both Intel and PowerPC CPUs, at least for the time being. Apple refers to programs with both PPC and x86 code as “universal”. Building a universal library with GNU autotools is nearly impossible, so it’s necessary to build x86 and PPC libraries and binaries separately and then join the result with the lipo tool. To build for a PowerPC CPU on an Intel machine, set the following environment variables:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export CFLAGS="-O3 -g -isysroot /Developer/SDKs/MacOSX10.3.9.sdk -arch ppc"
+export CXXFLAGS="-O3 -g -isysroot /Developer/SDKs/MacOSX10.3.9.sdk -arch ppc"
+</code></pre></div></div>
+
+<p>And compile boost with <code class="language-plaintext highlighter-rouge">bjam "-sTOOLS=darwin" "-sGXX=g++ -O3 -g -isysroot /Developer/SDKs/MacOSX10.3.9.sdk -arch ppc" "-sGCC=gcc -O3 -g -isysroot /Developer/SDKs/MacOSX10.3.9.sdk -arch ppc" "-sBUILD=release &lt;linkflags&gt;-Wl,-syslibroot,/Developer/SDKs/MacOSX10.3.9.sdk &lt;runtime-link&gt;static &lt;threading&gt;single/multi" --prefix=$HOME install</code> The rest of the build procedure remains the same. The resulting libraries and applications will run on any PowerPC mac with an OS as old as 10.3.9. To create a single universal binary for mauveAligner, run something akin to the following command <code class="language-plaintext highlighter-rouge">lipo -create mauveAligner-intel mauveAligner-ppc -output mauveAligner</code> where mauveAligner-intel and mauveAligner-ppc are the paths to the intel and ppc mauveAligner binaries, respectively.</p>
+
+
+  </article>
+
+</div>
+
+
+  </td>
+  </table>
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>the Darling lab | computational (meta)genomics</li>
+          <li><a href="mailto:aaron.darling@uts.edu.au">aaron.darling@uts.edu.au</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/koadman">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">koadman</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/koadman">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">koadman</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">The Darling lab at the University of Technology Sydney. We develop computational and molecular techniques to characterize the hidden world of microbes.
+</p>
+      </div>
+    </div>
+    <img alt="tree of bacterial and archaeal life, showing human gut lineages in blue" src="/assets/tree.png">
+
+  </div>
+</footer>
+
+
+  </body>
+
+</html>
