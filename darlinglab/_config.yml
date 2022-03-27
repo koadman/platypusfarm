@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   The Darling lab at the University of Technology Sydney.
   We develop computational and molecular techniques to characterize
   the hidden world of microbes.
-baseurl: "/platypusfarm" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://darlinglab.org" # the base hostname & protocol for your site
 twitter_username: koadman
 github_username:  koadman

@@ -4,10 +4,10 @@
     <title>the Darling lab | computational (meta)genomics</title>
     <description>The Darling lab at the University of Technology Sydney. We develop computational and molecular techniques to characterize the hidden world of microbes.
 </description>
-    <link>https://darlinglab.org/platypusfarm/</link>
-    <atom:link href="https://darlinglab.org/platypusfarm/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 27 Mar 2022 14:51:38 +1100</pubDate>
-    <lastBuildDate>Sun, 27 Mar 2022 14:51:38 +1100</lastBuildDate>
+    <link>https://darlinglab.org/</link>
+    <atom:link href="https://darlinglab.org/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 27 Mar 2022 15:43:09 +1100</pubDate>
+    <lastBuildDate>Sun, 27 Mar 2022 15:43:09 +1100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -19,8 +19,8 @@ Mathieu comes to us from Sydney Uni where he worked closely with &lt;a href=&quo
 
 </description>
         <pubDate>Fri, 16 Oct 2015 02:42:50 +1100</pubDate>
-        <link>https://darlinglab.org/platypusfarm/blog/2015/10/16/welcome-mathieu-fourment.html</link>
-        <guid isPermaLink="true">https://darlinglab.org/platypusfarm/blog/2015/10/16/welcome-mathieu-fourment.html</guid>
+        <link>https://darlinglab.org/blog/2015/10/16/welcome-mathieu-fourment.html</link>
+        <guid isPermaLink="true">https://darlinglab.org/blog/2015/10/16/welcome-mathieu-fourment.html</guid>
         
         
         <category>blog</category>
@@ -52,7 +52,7 @@ After following a simplified genomic epidemiology workflow that carries out &lt;
 At my suggestion the student then applied &lt;a href=&quot;http://microbesonline.org/fasttree/&quot;&gt;the FastTree software&lt;/a&gt; to infer a phylogeny of the isolates.
 We used version 2.1.7. Et voilà, 55 seconds later we got a phylogeny(*):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/platypusfarm/assets/data/anonymous-2.1.7.png&quot; alt=&quot;A bacterial genome phylogeny inferred with FastTree 2.1.7&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/data/anonymous-2.1.7.png&quot; alt=&quot;A bacterial genome phylogeny inferred with FastTree 2.1.7&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Look at that tree. Just look at it.&lt;/p&gt;
 
@@ -63,7 +63,7 @@ If those branch lengths are to be believed, we have quite possibly discovered a 
 
 &lt;p&gt;Let’s dig a little deeper. What if we change the substitution model, does the tree change? What if we change the inference algorithm? We had RAxML handy so we gave that a go, and got the following tree:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/platypusfarm/assets/data/anonymous-RAxML.png&quot; alt=&quot;A phylogeny inferred with RAxML on the same alignment&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/data/anonymous-RAxML.png&quot; alt=&quot;A phylogeny inferred with RAxML on the same alignment&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Hmmm.&lt;/p&gt;
 
@@ -126,7 +126,7 @@ And there it was. The answer. It turns out FastTree by default uses single preci
 
 &lt;p&gt;Let’s see how our tree looks after making these changes:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/platypusfarm/assets/data/anonymous_2.1.7_precise.png&quot; alt=&quot;A phylogeny inferred with double precision FastTree on the same alignment&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/data/anonymous_2.1.7_precise.png&quot; alt=&quot;A phylogeny inferred with double precision FastTree on the same alignment&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now that looks better! And a comparison of the cophenetic matrix to the raw distances looks good too.
 Another way to check whether we’ve improved model fit is to run FastTree with the -gamma option, so that the log likelihoods reported can be compared across two different runs. If we do this with the vanilla FastTree-2.1.7 it reports &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gamma(20) LogLk = -40634.725&lt;/code&gt;. Running the same analysis with the modified double-precision FastTree yields &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gamma(20) LogLk = -40182.654&lt;/code&gt;. In other words, the tree inferred by the double precision version is about &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;e^452&lt;/code&gt; times more likely to have generated the observed data. That’s no small improvement in model fit. Interestingly, the double-precision build actually runs faster than the single precision build on this dataset and on my laptop, so it seems the sacrifice of precision didn’t even buy us a speedup.&lt;/p&gt;
@@ -156,8 +156,8 @@ like this one, as FastTree does not account for recombination or gene conversion
 
 </description>
         <pubDate>Mon, 23 Mar 2015 18:19:50 +1100</pubDate>
-        <link>https://darlinglab.org/platypusfarm/blog/2015/03/23/not-so-fast-fasttree.html</link>
-        <guid isPermaLink="true">https://darlinglab.org/platypusfarm/blog/2015/03/23/not-so-fast-fasttree.html</guid>
+        <link>https://darlinglab.org/blog/2015/03/23/not-so-fast-fasttree.html</link>
+        <guid isPermaLink="true">https://darlinglab.org/blog/2015/03/23/not-so-fast-fasttree.html</guid>
         
         
         <category>blog</category>
@@ -255,8 +255,8 @@ The context in which a tool such as this would be used could be better introduce
 
 </description>
         <pubDate>Wed, 07 Jan 2015 18:19:50 +1100</pubDate>
-        <link>https://darlinglab.org/platypusfarm/reviews/2015/01/07/open-peer-review-of-nxrepair.html</link>
-        <guid isPermaLink="true">https://darlinglab.org/platypusfarm/reviews/2015/01/07/open-peer-review-of-nxrepair.html</guid>
+        <link>https://darlinglab.org/reviews/2015/01/07/open-peer-review-of-nxrepair.html</link>
+        <guid isPermaLink="true">https://darlinglab.org/reviews/2015/01/07/open-peer-review-of-nxrepair.html</guid>
         
         
         <category>reviews</category>
@@ -281,8 +281,8 @@ The context in which a tool such as this would be used could be better introduce
 
 </description>
         <pubDate>Thu, 20 Nov 2014 18:19:50 +1100</pubDate>
-        <link>https://darlinglab.org/platypusfarm/jekyll/update/2014/11/20/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">https://darlinglab.org/platypusfarm/jekyll/update/2014/11/20/welcome-to-jekyll.html</guid>
+        <link>https://darlinglab.org/jekyll/update/2014/11/20/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">https://darlinglab.org/jekyll/update/2014/11/20/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
@@ -310,8 +310,8 @@ Review of bwa mem. Aaron Darling. figshare.&lt;br /&gt;
 &lt;a href=&quot;http://dx.doi.org/10.6084/m9.figshare.714096&quot;&gt;http://dx.doi.org/10.6084/m9.figshare.714096&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 07 Jun 2013 17:19:50 +1000</pubDate>
-        <link>https://darlinglab.org/platypusfarm/reviews/2013/06/07/an-open-peer-review-of-bwa-mem.html</link>
-        <guid isPermaLink="true">https://darlinglab.org/platypusfarm/reviews/2013/06/07/an-open-peer-review-of-bwa-mem.html</guid>
+        <link>https://darlinglab.org/reviews/2013/06/07/an-open-peer-review-of-bwa-mem.html</link>
+        <guid isPermaLink="true">https://darlinglab.org/reviews/2013/06/07/an-open-peer-review-of-bwa-mem.html</guid>
         
         
         <category>reviews</category>
