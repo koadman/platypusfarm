@@ -1,0 +1,2061 @@
+
+Project file 'C:\build_temp\repeatoire\projects\repeatoire.vcproj' could not be loaded.
+The project is either missing from disk or access was denied.
+One or more projects in the solution could not be loaded for the following reason(s):
+
+The project file or web has been moved, renamed or is not on your computer.
+
+These projects will be labeled as unavailable in Solution Explorer. Expand the project node to show the reason the project could not be loaded.------ Rebuild All started: Project: libMUSCLE, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'libMUSCLE', configuration 'Release OpenMP|x64'
+Compiling...
+aligngivenpath.cpp
+writescorefile.cpp
+vtml2.cpp
+validateids.cpp
+usage.cpp
+upgma2.cpp
+typetostr.cpp
+treefrommsa.cpp
+tracebacksw.cpp
+tracebackopt.cpp
+traceback.cpp
+tomhydro.cpp
+threewaywt.cpp
+textfile.cpp
+termgaps.cpp
+sw.cpp
+subfams.cpp
+subfam.cpp
+stabilize.cpp
+sptest.cpp
+Compiling...
+spfast.cpp
+setnewhandler.cpp
+setgscweights.cpp
+setblosumweights.cpp
+seqvect.cpp
+seq.cpp
+scorepp.cpp
+scorehistory.cpp
+scoregaps.cpp
+scoredist.cpp
+savebest.cpp
+refinew.cpp
+refinevert.cpp
+refinetreee.cpp
+refinetree.cpp
+refinesubfams.cpp
+refinehoriz.cpp
+refine.cpp
+realigndiffse.cpp
+realigndiffs.cpp
+Compiling...
+readmx.cpp
+pwpath.cpp
+progressivealign.cpp
+progress.cpp
+progalign.cpp
+profilefrommsa.cpp
+profile.cpp
+profdb.cpp
+ppscore.cpp
+posgap.cpp
+phytofile.cpp
+physeq.cpp
+phyfromfile.cpp
+phyfromclust.cpp
+phy4.cpp
+phy3.cpp
+phy2.cpp
+phy.cpp
+params.cpp
+pam200mafft.cpp
+Compiling...
+outweights.cpp
+options.cpp
+onexception.cpp
+objscoreda.cpp
+objscore2.cpp
+objscore.cpp
+nwsmall.cpp
+nwrec.cpp
+nwdasmall.cpp
+nwdasimple2.cpp
+nwdasimple.cpp
+nucmx.cpp
+muscleout.cpp
+muscle.cpp
+msf.cpp
+msadistkimura.cpp
+msa2.cpp
+msa.cpp
+mpam200.cpp
+mhack.cpp
+Compiling...
+maketree.cpp
+makerootmsab.cpp
+makerootmsa.cpp
+main.cpp
+local.cpp
+intmath.cpp
+hydro.cpp
+html.cpp
+henikoffweightpb.cpp
+henikoffweight.cpp
+gotowt.cpp
+gonnet.cpp
+globalswin32.cpp
+globalsother.cpp
+globalslinux.cpp
+globals.cpp
+glbalndimer.cpp
+glbalignss.cpp
+glbalignspn.cpp
+glbalignsp.cpp
+Compiling...
+glbalignsimple.cpp
+glbalignle.cpp
+glbaligndiag.cpp
+glbalign352.cpp
+glbalign.cpp
+finddiagsn.cpp
+finddiags.cpp
+fastscorepath2.cpp
+fastdistnuc.cpp
+fastdistmafft.cpp
+fastdistkmer.cpp
+fastdistkbit.cpp
+fastdistjones.cpp
+fastdist.cpp
+fastclust.cpp
+fasta2.cpp
+fasta.cpp
+estring.cpp
+enumtostr.cpp
+enumopts.cpp
+Compiling...
+edgelist.cpp
+drawtree.cpp
+dpreglist.cpp
+dosp.cpp
+domuscle.cpp
+distpwkimura.cpp
+distfunc.cpp
+distcalc.cpp
+difftreese.cpp
+difftrees.cpp
+diffpaths.cpp
+diffobjscore.cpp
+diaglist.cpp
+cons.cpp
+color.cpp
+clwwt.cpp
+cluster.cpp
+clust.cpp
+blosumla.cpp
+blosum62.cpp
+Compiling...
+bittraceback.cpp
+anchors.cpp
+anchoredpp.cpp
+alpha.cpp
+aln.cpp
+aligntwoprofs.cpp
+aligntwomsas.cpp
+aligngivenpathsw.cpp
+Creating library...
+writescorefile.obj : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Build log was saved at "file://c:\build_temp\muscle\projects\x64\Release OpenMP\BuildLog.htm"
+libMUSCLE - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: libGenome, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'libGenome', configuration 'Release OpenMP|x64'
+Compiling...
+gnABISource.cpp
+gnTranslator.cpp
+gnStringTools.cpp
+gnStringSpec.cpp
+gnSourceSpec.cpp
+gnSourceQualifier.cpp
+gnSourceHeader.cpp
+gnSourceFactory.cpp
+gnSequence.cpp
+gnSEQSource.cpp
+gnRAWSource.cpp
+gnPosSpecificTranslator.cpp
+gnLocation.cpp
+gnGenomeSpec.cpp
+gnGBKSource.cpp
+gnFragmentSpec.cpp
+gnFilter.cpp
+gnFileSource.cpp
+gnFileContig.cpp
+gnFeature.cpp
+Compiling...
+gnFastTranslator.cpp
+gnFASSource.cpp
+gnException.cpp
+gnDefs.cpp
+gnContigSpec.cpp
+gnCompare.cpp
+gnBaseFeature.cpp
+Creating library...
+gnTranslator.obj : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Build log was saved at "file://c:\build_temp\libGenome\projects\x64\Release OpenMP\BuildLog.htm"
+libGenome - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: libMems, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'libMems', configuration 'Release OpenMP|x64'
+Compiling...
+algebras.cc
+SuperInterval.cpp
+ProgressiveAligner.cpp
+PairwiseMatchFinder.cpp
+GreedyBreakpointElimination.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\utility(44) : warning C4267: 'initializing' : conversion from 'size_t' to 'uint', possible loss of data
+        ..\libMems\GreedyBreakpointElimination.cpp(191) : see reference to function template instantiation 'std::pair<_Ty1,_Ty2>::pair<size_t,int>(const std::pair<size_t,int> &)' being compiled
+        with
+        [
+            _Ty1=uint,
+            _Ty2=uint
+        ]
+        ..\libMems\GreedyBreakpointElimination.cpp(666) : see reference to function template instantiation 'uint mems::RemoveLCBandCoalesce<std::vector<_Ty>>(size_t,uint,LcbVector &,std::vector<double> &,std::vector<std::pair<_Ty1,_Ty2>> &,std::vector<uint32> &)' being compiled
+        with
+        [
+            _Ty=mems::TrackingLCB<mems::TrackingMatch *>,
+            LcbVector=std::vector<mems::TrackingLCB<mems::TrackingMatch *>>,
+            _Ty1=uint,
+            _Ty2=uint
+        ]
+Backbone.cpp
+MuscleInterface.cpp
+..\libMems\MuscleInterface.cpp(730) : warning C4244: '=' : conversion from 'int' to 'muscle::SCORE', possible loss of data
+..\libMems\MuscleInterface.cpp(732) : warning C4244: '=' : conversion from 'int' to 'muscle::SCORE', possible loss of data
+Islands.cpp
+Aligner.cpp
+RepeatHash.cpp
+MemHash.cpp
+MatchFinder.cpp
+MaskedMemHash.cpp
+RepeatMatchList.cpp
+RepeatMatch.cpp
+MatchHashEntry.cpp
+gnAlignedSequences.cpp
+GappedAlignment.cpp
+SortedMerList.cpp
+MemorySML.cpp
+Compiling...
+FileSML.cpp
+DNAMemorySML.cpp
+DNAFileSML.cpp
+homologymain.cc
+homology.cc
+Compiling...
+twister.c
+util.c
+timing.c
+sorting.c
+sml.c
+dmsort.c
+buffer.c
+awin32aio.c
+..\libMems\dmSML\awin32aio.c(132) : warning C4313: 'printf' : '%d' in format string conflicts with argument 1 of type 'HANDLE'
+..\libMems\dmSML\awin32aio.c(132) : warning C4313: 'printf' : '%d' in format string conflicts with argument 2 of type 'char *'
+..\libMems\dmSML\awin32aio.c(132) : warning C4313: 'printf' : '%d' in format string conflicts with argument 4 of type 'OVERLAPPED *'
+..\libMems\dmSML\awin32aio.c(132) : warning C4313: 'printf' : '%d' in format string conflicts with argument 5 of type 'void (__cdecl *)(DWORD,DWORD,LPOVERLAPPED)'
+asyncio.c
+aPOSIXaio.c
+alinuxaio.c
+alibc.c
+Creating library...
+SuperInterval.obj : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Build log was saved at "file://c:\build_temp\libMems\projects\x64\Release OpenMP\BuildLog.htm"
+libMems - 0 error(s), 7 warning(s)
+------ Rebuild All started: Project: muscle, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'muscle', configuration 'Release OpenMP|x64'
+Compiling...
+writescorefile.cpp
+vtml2.cpp
+validateids.cpp
+usage.cpp
+upgma2.cpp
+typetostr.cpp
+treefrommsa.cpp
+tracebacksw.cpp
+tracebackopt.cpp
+traceback.cpp
+tomhydro.cpp
+threewaywt.cpp
+textfile.cpp
+termgaps.cpp
+sw.cpp
+subfams.cpp
+subfam.cpp
+stabilize.cpp
+sptest.cpp
+spfast.cpp
+Compiling...
+setnewhandler.cpp
+setgscweights.cpp
+setblosumweights.cpp
+seqvect.cpp
+seq.cpp
+scorepp.cpp
+scorehistory.cpp
+scoregaps.cpp
+scoredist.cpp
+savebest.cpp
+refinew.cpp
+refinevert.cpp
+refinetreee.cpp
+refinetree.cpp
+refinesubfams.cpp
+refinehoriz.cpp
+refine.cpp
+realigndiffse.cpp
+realigndiffs.cpp
+readmx.cpp
+Compiling...
+pwpath.cpp
+progressivealign.cpp
+progress.cpp
+progalign.cpp
+profilefrommsa.cpp
+profile.cpp
+profdb.cpp
+ppscore.cpp
+posgap.cpp
+phytofile.cpp
+physeq.cpp
+phyfromfile.cpp
+phyfromclust.cpp
+phy4.cpp
+phy3.cpp
+phy2.cpp
+phy.cpp
+params.cpp
+pam200mafft.cpp
+outweights.cpp
+Compiling...
+options.cpp
+onexception.cpp
+objscoreda.cpp
+objscore2.cpp
+objscore.cpp
+nwsmall.cpp
+nwrec.cpp
+nwdasmall.cpp
+nwdasimple2.cpp
+nwdasimple.cpp
+nucmx.cpp
+muscleout.cpp
+muscle.cpp
+msf.cpp
+msadistkimura.cpp
+msa2.cpp
+msa.cpp
+mpam200.cpp
+mhack.cpp
+maketree.cpp
+Compiling...
+makerootmsab.cpp
+makerootmsa.cpp
+main.cpp
+local.cpp
+intmath.cpp
+hydro.cpp
+html.cpp
+henikoffweightpb.cpp
+henikoffweight.cpp
+gotowt.cpp
+gonnet.cpp
+globalswin32.cpp
+globalsother.cpp
+globalslinux.cpp
+globals.cpp
+glbalndimer.cpp
+glbalignss.cpp
+glbalignspn.cpp
+glbalignsp.cpp
+glbalignsimple.cpp
+Compiling...
+glbalignle.cpp
+glbaligndiag.cpp
+glbalign352.cpp
+glbalign.cpp
+finddiagsn.cpp
+finddiags.cpp
+fastscorepath2.cpp
+fastdistnuc.cpp
+fastdistmafft.cpp
+fastdistkmer.cpp
+fastdistkbit.cpp
+fastdistjones.cpp
+fastdist.cpp
+fastclust.cpp
+fasta2.cpp
+fasta.cpp
+estring.cpp
+enumtostr.cpp
+enumopts.cpp
+edgelist.cpp
+Compiling...
+drawtree.cpp
+dpreglist.cpp
+dosp.cpp
+domuscle.cpp
+distpwkimura.cpp
+distfunc.cpp
+distcalc.cpp
+difftreese.cpp
+difftrees.cpp
+diffpaths.cpp
+diffobjscore.cpp
+diaglist.cpp
+cons.cpp
+color.cpp
+clwwt.cpp
+cluster.cpp
+clust.cpp
+blosumla.cpp
+blosum62.cpp
+bittraceback.cpp
+Compiling...
+anchors.cpp
+anchoredpp.cpp
+alpha.cpp
+aln.cpp
+aligntwoprofs.cpp
+aligntwomsas.cpp
+aligngivenpathsw.cpp
+aligngivenpath.cpp
+Compiling manifest to resources...
+Linking...
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
+Generating code
+Finished generating code
+Embedding manifest...
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
+Generating code
+Finished generating code
+Build log was saved at "file://c:\build_temp\muscle\projects\x64\Release OpenMP\BuildLog.htm"
+muscle - 0 error(s), 2 warning(s)
+------ Rebuild All started: Project: stripSubsetLCBs, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'stripSubsetLCBs', configuration 'Release OpenMP|x64'
+Compiling...
+stripSubsetLCBs.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+mems64omp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+stripSubsetLCBs - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: getOrthologList, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'getOrthologList', configuration 'Release OpenMP|x64'
+Compiling...
+getOrthologList.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+mems64omp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+getOrthologList - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: bbAnalyze, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'bbAnalyze', configuration 'Release OpenMP|x64'
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Compiling...
+bbAnalyze.cpp
+Linking...
+mems64omp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+bbAnalyze - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: scoreProcrastAlignment, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'scoreProcrastAlignment', configuration 'Release OpenMP|x64'
+Compiling...
+scoreProcrastAlignment.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\utility(44) : warning C4244: 'initializing' : conversion from 'const uint64' to 'uint', possible loss of data
+        ..\src\scoreProcrastAlignment.cpp(180) : see reference to function template instantiation 'std::pair<_Ty1,_Ty2>::pair<uint64,uint64>(const std::pair<_Ty1,uint64> &)' being compiled
+        with
+        [
+            _Ty1=size_t,
+            _Ty2=uint
+        ]
+Compiling...
+getopt1.c
+getopt.c
+Linking...
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+scoreProcrastAlignment - 0 error(s), 1 warning(s)
+------ Rebuild All started: Project: extractBCITrees, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'extractBCITrees', configuration 'Release OpenMP|x64'
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Compiling...
+extractBCITrees.cpp
+Linking...
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+extractBCITrees - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: calculateBackboneCoverage2, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'calculateBackboneCoverage2', configuration 'Release OpenMP|x64'
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Compiling...
+calculateBackboneCoverage2.cpp
+Linking...
+mems64omp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+calculateBackboneCoverage2 - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: checkForLGT, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'checkForLGT', configuration 'Release OpenMP|x64'
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Compiling...
+checkForLGT.cpp
+Linking...
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+checkForLGT - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: sortContigs, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'sortContigs', configuration 'Release OpenMP|x64'
+Compiling...
+sortContigs.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+mems64omp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+sortContigs - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: toEvoHighwayFormat, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'toEvoHighwayFormat', configuration 'Release OpenMP|x64'
+Compiling...
+toEvoHighwayFormat.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+mems64omp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+toEvoHighwayFormat - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: toGrimmFormat, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'toGrimmFormat', configuration 'Release OpenMP|x64'
+Compiling...
+toGrimmFormat.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+mems64omp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+toGrimmFormat - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: extractSubalignments, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'extractSubalignments', configuration 'Release OpenMP|x64'
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Compiling...
+extractSubalignments.cpp
+Linking...
+mems64omp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+extractSubalignments - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: uniquifyTrees, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'uniquifyTrees', configuration 'Release OpenMP|x64'
+Compiling...
+uniquifyTrees.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+uniquifyTrees - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: progressiveMauve, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'progressiveMauve', configuration 'Release OpenMP|x64'
+Compiling...
+UniqueMatchFinder.cpp
+progressiveMauve.cpp
+Compiling...
+getopt1.c
+getopt.c
+Linking...
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+progressiveMauve - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: scoreAlignment2, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'scoreAlignment2', configuration 'Release OpenMP|x64'
+Compiling...
+scoreAlignment2.cpp
+c:\build_temp\sgevolver\src\scorealignment2.cpp(385) : warning C4715: 'findFirstCorrectlyAlignedPair<std::_Vector_iterator<aligned_coords_s,std::allocator<aligned_coords_s> > >' : not all control paths return a value
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+mems64omp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\sgEvolver\projects\x64\Release OpenMP\BuildLog.htm"
+scoreAlignment2 - 0 error(s), 1 warning(s)
+------ Rebuild All started: Project: unalign, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'unalign', configuration 'Release OpenMP|x64'
+Compiling...
+unalign.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+mems64omp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+unalign - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: sgEvolver, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'sgEvolver', configuration 'Release OpenMP|x64'
+Compiling...
+twister.c
+getopt1.c
+getopt.c
+Generating Code...
+Compiling...
+sgEvolver.cpp
+..\src\sgEvolver.cpp(227) : warning C4005: 'NELEMS' : macro redefinition
+        C:\build_temp\muscle\libMUSCLE/threadstorage.h(22) : see previous definition of 'NELEMS'
+Mutator.cpp
+gnStringSource.cpp
+gnGapSource.cpp
+Alignment.cpp
+Generating Code...
+Linking...
+mems64omp.lib(gnAlignedSequences.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\sgEvolver\projects\x64\Release OpenMP\BuildLog.htm"
+sgEvolver - 0 error(s), 1 warning(s)
+------ Rebuild All started: Project: uniqueMerCount, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'uniqueMerCount', configuration 'Release OpenMP|x64'
+Compiling...
+uniqueMerCount.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+mems64omp.lib(DNAFileSML.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+uniqueMerCount - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: transposeCoordinates, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'transposeCoordinates', configuration 'Release OpenMP|x64'
+Compiling...
+transposeCoordinates.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+mems64omp.lib(Aligner.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+transposeCoordinates - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: scoreALU, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'scoreALU', configuration 'Release OpenMP|x64'
+Compiling...
+scoreALU.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+genome64omp.lib(gnException.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+scoreALU - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: scoreAlignment, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'scoreAlignment', configuration 'Release OpenMP|x64'
+Compiling...
+scoreAlignment.cpp
+..\src\scoreAlignment.cpp(205) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+..\src\scoreAlignment.cpp(207) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+..\src\scoreAlignment.cpp(219) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+..\src\scoreAlignment.cpp(220) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+..\src\scoreAlignment.cpp(291) : warning C4804: '<=' : unsafe use of type 'bool' in operation
+..\src\scoreAlignment.cpp(315) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+..\src\scoreAlignment.cpp(316) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+..\src\scoreAlignment.cpp(385) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+..\src\scoreAlignment.cpp(386) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\xtree(618) : warning C4800: 'boolean' : forcing value to bool 'true' or 'false' (performance warning)
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\xtree(611) : while compiling class template member function 'std::pair<_Ty1,_Ty2> std::_Tree<_Traits>::insert(const std::pair<const _Kty,_Ty> &)'
+        with
+        [
+            _Ty1=std::_Tree<std::_Tmap_traits<std::pair<uint64,uint64>,uint,IntervalCompare,std::allocator<std::pair<const std::pair<uint64,uint64>,uint>>,false>>::iterator,
+            _Ty2=bool,
+            _Traits=std::_Tmap_traits<std::pair<uint64,uint64>,uint,IntervalCompare,std::allocator<std::pair<const std::pair<uint64,uint64>,uint>>,false>,
+            _Kty=std::pair<uint64,uint64>,
+            _Ty=uint
+        ]
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\map(82) : see reference to class template instantiation 'std::_Tree<_Traits>' being compiled
+        with
+        [
+            _Traits=std::_Tmap_traits<std::pair<uint64,uint64>,uint,IntervalCompare,std::allocator<std::pair<const std::pair<uint64,uint64>,uint>>,false>
+        ]
+        ..\src\scoreAlignment.cpp(48) : see reference to class template instantiation 'std::map<_Kty,_Ty,_Pr>' being compiled
+        with
+        [
+            _Kty=std::pair<uint64,uint64>,
+            _Ty=uint,
+            _Pr=IntervalCompare
+        ]
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+mems64omp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+scoreAlignment - 0 error(s), 10 warning(s)
+------ Rebuild All started: Project: mauveAligner, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'mauveAligner', configuration 'Release OpenMP|x64'
+Compiling...
+mauveAligner.cpp
+..\src\mauveAligner.cpp(47) : warning C4005: 'NELEMS' : macro redefinition
+        C:\build_temp\muscle\libMUSCLE/threadstorage.h(22) : see previous definition of 'NELEMS'
+Compiling...
+getopt1.c
+getopt.c
+Linking...
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+mauveAligner - 0 error(s), 1 warning(s)
+------ Rebuild All started: Project: extractBackbone, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'extractBackbone', configuration 'Release OpenMP|x64'
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Compiling...
+extractBackbone.cpp
+Linking...
+mems64omp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+extractBackbone - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: calculateBackboneCoverage, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'calculateBackboneCoverage', configuration 'Release OpenMP|x64'
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Compiling...
+calculateBackboneCoverage.cpp
+..\src\calculateBackboneCoverage.cpp(25) : warning C4005: 'NELEMS' : macro redefinition
+        C:\build_temp\muscle\libMUSCLE/threadstorage.h(22) : see previous definition of 'NELEMS'
+Linking...
+mems64omp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+calculateBackboneCoverage - 0 error(s), 1 warning(s)
+------ Rebuild All started: Project: rootTrees, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'rootTrees', configuration 'Release OpenMP|x64'
+Compiling...
+rootTrees.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+rootTrees - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: xmfa2maf, Configuration: Release OpenMP x64 ------
+Deleting intermediate and output files for project 'xmfa2maf', configuration 'Release OpenMP|x64'
+Compiling...
+xmfa2maf.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+genome64omp.lib(gnException.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\x64\Release OpenMP\BuildLog.htm"
+xmfa2maf - 0 error(s), 0 warning(s)
+========== Rebuild All: 29 succeeded, 0 failed, 0 skipped ==========
+
+
+Project file 'C:\build_temp\repeatoire\projects\repeatoire.vcproj' could not be loaded.
+The project is either missing from disk or access was denied.
+One or more projects in the solution could not be loaded for the following reason(s):
+
+The project file or web has been moved, renamed or is not on your computer.
+
+These projects will be labeled as unavailable in Solution Explorer. Expand the project node to show the reason the project could not be loaded.------ Rebuild All started: Project: libMUSCLE, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'libMUSCLE', configuration 'Release OpenMP|Win32'
+Compiling...
+aligngivenpath.cpp
+writescorefile.cpp
+vtml2.cpp
+validateids.cpp
+usage.cpp
+upgma2.cpp
+typetostr.cpp
+treefrommsa.cpp
+tracebacksw.cpp
+tracebackopt.cpp
+traceback.cpp
+tomhydro.cpp
+threewaywt.cpp
+textfile.cpp
+termgaps.cpp
+sw.cpp
+subfams.cpp
+subfam.cpp
+stabilize.cpp
+sptest.cpp
+Compiling...
+spfast.cpp
+setnewhandler.cpp
+setgscweights.cpp
+setblosumweights.cpp
+seqvect.cpp
+seq.cpp
+scorepp.cpp
+scorehistory.cpp
+scoregaps.cpp
+scoredist.cpp
+savebest.cpp
+refinew.cpp
+refinevert.cpp
+refinetreee.cpp
+refinetree.cpp
+refinesubfams.cpp
+refinehoriz.cpp
+refine.cpp
+realigndiffse.cpp
+realigndiffs.cpp
+Compiling...
+readmx.cpp
+pwpath.cpp
+progressivealign.cpp
+progress.cpp
+progalign.cpp
+profilefrommsa.cpp
+profile.cpp
+profdb.cpp
+ppscore.cpp
+posgap.cpp
+phytofile.cpp
+physeq.cpp
+phyfromfile.cpp
+phyfromclust.cpp
+phy4.cpp
+phy3.cpp
+phy2.cpp
+phy.cpp
+params.cpp
+pam200mafft.cpp
+Compiling...
+outweights.cpp
+options.cpp
+onexception.cpp
+objscoreda.cpp
+objscore2.cpp
+objscore.cpp
+nwsmall.cpp
+nwrec.cpp
+nwdasmall.cpp
+nwdasimple2.cpp
+nwdasimple.cpp
+nucmx.cpp
+muscleout.cpp
+muscle.cpp
+msf.cpp
+msadistkimura.cpp
+msa2.cpp
+msa.cpp
+mpam200.cpp
+mhack.cpp
+Compiling...
+maketree.cpp
+makerootmsab.cpp
+makerootmsa.cpp
+main.cpp
+local.cpp
+intmath.cpp
+hydro.cpp
+html.cpp
+henikoffweightpb.cpp
+henikoffweight.cpp
+gotowt.cpp
+gonnet.cpp
+globalswin32.cpp
+globalsother.cpp
+globalslinux.cpp
+globals.cpp
+glbalndimer.cpp
+glbalignss.cpp
+glbalignspn.cpp
+glbalignsp.cpp
+Compiling...
+glbalignsimple.cpp
+glbalignle.cpp
+glbaligndiag.cpp
+glbalign352.cpp
+glbalign.cpp
+finddiagsn.cpp
+finddiags.cpp
+fastscorepath2.cpp
+fastdistnuc.cpp
+fastdistmafft.cpp
+fastdistkmer.cpp
+fastdistkbit.cpp
+fastdistjones.cpp
+fastdist.cpp
+fastclust.cpp
+fasta2.cpp
+fasta.cpp
+estring.cpp
+enumtostr.cpp
+enumopts.cpp
+Compiling...
+edgelist.cpp
+drawtree.cpp
+dpreglist.cpp
+dosp.cpp
+domuscle.cpp
+distpwkimura.cpp
+distfunc.cpp
+distcalc.cpp
+difftreese.cpp
+difftrees.cpp
+diffpaths.cpp
+diffobjscore.cpp
+diaglist.cpp
+cons.cpp
+color.cpp
+clwwt.cpp
+cluster.cpp
+clust.cpp
+blosumla.cpp
+blosum62.cpp
+Compiling...
+bittraceback.cpp
+anchors.cpp
+anchoredpp.cpp
+alpha.cpp
+aln.cpp
+aligntwoprofs.cpp
+aligntwomsas.cpp
+aligngivenpathsw.cpp
+Creating library...
+writescorefile.obj : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Build log was saved at "file://c:\build_temp\muscle\projects\Release OpenMP\BuildLog.htm"
+libMUSCLE - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: libGenome, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'libGenome', configuration 'Release OpenMP|Win32'
+Compiling...
+gnABISource.cpp
+gnTranslator.cpp
+gnStringTools.cpp
+gnStringSpec.cpp
+gnSourceSpec.cpp
+gnSourceQualifier.cpp
+gnSourceHeader.cpp
+gnSourceFactory.cpp
+gnSequence.cpp
+gnSEQSource.cpp
+gnRAWSource.cpp
+gnPosSpecificTranslator.cpp
+gnLocation.cpp
+gnGenomeSpec.cpp
+gnGBKSource.cpp
+gnFragmentSpec.cpp
+gnFilter.cpp
+gnFileSource.cpp
+gnFileContig.cpp
+gnFeature.cpp
+Compiling...
+gnFastTranslator.cpp
+gnFASSource.cpp
+gnException.cpp
+gnDefs.cpp
+gnContigSpec.cpp
+gnCompare.cpp
+gnBaseFeature.cpp
+Creating library...
+gnTranslator.obj : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Build log was saved at "file://c:\build_temp\libGenome\projects\Release OpenMP\BuildLog.htm"
+libGenome - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: libMems, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'libMems', configuration 'Release OpenMP|Win32'
+Compiling...
+algebras.cc
+SuperInterval.cpp
+ProgressiveAligner.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(739) : warning C4267: '=' : conversion from 'size_t' to 'unsigned int', possible loss of data
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(757) : see reference to function template instantiation '_OutIt std::_Transform<_InIt1,unsigned int*,unsigned int*,__w64 const unsigned int&(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &),std::forward_iterator_tag,std::forward_iterator_tag>(_InIt1,_InIt1,_InIt2,_OutIt,_Fn2,_InItCats,_InOutItCat,std::_Range_checked_iterator_tag,std::_Range_checked_iterator_tag)' being compiled
+        with
+        [
+            _OutIt=unsigned int *,
+            _InIt1=unsigned int *,
+            _InIt2=unsigned int *,
+            _Fn2=__w64 const unsigned int &(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &),
+            _InItCats=std::forward_iterator_tag,
+            _InOutItCat=std::forward_iterator_tag
+        ]
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(872) : see reference to function template instantiation '_OutIt std::_Transform<unsigned int*,_InIt2,_OutIt,__w64 const unsigned int&(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)>(_InIt1,_InIt1,_InIt2,_OutIt,_Fn2,std::random_access_iterator_tag,std::random_access_iterator_tag,std::_Range_checked_iterator_tag,std::_Range_checked_iterator_tag)' being compiled
+        with
+        [
+            _OutIt=__w64 unsigned int *,
+            _InIt2=__w64 unsigned int *,
+            _InIt1=unsigned int *,
+            _Fn2=__w64 const unsigned int &(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array.hpp(419) : see reference to function template instantiation '__w64 unsigned int *std::transform<__w64 unsigned int*,__w64 unsigned int*,__w64 unsigned int*,__w64 const unsigned int&(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)>(_InIt1,_InIt1,_InIt2,_OutIt,_Fn2)' being compiled
+        with
+        [
+            _InIt1=__w64 unsigned int *,
+            _InIt2=__w64 unsigned int *,
+            _OutIt=__w64 unsigned int *,
+            _Fn2=__w64 const unsigned int &(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array.hpp(402) : while compiling class template member function 'boost::multi_array<T,NumDims> &boost::multi_array<T,NumDims>::resize(const boost::detail::multi_array::extent_gen<NumRanges> &)'
+        with
+        [
+            T=double,
+            NumDims=2,
+            NumRanges=2
+        ]
+        c:\build_temp\libMems\libMems/GreedyBreakpointElimination.h(540) : see reference to class template instantiation 'boost::multi_array<T,NumDims>' being compiled
+        with
+        [
+            T=double,
+            NumDims=2
+        ]
+PairwiseMatchFinder.cpp
+GreedyBreakpointElimination.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\utility(44) : warning C4267: 'initializing' : conversion from 'size_t' to 'uint', possible loss of data
+        ..\libMems\GreedyBreakpointElimination.cpp(191) : see reference to function template instantiation 'std::pair<_Ty1,_Ty2>::pair<size_t,int>(const std::pair<_Ty1,int> &)' being compiled
+        with
+        [
+            _Ty1=uint,
+            _Ty2=uint
+        ]
+        ..\libMems\GreedyBreakpointElimination.cpp(666) : see reference to function template instantiation 'uint mems::RemoveLCBandCoalesce<std::vector<_Ty>>(size_t,uint,LcbVector &,std::vector<double> &,std::vector<std::pair<_Ty1,_Ty2>> &,std::vector<node_id_t> &)' being compiled
+        with
+        [
+            _Ty=mems::TrackingLCB<mems::TrackingMatch *>,
+            LcbVector=std::vector<mems::TrackingLCB<mems::TrackingMatch *>>,
+            _Ty1=uint,
+            _Ty2=uint
+        ]
+Backbone.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\utility(44) : warning C4244: 'initializing' : conversion from 'const uint64' to 'uint', possible loss of data
+        ..\libMems\Backbone.cpp(457) : see reference to function template instantiation 'std::pair<_Ty1,_Ty2>::pair<uint64,uint64>(const std::pair<uint64,uint64> &)' being compiled
+        with
+        [
+            _Ty1=uint,
+            _Ty2=uint
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\utility(44) : warning C4244: 'initializing' : conversion from 'const uint64' to 'uint', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(739) : warning C4267: '=' : conversion from 'size_t' to 'unsigned int', possible loss of data
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(757) : see reference to function template instantiation '_OutIt std::_Transform<_InIt1,unsigned int*,unsigned int*,__w64 const unsigned int&(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &),std::forward_iterator_tag,std::forward_iterator_tag>(_InIt1,_InIt1,_InIt2,_OutIt,_Fn2,_InItCats,_InOutItCat,std::_Range_checked_iterator_tag,std::_Range_checked_iterator_tag)' being compiled
+        with
+        [
+            _OutIt=unsigned int *,
+            _InIt1=unsigned int *,
+            _InIt2=unsigned int *,
+            _Fn2=__w64 const unsigned int &(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &),
+            _InItCats=std::forward_iterator_tag,
+            _InOutItCat=std::forward_iterator_tag
+        ]
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(872) : see reference to function template instantiation '_OutIt std::_Transform<unsigned int*,_InIt2,_OutIt,__w64 const unsigned int&(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)>(_InIt1,_InIt1,_InIt2,_OutIt,_Fn2,std::random_access_iterator_tag,std::random_access_iterator_tag,std::_Range_checked_iterator_tag,std::_Range_checked_iterator_tag)' being compiled
+        with
+        [
+            _OutIt=__w64 unsigned int *,
+            _InIt2=__w64 unsigned int *,
+            _InIt1=unsigned int *,
+            _Fn2=__w64 const unsigned int &(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array.hpp(419) : see reference to function template instantiation '__w64 unsigned int *std::transform<__w64 unsigned int*,__w64 unsigned int*,__w64 unsigned int*,__w64 const unsigned int&(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)>(_InIt1,_InIt1,_InIt2,_OutIt,_Fn2)' being compiled
+        with
+        [
+            _InIt1=__w64 unsigned int *,
+            _InIt2=__w64 unsigned int *,
+            _OutIt=__w64 unsigned int *,
+            _Fn2=__w64 const unsigned int &(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array.hpp(402) : while compiling class template member function 'boost::multi_array<T,NumDims> &boost::multi_array<T,NumDims>::resize(const boost::detail::multi_array::extent_gen<NumRanges> &)'
+        with
+        [
+            T=std::vector<std::pair<uint,uint>>,
+            NumDims=3,
+            NumRanges=3
+        ]
+        ..\libMems\Backbone.cpp(276) : see reference to class template instantiation 'boost::multi_array<T,NumDims>' being compiled
+        with
+        [
+            T=std::vector<std::pair<uint,uint>>,
+            NumDims=3
+        ]
+MuscleInterface.cpp
+..\libMems\MuscleInterface.cpp(730) : warning C4244: '=' : conversion from 'int' to 'muscle::SCORE', possible loss of data
+..\libMems\MuscleInterface.cpp(732) : warning C4244: '=' : conversion from 'int' to 'muscle::SCORE', possible loss of data
+Islands.cpp
+Aligner.cpp
+RepeatHash.cpp
+MemHash.cpp
+MatchFinder.cpp
+MaskedMemHash.cpp
+RepeatMatchList.cpp
+RepeatMatch.cpp
+MatchHashEntry.cpp
+gnAlignedSequences.cpp
+GappedAlignment.cpp
+SortedMerList.cpp
+MemorySML.cpp
+Compiling...
+FileSML.cpp
+DNAMemorySML.cpp
+DNAFileSML.cpp
+homologymain.cc
+homology.cc
+Compiling...
+twister.c
+util.c
+timing.c
+sorting.c
+sml.c
+dmsort.c
+buffer.c
+awin32aio.c
+..\libMems\dmSML\awin32aio.c(132) : warning C4313: 'printf' : '%d' in format string conflicts with argument 1 of type 'HANDLE'
+..\libMems\dmSML\awin32aio.c(132) : warning C4313: 'printf' : '%d' in format string conflicts with argument 2 of type 'char *'
+..\libMems\dmSML\awin32aio.c(132) : warning C4313: 'printf' : '%d' in format string conflicts with argument 4 of type 'OVERLAPPED *'
+..\libMems\dmSML\awin32aio.c(132) : warning C4313: 'printf' : '%d' in format string conflicts with argument 5 of type 'void (__stdcall *)(DWORD,DWORD,LPOVERLAPPED)'
+asyncio.c
+aPOSIXaio.c
+alinuxaio.c
+alibc.c
+Creating library...
+SuperInterval.obj : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Build log was saved at "file://c:\build_temp\libMems\projects\Release OpenMP\BuildLog.htm"
+libMems - 0 error(s), 11 warning(s)
+------ Rebuild All started: Project: muscle, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'muscle', configuration 'Release OpenMP|Win32'
+Compiling...
+writescorefile.cpp
+vtml2.cpp
+validateids.cpp
+usage.cpp
+upgma2.cpp
+typetostr.cpp
+treefrommsa.cpp
+tracebacksw.cpp
+tracebackopt.cpp
+traceback.cpp
+tomhydro.cpp
+threewaywt.cpp
+textfile.cpp
+termgaps.cpp
+sw.cpp
+subfams.cpp
+subfam.cpp
+stabilize.cpp
+sptest.cpp
+spfast.cpp
+Compiling...
+setnewhandler.cpp
+setgscweights.cpp
+setblosumweights.cpp
+seqvect.cpp
+seq.cpp
+scorepp.cpp
+scorehistory.cpp
+scoregaps.cpp
+scoredist.cpp
+savebest.cpp
+refinew.cpp
+refinevert.cpp
+refinetreee.cpp
+refinetree.cpp
+refinesubfams.cpp
+refinehoriz.cpp
+refine.cpp
+realigndiffse.cpp
+realigndiffs.cpp
+readmx.cpp
+Compiling...
+pwpath.cpp
+progressivealign.cpp
+progress.cpp
+progalign.cpp
+profilefrommsa.cpp
+profile.cpp
+profdb.cpp
+ppscore.cpp
+posgap.cpp
+phytofile.cpp
+physeq.cpp
+phyfromfile.cpp
+phyfromclust.cpp
+phy4.cpp
+phy3.cpp
+phy2.cpp
+phy.cpp
+params.cpp
+pam200mafft.cpp
+outweights.cpp
+Compiling...
+options.cpp
+onexception.cpp
+objscoreda.cpp
+objscore2.cpp
+objscore.cpp
+nwsmall.cpp
+nwrec.cpp
+nwdasmall.cpp
+nwdasimple2.cpp
+nwdasimple.cpp
+nucmx.cpp
+muscleout.cpp
+muscle.cpp
+msf.cpp
+msadistkimura.cpp
+msa2.cpp
+msa.cpp
+mpam200.cpp
+mhack.cpp
+maketree.cpp
+Compiling...
+makerootmsab.cpp
+makerootmsa.cpp
+main.cpp
+local.cpp
+intmath.cpp
+hydro.cpp
+html.cpp
+henikoffweightpb.cpp
+henikoffweight.cpp
+gotowt.cpp
+gonnet.cpp
+globalswin32.cpp
+globalsother.cpp
+globalslinux.cpp
+globals.cpp
+glbalndimer.cpp
+glbalignss.cpp
+glbalignspn.cpp
+glbalignsp.cpp
+glbalignsimple.cpp
+Compiling...
+glbalignle.cpp
+glbaligndiag.cpp
+glbalign352.cpp
+glbalign.cpp
+finddiagsn.cpp
+finddiags.cpp
+fastscorepath2.cpp
+fastdistnuc.cpp
+fastdistmafft.cpp
+fastdistkmer.cpp
+fastdistkbit.cpp
+fastdistjones.cpp
+fastdist.cpp
+fastclust.cpp
+fasta2.cpp
+fasta.cpp
+estring.cpp
+enumtostr.cpp
+enumopts.cpp
+edgelist.cpp
+Compiling...
+drawtree.cpp
+dpreglist.cpp
+dosp.cpp
+domuscle.cpp
+distpwkimura.cpp
+distfunc.cpp
+distcalc.cpp
+difftreese.cpp
+difftrees.cpp
+diffpaths.cpp
+diffobjscore.cpp
+diaglist.cpp
+cons.cpp
+color.cpp
+clwwt.cpp
+cluster.cpp
+clust.cpp
+blosumla.cpp
+blosum62.cpp
+bittraceback.cpp
+Compiling...
+anchors.cpp
+anchoredpp.cpp
+alpha.cpp
+aln.cpp
+aligntwoprofs.cpp
+aligntwomsas.cpp
+aligngivenpathsw.cpp
+aligngivenpath.cpp
+Compiling manifest to resources...
+Linking...
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
+Generating code
+Finished generating code
+Embedding manifest...
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
+Generating code
+Finished generating code
+Build log was saved at "file://c:\build_temp\muscle\projects\Release OpenMP\BuildLog.htm"
+muscle - 0 error(s), 2 warning(s)
+------ Rebuild All started: Project: stripSubsetLCBs, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'stripSubsetLCBs', configuration 'Release OpenMP|Win32'
+Compiling...
+stripSubsetLCBs.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+memsomp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+stripSubsetLCBs - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: getOrthologList, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'getOrthologList', configuration 'Release OpenMP|Win32'
+Compiling...
+getOrthologList.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(739) : warning C4267: '=' : conversion from 'size_t' to 'unsigned int', possible loss of data
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(757) : see reference to function template instantiation '_OutIt std::_Transform<_InIt1,unsigned int*,unsigned int*,__w64 const unsigned int&(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &),std::forward_iterator_tag,std::forward_iterator_tag>(_InIt1,_InIt1,_InIt2,_OutIt,_Fn2,_InItCats,_InOutItCat,std::_Range_checked_iterator_tag,std::_Range_checked_iterator_tag)' being compiled
+        with
+        [
+            _OutIt=unsigned int *,
+            _InIt1=unsigned int *,
+            _InIt2=unsigned int *,
+            _Fn2=__w64 const unsigned int &(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &),
+            _InItCats=std::forward_iterator_tag,
+            _InOutItCat=std::forward_iterator_tag
+        ]
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(872) : see reference to function template instantiation '_OutIt std::_Transform<unsigned int*,_InIt2,_OutIt,__w64 const unsigned int&(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)>(_InIt1,_InIt1,_InIt2,_OutIt,_Fn2,std::random_access_iterator_tag,std::random_access_iterator_tag,std::_Range_checked_iterator_tag,std::_Range_checked_iterator_tag)' being compiled
+        with
+        [
+            _OutIt=__w64 unsigned int *,
+            _InIt2=__w64 unsigned int *,
+            _InIt1=unsigned int *,
+            _Fn2=__w64 const unsigned int &(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array.hpp(419) : see reference to function template instantiation '__w64 unsigned int *std::transform<__w64 unsigned int*,__w64 unsigned int*,__w64 unsigned int*,__w64 const unsigned int&(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)>(_InIt1,_InIt1,_InIt2,_OutIt,_Fn2)' being compiled
+        with
+        [
+            _InIt1=__w64 unsigned int *,
+            _InIt2=__w64 unsigned int *,
+            _OutIt=__w64 unsigned int *,
+            _Fn2=__w64 const unsigned int &(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array.hpp(402) : while compiling class template member function 'boost::multi_array<T,NumDims> &boost::multi_array<T,NumDims>::resize(const boost::detail::multi_array::extent_gen<NumRanges> &)'
+        with
+        [
+            T=mems::hss_list_t,
+            NumDims=3,
+            NumRanges=3
+        ]
+        C:\build_temp\libMems\libMems/Backbone.h(105) : see reference to class template instantiation 'boost::multi_array<T,NumDims>' being compiled
+        with
+        [
+            T=mems::hss_list_t,
+            NumDims=3
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(670) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(683) : see reference to function template instantiation '_OutIt std::_Transform<_InIt,int*,_Fn1,std::forward_iterator_tag>(_InIt,_InIt,_OutIt,_Fn1,_InOutItCat,std::_Range_checked_iterator_tag)' being compiled
+        with
+        [
+            _OutIt=int *,
+            _InIt=const boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type> ,
+            _Fn1=boost::const_mem_fun_ref_t<__w64 unsigned int,boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type>>,
+            _InOutItCat=std::forward_iterator_tag
+        ]
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(712) : see reference to function template instantiation '_OutIt std::_Transform<const boost::detail::multi_array::extent_range<Extent,SizeType>*,_OutIt,_Fn1>(_InIt,_InIt,_OutIt,_Fn1,std::random_access_iterator_tag,std::_Range_checked_iterator_tag)' being compiled
+        with
+        [
+            _OutIt=__w64 int *,
+            Extent=boost::detail::multi_array::extent_gen<NumRanges>::index,
+            SizeType=boost::detail::multi_array::extent_gen<NumRanges>::size_type,
+            _Fn1=boost::const_mem_fun_ref_t<__w64 unsigned int,boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type>>,
+            _InIt=const boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type> 
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array/multi_array_ref.hpp(380) : see reference to function template instantiation '__w64 int *std::transform<const boost::detail::multi_array::extent_range<Extent,SizeType>*,__w64 int*,boost::const_mem_fun_ref_t<S,T>>(_InIt,_InIt,_OutIt,_Fn1)' being compiled
+        with
+        [
+            Extent=boost::detail::multi_array::extent_gen<NumRanges>::index,
+            SizeType=boost::detail::multi_array::extent_gen<NumRanges>::size_type,
+            S=__w64 unsigned int,
+            T=boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type>,
+            _InIt=const boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type> ,
+            _OutIt=__w64 int *,
+            _Fn1=boost::const_mem_fun_ref_t<__w64 unsigned int,boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type>>
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array/multi_array_ref.hpp(367) : while compiling class template member function 'void boost::const_multi_array_ref<T,NumDims,TPtr>::init_from_extent_gen(const boost::detail::multi_array::extent_gen<NumRanges> &)'
+        with
+        [
+            T=mems::hss_list_t,
+            NumDims=3,
+            TPtr=mems::hss_list_t *,
+            NumRanges=3
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array/multi_array_ref.hpp(417) : see reference to class template instantiation 'boost::const_multi_array_ref<T,NumDims,TPtr>' being compiled
+        with
+        [
+            T=mems::hss_list_t,
+            NumDims=3,
+            TPtr=mems::hss_list_t *
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array.hpp(113) : see reference to class template instantiation 'boost::multi_array_ref<T,NumDims>' being compiled
+        with
+        [
+            T=mems::hss_list_t,
+            NumDims=3
+        ]
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+memsomp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+getOrthologList - 0 error(s), 2 warning(s)
+------ Rebuild All started: Project: bbAnalyze, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'bbAnalyze', configuration 'Release OpenMP|Win32'
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Compiling...
+bbAnalyze.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\utility(44) : warning C4244: 'initializing' : conversion from 'const uint64' to 'uint', possible loss of data
+        ..\src\bbAnalyze.cpp(556) : see reference to function template instantiation 'std::pair<_Ty1,_Ty2>::pair<uint64,uint64>(const std::pair<uint64,uint64> &)' being compiled
+        with
+        [
+            _Ty1=uint,
+            _Ty2=uint
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\utility(44) : warning C4244: 'initializing' : conversion from 'const uint64' to 'uint', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(739) : warning C4267: '=' : conversion from 'size_t' to 'unsigned int', possible loss of data
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(757) : see reference to function template instantiation '_OutIt std::_Transform<_InIt1,unsigned int*,unsigned int*,__w64 const unsigned int&(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &),std::forward_iterator_tag,std::forward_iterator_tag>(_InIt1,_InIt1,_InIt2,_OutIt,_Fn2,_InItCats,_InOutItCat,std::_Range_checked_iterator_tag,std::_Range_checked_iterator_tag)' being compiled
+        with
+        [
+            _OutIt=unsigned int *,
+            _InIt1=unsigned int *,
+            _InIt2=unsigned int *,
+            _Fn2=__w64 const unsigned int &(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &),
+            _InItCats=std::forward_iterator_tag,
+            _InOutItCat=std::forward_iterator_tag
+        ]
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(872) : see reference to function template instantiation '_OutIt std::_Transform<unsigned int*,_InIt2,_OutIt,__w64 const unsigned int&(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)>(_InIt1,_InIt1,_InIt2,_OutIt,_Fn2,std::random_access_iterator_tag,std::random_access_iterator_tag,std::_Range_checked_iterator_tag,std::_Range_checked_iterator_tag)' being compiled
+        with
+        [
+            _OutIt=__w64 unsigned int *,
+            _InIt2=__w64 unsigned int *,
+            _InIt1=unsigned int *,
+            _Fn2=__w64 const unsigned int &(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array.hpp(419) : see reference to function template instantiation '__w64 unsigned int *std::transform<__w64 unsigned int*,__w64 unsigned int*,__w64 unsigned int*,__w64 const unsigned int&(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)>(_InIt1,_InIt1,_InIt2,_OutIt,_Fn2)' being compiled
+        with
+        [
+            _InIt1=__w64 unsigned int *,
+            _InIt2=__w64 unsigned int *,
+            _OutIt=__w64 unsigned int *,
+            _Fn2=__w64 const unsigned int &(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array.hpp(402) : while compiling class template member function 'boost::multi_array<T,NumDims> &boost::multi_array<T,NumDims>::resize(const boost::detail::multi_array::extent_gen<NumRanges> &)'
+        with
+        [
+            T=mems::hss_list_t,
+            NumDims=3,
+            NumRanges=3
+        ]
+        C:\build_temp\libMems\libMems/Backbone.h(105) : see reference to class template instantiation 'boost::multi_array<T,NumDims>' being compiled
+        with
+        [
+            T=mems::hss_list_t,
+            NumDims=3
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(670) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(683) : see reference to function template instantiation '_OutIt std::_Transform<_InIt,int*,_Fn1,std::forward_iterator_tag>(_InIt,_InIt,_OutIt,_Fn1,_InOutItCat,std::_Range_checked_iterator_tag)' being compiled
+        with
+        [
+            _OutIt=int *,
+            _InIt=const boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type> ,
+            _Fn1=boost::const_mem_fun_ref_t<__w64 unsigned int,boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type>>,
+            _InOutItCat=std::forward_iterator_tag
+        ]
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(712) : see reference to function template instantiation '_OutIt std::_Transform<const boost::detail::multi_array::extent_range<Extent,SizeType>*,_OutIt,_Fn1>(_InIt,_InIt,_OutIt,_Fn1,std::random_access_iterator_tag,std::_Range_checked_iterator_tag)' being compiled
+        with
+        [
+            _OutIt=__w64 int *,
+            Extent=boost::detail::multi_array::extent_gen<NumRanges>::index,
+            SizeType=boost::detail::multi_array::extent_gen<NumRanges>::size_type,
+            _Fn1=boost::const_mem_fun_ref_t<__w64 unsigned int,boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type>>,
+            _InIt=const boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type> 
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array/multi_array_ref.hpp(380) : see reference to function template instantiation '__w64 int *std::transform<const boost::detail::multi_array::extent_range<Extent,SizeType>*,__w64 int*,boost::const_mem_fun_ref_t<S,T>>(_InIt,_InIt,_OutIt,_Fn1)' being compiled
+        with
+        [
+            Extent=boost::detail::multi_array::extent_gen<NumRanges>::index,
+            SizeType=boost::detail::multi_array::extent_gen<NumRanges>::size_type,
+            S=__w64 unsigned int,
+            T=boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type>,
+            _InIt=const boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type> ,
+            _OutIt=__w64 int *,
+            _Fn1=boost::const_mem_fun_ref_t<__w64 unsigned int,boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type>>
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array/multi_array_ref.hpp(367) : while compiling class template member function 'void boost::const_multi_array_ref<T,NumDims,TPtr>::init_from_extent_gen(const boost::detail::multi_array::extent_gen<NumRanges> &)'
+        with
+        [
+            T=mems::hss_list_t,
+            NumDims=3,
+            TPtr=mems::hss_list_t *,
+            NumRanges=3
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array/multi_array_ref.hpp(417) : see reference to class template instantiation 'boost::const_multi_array_ref<T,NumDims,TPtr>' being compiled
+        with
+        [
+            T=mems::hss_list_t,
+            NumDims=3,
+            TPtr=mems::hss_list_t *
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array.hpp(113) : see reference to class template instantiation 'boost::multi_array_ref<T,NumDims>' being compiled
+        with
+        [
+            T=mems::hss_list_t,
+            NumDims=3
+        ]
+Linking...
+memsomp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+bbAnalyze - 0 error(s), 4 warning(s)
+------ Rebuild All started: Project: scoreProcrastAlignment, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'scoreProcrastAlignment', configuration 'Release OpenMP|Win32'
+Compiling...
+scoreProcrastAlignment.cpp
+Compiling...
+getopt1.c
+getopt.c
+Linking...
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+scoreProcrastAlignment - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: extractBCITrees, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'extractBCITrees', configuration 'Release OpenMP|Win32'
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Compiling...
+extractBCITrees.cpp
+Linking...
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+extractBCITrees - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: calculateBackboneCoverage2, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'calculateBackboneCoverage2', configuration 'Release OpenMP|Win32'
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Compiling...
+calculateBackboneCoverage2.cpp
+Linking...
+memsomp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+calculateBackboneCoverage2 - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: checkForLGT, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'checkForLGT', configuration 'Release OpenMP|Win32'
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Compiling...
+checkForLGT.cpp
+Linking...
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+checkForLGT - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: sortContigs, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'sortContigs', configuration 'Release OpenMP|Win32'
+Compiling...
+sortContigs.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+memsomp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+sortContigs - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: toEvoHighwayFormat, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'toEvoHighwayFormat', configuration 'Release OpenMP|Win32'
+Compiling...
+toEvoHighwayFormat.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+memsomp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+toEvoHighwayFormat - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: toGrimmFormat, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'toGrimmFormat', configuration 'Release OpenMP|Win32'
+Compiling...
+toGrimmFormat.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+memsomp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+toGrimmFormat - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: extractSubalignments, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'extractSubalignments', configuration 'Release OpenMP|Win32'
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Compiling...
+extractSubalignments.cpp
+Linking...
+memsomp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+extractSubalignments - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: uniquifyTrees, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'uniquifyTrees', configuration 'Release OpenMP|Win32'
+Compiling...
+uniquifyTrees.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+uniquifyTrees - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: progressiveMauve, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'progressiveMauve', configuration 'Release OpenMP|Win32'
+Compiling...
+UniqueMatchFinder.cpp
+progressiveMauve.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(739) : warning C4267: '=' : conversion from 'size_t' to 'unsigned int', possible loss of data
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(757) : see reference to function template instantiation '_OutIt std::_Transform<_InIt1,unsigned int*,unsigned int*,__w64 const unsigned int&(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &),std::forward_iterator_tag,std::forward_iterator_tag>(_InIt1,_InIt1,_InIt2,_OutIt,_Fn2,_InItCats,_InOutItCat,std::_Range_checked_iterator_tag,std::_Range_checked_iterator_tag)' being compiled
+        with
+        [
+            _OutIt=unsigned int *,
+            _InIt1=unsigned int *,
+            _InIt2=unsigned int *,
+            _Fn2=__w64 const unsigned int &(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &),
+            _InItCats=std::forward_iterator_tag,
+            _InOutItCat=std::forward_iterator_tag
+        ]
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(872) : see reference to function template instantiation '_OutIt std::_Transform<unsigned int*,_InIt2,_OutIt,__w64 const unsigned int&(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)>(_InIt1,_InIt1,_InIt2,_OutIt,_Fn2,std::random_access_iterator_tag,std::random_access_iterator_tag,std::_Range_checked_iterator_tag,std::_Range_checked_iterator_tag)' being compiled
+        with
+        [
+            _OutIt=__w64 unsigned int *,
+            _InIt2=__w64 unsigned int *,
+            _InIt1=unsigned int *,
+            _Fn2=__w64 const unsigned int &(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array.hpp(419) : see reference to function template instantiation '__w64 unsigned int *std::transform<__w64 unsigned int*,__w64 unsigned int*,__w64 unsigned int*,__w64 const unsigned int&(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)>(_InIt1,_InIt1,_InIt2,_OutIt,_Fn2)' being compiled
+        with
+        [
+            _InIt1=__w64 unsigned int *,
+            _InIt2=__w64 unsigned int *,
+            _OutIt=__w64 unsigned int *,
+            _Fn2=__w64 const unsigned int &(__cdecl *)(__w64 const unsigned int &,__w64 const unsigned int &)
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array.hpp(402) : while compiling class template member function 'boost::multi_array<T,NumDims> &boost::multi_array<T,NumDims>::resize(const boost::detail::multi_array::extent_gen<NumRanges> &)'
+        with
+        [
+            T=mems::hss_list_t,
+            NumDims=3,
+            NumRanges=3
+        ]
+        C:\build_temp\libMems\libMems/Backbone.h(105) : see reference to class template instantiation 'boost::multi_array<T,NumDims>' being compiled
+        with
+        [
+            T=mems::hss_list_t,
+            NumDims=3
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(670) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(683) : see reference to function template instantiation '_OutIt std::_Transform<_InIt,int*,_Fn1,std::forward_iterator_tag>(_InIt,_InIt,_OutIt,_Fn1,_InOutItCat,std::_Range_checked_iterator_tag)' being compiled
+        with
+        [
+            _OutIt=int *,
+            _InIt=const boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type> ,
+            _Fn1=boost::const_mem_fun_ref_t<__w64 unsigned int,boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type>>,
+            _InOutItCat=std::forward_iterator_tag
+        ]
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\algorithm(712) : see reference to function template instantiation '_OutIt std::_Transform<const boost::detail::multi_array::extent_range<Extent,SizeType>*,_OutIt,_Fn1>(_InIt,_InIt,_OutIt,_Fn1,std::random_access_iterator_tag,std::_Range_checked_iterator_tag)' being compiled
+        with
+        [
+            _OutIt=__w64 int *,
+            Extent=boost::detail::multi_array::extent_gen<NumRanges>::index,
+            SizeType=boost::detail::multi_array::extent_gen<NumRanges>::size_type,
+            _Fn1=boost::const_mem_fun_ref_t<__w64 unsigned int,boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type>>,
+            _InIt=const boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type> 
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array/multi_array_ref.hpp(380) : see reference to function template instantiation '__w64 int *std::transform<const boost::detail::multi_array::extent_range<Extent,SizeType>*,__w64 int*,boost::const_mem_fun_ref_t<S,T>>(_InIt,_InIt,_OutIt,_Fn1)' being compiled
+        with
+        [
+            Extent=boost::detail::multi_array::extent_gen<NumRanges>::index,
+            SizeType=boost::detail::multi_array::extent_gen<NumRanges>::size_type,
+            S=__w64 unsigned int,
+            T=boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type>,
+            _InIt=const boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type> ,
+            _OutIt=__w64 int *,
+            _Fn1=boost::const_mem_fun_ref_t<__w64 unsigned int,boost::detail::multi_array::extent_range<boost::detail::multi_array::extent_gen<NumRanges>::index,boost::detail::multi_array::extent_gen<NumRanges>::size_type>>
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array/multi_array_ref.hpp(367) : while compiling class template member function 'void boost::const_multi_array_ref<T,NumDims,TPtr>::init_from_extent_gen(const boost::detail::multi_array::extent_gen<NumRanges> &)'
+        with
+        [
+            T=mems::hss_list_t,
+            NumDims=3,
+            TPtr=mems::hss_list_t *,
+            NumRanges=3
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array/multi_array_ref.hpp(417) : see reference to class template instantiation 'boost::const_multi_array_ref<T,NumDims,TPtr>' being compiled
+        with
+        [
+            T=mems::hss_list_t,
+            NumDims=3,
+            TPtr=mems::hss_list_t *
+        ]
+        C:\boost\include\boost-1_37\boost/multi_array.hpp(113) : see reference to class template instantiation 'boost::multi_array_ref<T,NumDims>' being compiled
+        with
+        [
+            T=mems::hss_list_t,
+            NumDims=3
+        ]
+Compiling...
+getopt1.c
+getopt.c
+Linking...
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+progressiveMauve - 0 error(s), 2 warning(s)
+------ Rebuild All started: Project: scoreAlignment2, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'scoreAlignment2', configuration 'Release OpenMP|Win32'
+Compiling...
+scoreAlignment2.cpp
+c:\build_temp\sgevolver\src\scorealignment2.cpp(385) : warning C4715: 'findFirstCorrectlyAlignedPair<std::_Vector_iterator<aligned_coords_s,std::allocator<aligned_coords_s> > >' : not all control paths return a value
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+memsomp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\sgEvolver\projects\Release OpenMP\BuildLog.htm"
+scoreAlignment2 - 0 error(s), 1 warning(s)
+------ Rebuild All started: Project: unalign, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'unalign', configuration 'Release OpenMP|Win32'
+Compiling...
+unalign.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+memsomp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+unalign - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: sgEvolver, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'sgEvolver', configuration 'Release OpenMP|Win32'
+Compiling...
+twister.c
+getopt1.c
+getopt.c
+Generating Code...
+Compiling...
+sgEvolver.cpp
+..\src\sgEvolver.cpp(227) : warning C4005: 'NELEMS' : macro redefinition
+        C:\build_temp\muscle\libMUSCLE/threadstorage.h(22) : see previous definition of 'NELEMS'
+Mutator.cpp
+gnStringSource.cpp
+gnGapSource.cpp
+Alignment.cpp
+Generating Code...
+Linking...
+memsomp.lib(gnAlignedSequences.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\sgEvolver\projects\Release OpenMP\BuildLog.htm"
+sgEvolver - 0 error(s), 1 warning(s)
+------ Rebuild All started: Project: uniqueMerCount, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'uniqueMerCount', configuration 'Release OpenMP|Win32'
+Compiling...
+uniqueMerCount.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+memsomp.lib(DNAFileSML.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+uniqueMerCount - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: transposeCoordinates, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'transposeCoordinates', configuration 'Release OpenMP|Win32'
+Compiling...
+transposeCoordinates.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+memsomp.lib(Aligner.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+transposeCoordinates - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: scoreALU, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'scoreALU', configuration 'Release OpenMP|Win32'
+Compiling...
+scoreALU.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+genomeomp.lib(gnException.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+scoreALU - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: scoreAlignment, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'scoreAlignment', configuration 'Release OpenMP|Win32'
+Compiling...
+scoreAlignment.cpp
+..\src\scoreAlignment.cpp(205) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+..\src\scoreAlignment.cpp(207) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+..\src\scoreAlignment.cpp(219) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+..\src\scoreAlignment.cpp(220) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+..\src\scoreAlignment.cpp(291) : warning C4804: '<=' : unsafe use of type 'bool' in operation
+..\src\scoreAlignment.cpp(315) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+..\src\scoreAlignment.cpp(316) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+..\src\scoreAlignment.cpp(385) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+..\src\scoreAlignment.cpp(386) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\xtree(618) : warning C4800: 'boolean' : forcing value to bool 'true' or 'false' (performance warning)
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\xtree(611) : while compiling class template member function 'std::pair<_Ty1,_Ty2> std::_Tree<_Traits>::insert(const std::pair<const _Kty,_Ty> &)'
+        with
+        [
+            _Ty1=std::_Tree<std::_Tmap_traits<std::pair<uint64,uint64>,uint,IntervalCompare,std::allocator<std::pair<const std::pair<uint64,uint64>,uint>>,false>>::iterator,
+            _Ty2=bool,
+            _Traits=std::_Tmap_traits<std::pair<uint64,uint64>,uint,IntervalCompare,std::allocator<std::pair<const std::pair<uint64,uint64>,uint>>,false>,
+            _Kty=std::pair<uint64,uint64>,
+            _Ty=uint
+        ]
+        C:\Program Files (x86)\Microsoft Visual Studio 8\VC\INCLUDE\map(82) : see reference to class template instantiation 'std::_Tree<_Traits>' being compiled
+        with
+        [
+            _Traits=std::_Tmap_traits<std::pair<uint64,uint64>,uint,IntervalCompare,std::allocator<std::pair<const std::pair<uint64,uint64>,uint>>,false>
+        ]
+        ..\src\scoreAlignment.cpp(48) : see reference to class template instantiation 'std::map<_Kty,_Ty,_Pr>' being compiled
+        with
+        [
+            _Kty=std::pair<uint64,uint64>,
+            _Ty=uint,
+            _Pr=IntervalCompare
+        ]
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+memsomp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+scoreAlignment - 0 error(s), 10 warning(s)
+------ Rebuild All started: Project: mauveAligner, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'mauveAligner', configuration 'Release OpenMP|Win32'
+Compiling...
+mauveAligner.cpp
+..\src\mauveAligner.cpp(47) : warning C4005: 'NELEMS' : macro redefinition
+        C:\build_temp\muscle\libMUSCLE/threadstorage.h(22) : see previous definition of 'NELEMS'
+Compiling...
+getopt1.c
+getopt.c
+Linking...
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+mauveAligner - 0 error(s), 1 warning(s)
+------ Rebuild All started: Project: extractBackbone, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'extractBackbone', configuration 'Release OpenMP|Win32'
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Compiling...
+extractBackbone.cpp
+Linking...
+memsomp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+extractBackbone - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: calculateBackboneCoverage, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'calculateBackboneCoverage', configuration 'Release OpenMP|Win32'
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Compiling...
+calculateBackboneCoverage.cpp
+..\src\calculateBackboneCoverage.cpp(25) : warning C4005: 'NELEMS' : macro redefinition
+        C:\build_temp\muscle\libMUSCLE/threadstorage.h(22) : see previous definition of 'NELEMS'
+Linking...
+memsomp.lib(GappedAlignment.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+calculateBackboneCoverage - 0 error(s), 1 warning(s)
+------ Rebuild All started: Project: rootTrees, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'rootTrees', configuration 'Release OpenMP|Win32'
+Compiling...
+rootTrees.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+rootTrees - 0 error(s), 0 warning(s)
+------ Rebuild All started: Project: xmfa2maf, Configuration: Release OpenMP Win32 ------
+Deleting intermediate and output files for project 'xmfa2maf', configuration 'Release OpenMP|Win32'
+Compiling...
+xmfa2maf.cpp
+Compiling...
+getopt1.c
+getopt.c
+Generating Code...
+Linking...
+genomeomp.lib(gnException.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+Generating code
+Finished generating code
+Embedding manifest...
+Build log was saved at "file://c:\build_temp\mauveAligner\projects\Release OpenMP\BuildLog.htm"
+xmfa2maf - 0 error(s), 0 warning(s)
+========== Rebuild All: 29 succeeded, 0 failed, 0 skipped ==========
+
