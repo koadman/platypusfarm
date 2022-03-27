@@ -42,13 +42,12 @@ Went on to a continuing staff role at Illumina Australia Pty Ltd<br/>
 Went on to a staff role at the NSW Department of Primary Industries<br/>
 [UTS staff profile](https://www.uts.edu.au/staff/barbara.britorodriguez)
 
-**Dr. Johanna Wong** -- Postdoctoral Fellow, bioinformatics for the [OUTBREAK project](https://outbreakproject.com.au/)<br/>
-Went on to a staff role at the NSW Department of Primary Industries<br/>
-[UTS staff profile](https://www.uts.edu.au/staff/johanna.wong) | [twitter: @johannawhwong](https://twitter.com/johannawhwong)
-
 
 ### Lab Alumni
 
+**Dr. Johanna Wong** -- Postdoctoral Fellow, bioinformatics for the [OUTBREAK project](https://outbreakproject.com.au/)<br/>
+Went on to a staff role at the NSW Department of Primary Industries<br/>
+[UTS staff profile](https://www.uts.edu.au/staff/johanna.wong) | [twitter: @johannawhwong](https://twitter.com/johannawhwong)
 
 **Kevin Ying** -- Binfie, long-read sequencing technologies<br/>
 [github](https://github.com/kevyin)<br/>

@@ -2,6 +2,10 @@
 layout: mauvepage
 ---
 
+### Mauve is no longer maintained
+
+The software remains freely available, but is no longer under active development by the original authors. There is no guarantee of support or that any emails to the authors will be answered (not that there ever was such a guarantee!). Bugs can be reported to the [github issue tracker](https://github.com/koadman/mauve/issues) but will not be fixed by the software's original authors.
+
 ### Downloading Mauve
 
 Mauve is free of charge, open-source software licensed under the GNU GPL.
